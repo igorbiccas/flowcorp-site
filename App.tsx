@@ -4,7 +4,7 @@ import Header from './components/Header';
 import ProblemSection from './components/ProblemSection';
 import SolutionSection from './components/SolutionSection';
 import PossibilitiesSection from './components/PossibilitiesSection';
-import CtaSection from './components/BetaSection';
+import BetaSection from './components/BetaSection';
 import Footer from './components/Footer';
 
 const App: React.FC = () => {
@@ -15,7 +15,7 @@ const App: React.FC = () => {
         <ProblemSection />
         <SolutionSection />
         <PossibilitiesSection />
-        <CtaSection />
+        <BetaSection />
       </main>
       <Footer />
     </div>
