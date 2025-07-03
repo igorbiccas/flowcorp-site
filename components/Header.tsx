@@ -8,11 +8,11 @@ const Header: React.FC = () => {
     <>
         <nav className="fixed top-0 left-0 right-0 z-50 bg-black/20 backdrop-blur-xl">
             <div className="container mx-auto px-6 py-4 flex justify-between items-center border-b border-brand-border">
-                <a href="#" className="text-xl font-bold text-brand-text tracking-wider" style={{textShadow: '0 0 10px rgba(255,255,255,0.3)'}}>Selfbrain</a>
+                <a href="#" className="text-xl font-bold text-brand-text tracking-wider transition-all duration-300 hover:text-white hover:drop-shadow-[0_0_8px_rgba(255,255,255,0.5)]" style={{textShadow: '0 0 10px rgba(255,255,255,0.3)'}}>Selfbrain</a>
             </div>
         </nav>
 
-        <header className="relative pt-48 pb-32 md:pt-64 md:pb-48 flex items-center justify-center text-center overflow-hidden">
+        <header className="relative pt-32 pb-24 md:pt-48 md:pb-40 flex items-center justify-center text-center overflow-hidden">
           <div className="absolute inset-0 bg-brand-background z-0">
             {/* Animated Grid */}
             <div className="absolute inset-0 bg-[linear-gradient(to_right,rgba(255,255,255,0.05)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.05)_1px,transparent_1px)] bg-[size:4rem_4rem] animate-grid-pan opacity-50"></div>
@@ -33,8 +33,9 @@ const Header: React.FC = () => {
                 }}
              />
           </div>
+          <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,transparent_40%,_black)] z-10"></div>
           <div className="container mx-auto px-6 relative z-20">
-            <h1 className="text-5xl sm:text-7xl md:text-8xl font-extrabold mb-6 text-brand-text leading-tight max-w-5xl mx-auto" style={{ textShadow: '0 0 30px rgba(255,255,255,0.1)'}}>
+            <h1 className="text-5xl md:text-7xl lg:text-8xl font-extrabold mb-6 text-brand-text leading-tight max-w-5xl mx-auto" style={{ textShadow: '0 0 30px rgba(255,255,255,0.1)'}}>
               <AnimatedTitle text="Sua IA não esquece." />
             </h1>
             <p className="text-lg md:text-xl text-brand-text-secondary mb-10 max-w-2xl mx-auto">

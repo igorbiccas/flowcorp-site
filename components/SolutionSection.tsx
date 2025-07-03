@@ -22,15 +22,15 @@ const solutionPoints = [
 
 const SolutionSection: React.FC = () => {
   return (
-    <section id="solution" className="py-32 md:py-40 bg-white/[.01] border-y border-brand-border">
+    <section id="solution" className="py-20 md:py-32 bg-white/[.01] border-y border-brand-border">
       <div className="container mx-auto px-6 relative z-10">
         <div className="max-w-4xl mx-auto">
           <Animated>
-            <h2 className="text-4xl md:text-5xl font-extrabold text-center mb-24 text-brand-text leading-tight">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-center mb-16 md:mb-24 text-brand-text leading-tight">
               Uma nova forma de existir.
             </h2>
           </Animated>
-          <div className="space-y-20">
+          <div className="space-y-16 md:space-y-20">
             {solutionPoints.map((point, index) => (
               <Animated key={index} delay={index * 150 + 200}>
                 <div className="flex flex-col md:flex-row items-center gap-8 text-center md:text-left">
@@ -39,7 +39,7 @@ const SolutionSection: React.FC = () => {
                   </div>
                   <div className="max-w-lg">
                     <h3 className="text-2xl font-bold text-brand-text mb-2">{point.title}</h3>
-                    <p className="text-lg text-brand-text-secondary font-light leading-relaxed">{point.description}</p>
+                    <p className="text-base md:text-lg text-brand-text-secondary font-light leading-relaxed">{point.description}</p>
                   </div>
                 </div>
               </Animated>
