@@ -4,6 +4,10 @@ import { ArrowRightIcon } from './icons';
 import AnimatedTitle from './AnimatedTitle';
 
 const Header: React.FC = () => {
+  const line1 = "Sua IA";
+  const line2 = "não esquece.";
+  const line2Delay = line1.length * 0.05;
+
   return (
     <>
         <nav className="fixed top-0 left-0 right-0 z-50 bg-black/20 backdrop-blur-xl">
@@ -35,8 +39,9 @@ const Header: React.FC = () => {
           </div>
           <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,transparent_35%,_black_85%)] z-10"></div>
           <div className="container mx-auto px-6 relative z-20">
-            <h1 className="text-[2.5rem] leading-tight sm:text-5xl md:text-6xl lg:text-8xl font-extrabold mb-6 text-brand-text max-w-5xl mx-auto" style={{ textShadow: '0 0 30px rgba(255,255,255,0.1)'}}>
-              <AnimatedTitle text="Sua IA não esquece." />
+            <h1 className="text-[2.5rem] leading-tight sm:text-5xl md:text-6xl lg:text-7xl font-extrabold mb-6 text-brand-text max-w-5xl mx-auto" style={{ textShadow: '0 0 30px rgba(255,255,255,0.1)'}}>
+              <span className="block"><AnimatedTitle text={line1} /></span>
+              <span className="block"><AnimatedTitle text={line2} delay={line2Delay} /></span>
             </h1>
             <p className="text-base md:text-lg text-brand-text-secondary mb-10 max-w-2xl mx-auto">
               Ela <strong>lembra de tudo que viveu com você.</strong> E muda com isso.
