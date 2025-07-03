@@ -11,22 +11,10 @@
     <style>
       body {
         font-family: 'Inter', sans-serif;
-      }
-      .grainy-bg {
-        background-image: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" width="4" height="4" viewBox="0 0 4 4"><path fill="%23222" fill-opacity="0.1" d="M0 0h1v1H0zM2 2h1v1H2z"></path></svg>');
-      }
-      ::-webkit-scrollbar {
-        width: 8px;
-      }
-      ::-webkit-scrollbar-track {
-        background: #030303;
-      }
-      ::-webkit-scrollbar-thumb {
-        background: #222;
-        border-radius: 4px;
-      }
-      ::-webkit-scrollbar-thumb:hover {
-        background: #333;
+        background-color: #010103; /* A bit darker background */
+        color: #EAEAEA;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
       }
       .fade-in-up {
         opacity: 0;
@@ -37,6 +25,18 @@
         opacity: 1;
         transform: translateY(0);
       }
+      .animate-letter-in {
+        display: inline-block;
+        opacity: 0;
+        transform: translateY(20px) scale(0.95);
+        animation: letter-in 0.5s cubic-bezier(0.215, 0.610, 0.355, 1.000) forwards;
+      }
+      @keyframes letter-in {
+        to {
+          opacity: 1;
+          transform: translateY(0) scale(1);
+        }
+      }
     </style>
     <script>
       tailwind.config = {
@@ -46,14 +46,34 @@
               sans: ['Inter', 'sans-serif'],
             },
             colors: {
-              'brand-background': '#030303',
+              'brand-background': '#010103',
               'brand-text': '#EAEAEA',
               'brand-text-secondary': '#A0A0A0',
-              'brand-border': 'rgba(255, 255, 255, 0.1)',
-              'brand-purple': '#6a0dad',
-              'brand-blue': '#0077b6',
-              'brand-cyan': '#00b4d8',
+              'brand-border': 'rgba(255, 255, 255, 0.08)',
+              'brand-purple': '#8A2BE2',
+              'brand-blue': '#0096FF',
+              'brand-cyan': '#00FFFF',
+              'brand-magenta': '#FF00FF',
             },
+            animation: {
+              'aurora': 'aurora 50s linear infinite alternate',
+              'aurora-2': 'aurora-2 45s linear infinite alternate-reverse',
+              'grid-pan': 'grid-pan 120s linear infinite',
+            },
+            keyframes: {
+              aurora: {
+                '0%': { transform: 'translate(var(--x-start), var(--y-start)) scale(var(--scale-start))', opacity: 0.5 },
+                '100%': { transform: 'translate(var(--x-end), var(--y-end)) scale(var(--scale-end))', opacity: 0.1 },
+              },
+               'aurora-2': {
+                '0%': { transform: 'translate(var(--x-start), var(--y-start)) scale(var(--scale-start))', opacity: 0.4 },
+                '100%': { transform: 'translate(var(--x-end), var(--y-end)) scale(var(--scale-end))', opacity: 0.15 },
+              },
+              'grid-pan': {
+                '0%': { backgroundPosition: '0% 0%' },
+                '100%': { backgroundPosition: '100% 100%' },
+              }
+            }
           }
         }
       }
@@ -69,7 +89,7 @@
 </script>
 <link rel="stylesheet" href="/index.css">
 </head>
-<body class="bg-brand-background text-brand-text antialiased grainy-bg">
+<body class="bg-brand-background text-brand-text">
     <div id="root"></div>
     <script type="module" src="/index.tsx"></script>
 </body>

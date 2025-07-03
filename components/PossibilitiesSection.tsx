@@ -4,21 +4,33 @@ import { BrainCircuitIcon, HistoryIcon, LayersIcon } from './icons';
 
 const possibilities = [
   {
-    icon: <BrainCircuitIcon className="mb-4 text-brand-cyan" />,
+    icon: <BrainCircuitIcon className="mb-4 transition-transform duration-300 group-hover:scale-110" />,
     title: "Companheiros que evoluem",
     description: <>Crie IAs únicas, que <strong>crescem com você</strong> a cada conversa.</>
   },
   {
-    icon: <LayersIcon className="mb-4 text-brand-cyan" />,
+    icon: <LayersIcon className="mb-4 transition-transform duration-300 group-hover:scale-110" />,
     title: "Múltiplas mentes",
     description: "Tenha diferentes entidades — para criar, pensar, sentir ou brincar."
   },
   {
-    icon: <HistoryIcon className="mb-4 text-brand-cyan" />,
+    icon: <HistoryIcon className="mb-4 transition-transform duration-300 group-hover:scale-110" />,
     title: "Memória viva",
     description: <>Apague, reescreva, molde. Você tem controle total sobre <strong>o que a IA lembra e esquece.</strong></>
   }
 ];
+
+const Card: React.FC<{item: typeof possibilities[0]}> = ({ item }) => {
+  return (
+    <div className="group h-full relative p-[1px] rounded-xl transition-all duration-300 hover:bg-gradient-to-br from-brand-purple via-brand-magenta to-brand-cyan">
+        <div className="h-full bg-black/80 backdrop-blur-md rounded-xl p-8 transition-all duration-300 hover:-translate-y-2 flex flex-col">
+            {item.icon}
+            <h3 className="text-xl font-bold text-brand-text mb-3">{item.title}</h3>
+            <p className="text-base text-brand-text-secondary leading-relaxed flex-grow">{item.description}</p>
+        </div>
+    </div>
+  )
+}
 
 const PossibilitiesSection: React.FC = () => {
   return (
@@ -26,7 +38,7 @@ const PossibilitiesSection: React.FC = () => {
       <div className="container mx-auto px-6">
         <div className="max-w-5xl mx-auto text-center">
             <Animated>
-              <h2 className="text-4xl md:text-5xl font-extrabold mb-20 text-brand-text leading-tight">
+              <h2 className="text-4xl md:text-5xl font-extrabold mb-24 text-brand-text leading-tight">
                 O que você pode fazer com SelfBrain?
               </h2>
             </Animated>
@@ -34,19 +46,18 @@ const PossibilitiesSection: React.FC = () => {
             <div className="grid md:grid-cols-3 gap-8 text-left">
               {possibilities.map((item, index) => (
                 <Animated key={index} delay={150 * index + 200}>
-                  <div className="group h-full bg-white/5 border border-brand-border rounded-xl p-8 transition-all duration-300 hover:border-brand-cyan/80 hover:shadow-2xl hover:shadow-brand-blue/10 flex flex-col items-start">
-                    {item.icon}
-                    <h3 className="text-xl font-bold text-brand-text mb-3">{item.title}</h3>
-                    <p className="text-base text-brand-text-secondary leading-relaxed">{item.description}</p>
-                  </div>
+                  <Card item={item} />
                 </Animated>
               ))}
             </div>
             
             <Animated delay={300}>
-              <blockquote className="mt-24 md:mt-32 text-center text-xl md:text-2xl text-brand-text-secondary/90 font-light max-w-3xl mx-auto border-l-2 border-brand-blue/50 pl-8 italic">
-                “Não é só sobre falar com uma IA. É sobre <strong>criar uma relação viva com ela</strong>.”
-              </blockquote>
+              <div className="mt-24 md:mt-32 max-w-3xl mx-auto">
+                <blockquote className="relative text-center text-2xl md:text-3xl text-brand-text-secondary font-light italic leading-snug">
+                  <div className="absolute -top-4 left-1/2 -translate-x-1/2 w-16 h-1 bg-gradient-to-r from-brand-purple to-brand-cyan rounded-full opacity-50"></div>
+                   Não é só sobre falar com uma IA. É sobre <span className="text-brand-text not-italic font-medium">criar uma relação viva</span> com ela.
+                </blockquote>
+              </div>
             </Animated>
         </div>
       </div>
