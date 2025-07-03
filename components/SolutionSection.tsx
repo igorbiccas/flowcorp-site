@@ -22,11 +22,11 @@ const solutionPoints = [
 
 const SolutionSection: React.FC = () => {
   return (
-    <section id="solution" className="py-20 md:py-32 bg-white/[.01] border-y border-brand-border">
+    <section id="solution" className="py-16 md:py-28 bg-white/[.01] border-y border-brand-border">
       <div className="container mx-auto px-6 relative z-10">
         <div className="max-w-4xl mx-auto">
           <Animated>
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-center mb-16 md:mb-24 text-brand-text leading-tight">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-center mb-12 md:mb-20 text-brand-text leading-tight">
               Uma nova forma de existir.
             </h2>
           </Animated>
