@@ -22,7 +22,7 @@ const products: Product[] = [
     description: 'Grave uma conversa. A IA entende e gera o relatório.',
     status: 'MVP em desenvolvimento',
     buttonText: 'Ver MVP',
-    url: '#',
+    url: 'https://datadocs.vercel.app/',
   },
 ];
 
