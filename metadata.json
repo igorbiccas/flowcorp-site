@@ -1,5 +1,6 @@
 {
   "name": "FlowCorp AI",
   "description": "A modern, minimalist website for FlowCorp, an AI studio that builds and launches its own advanced AI products.",
-  "requestFramePermissions": []
+  "requestFramePermissions": [],
+  "prompt": ""
 }

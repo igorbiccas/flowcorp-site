@@ -1,10 +1,10 @@
 import React, { useRef } from 'react';
 import type { Product } from './types';
+import Header from './components/Header';
 import ProductCard from './components/ProductCard';
 import AnimatedSection from './components/AnimatedSection';
-import { ArrowDownIcon, WrenchIcon, BrainCircuitIcon, AnamneseIcon, XIcon, InstagramIcon } from './components/icons';
+import { ArrowDownIcon, WrenchIcon, BrainCircuitIcon, AnamneseIcon } from './components/icons';
 
-// Product data
 const products: Product[] = [
   {
     icon: <BrainCircuitIcon />,
@@ -22,12 +22,10 @@ const products: Product[] = [
     description: 'Grave uma conversa. A IA entende e gera o relatório.',
     status: 'MVP em desenvolvimento',
     buttonText: 'Ver MVP',
-    url: 'https://datadocs.vercel.app/',
+    url: '#',
   },
 ];
 
-
-// Main App Component
 const App: React.FC = () => {
   const productsRef = useRef<HTMLDivElement>(null);
 
@@ -36,83 +34,92 @@ const App: React.FC = () => {
   };
 
   return (
-    <div className="bg-neutral-950 min-h-screen text-neutral-300">
-      <div className="absolute inset-0 -z-10 h-full w-full bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.2),rgba(255,255,255,0))]"></div>
-
-      <main className="container mx-auto px-6 md:px-8">
-        
-        <section className="min-h-screen flex flex-col justify-center items-center text-center py-20 relative">
+    <div className="bg-zinc-950 min-h-screen text-zinc-300">
+      <Header />
+      
+      <main>
+        <section className="container mx-auto px-6 md:px-8 min-h-screen flex flex-col justify-center items-center text-center py-20 relative">
            <AnimatedSection className="w-full">
-                <h1 className="text-5xl md:text-7xl font-black text-neutral-100 mb-4 tracking-tighter">
-                FlowCorp
+                <h1 className="text-5xl md:text-6xl font-semibold text-zinc-100 mb-6 tracking-tight">
+                    Inteligência Artificial com Propósito.
                 </h1>
-                <p className="max-w-3xl mx-auto text-xl md:text-2xl text-neutral-300 mb-6">
-                Criamos o que só é possível com a IA de hoje.
-                </p>
-                <p className="max-w-2xl mx-auto text-lg text-neutral-400 mb-10">
-                Produtos próprios. Com velocidade, propósito e tecnologia real.
+                <p className="max-w-3xl mx-auto text-lg md:text-xl text-zinc-300 mb-10">
+                    Somos um estúdio de IA focado em construir e lançar produtos próprios que resolvem problemas reais com tecnologia de ponta.
                 </p>
                 <button
                 onClick={handleScrollToProducts}
-                className="group bg-white text-neutral-950 font-semibold py-3 px-6 rounded-lg transition-transform duration-300 ease-in-out hover:scale-105 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-neutral-950"
+                className="group inline-flex items-center justify-center bg-white text-black font-semibold py-3 px-6 rounded-lg transition-transform duration-300 ease-in-out hover:scale-105 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-zinc-950"
                 >
-                Conheça nossos apps <ArrowDownIcon />
+                Conheça nossos produtos <ArrowDownIcon />
                 </button>
             </AnimatedSection>
         </section>
 
-        <div className="space-y-24 md:space-y-32">
-            <AnimatedSection className="max-w-3xl mx-auto text-center">
-                <h2 className="text-3xl md:text-4xl font-bold text-neutral-100 mb-6 tracking-tight">
-                    Um estúdio de IA, não uma agência.
-                </h2>
-                <div className="space-y-4 text-lg md:text-xl text-neutral-400 leading-relaxed">
-                    <p>
-                    A FlowCorp é um estúdio que constrói e lança produtos com IA avançada.
-                    </p>
-                    <p>
-                    Não fazemos promessas. Criamos ferramentas que funcionam.
-                    </p>
-                    <p>
-                    Tudo o que desenvolvemos é nosso — feito para resolver algo que só a IA de hoje permite.
-                    </p>
-                </div>
-            </AnimatedSection>
+        <section className="py-24 md:py-32">
+            <div className="container mx-auto px-6 md:px-8">
+                <AnimatedSection className="max-w-5xl mx-auto">
+                    <div className="grid md:grid-cols-5 gap-8 md:gap-16 items-center">
+                        <div className="md:col-span-2">
+                            <h2 className="text-4xl md:text-5xl font-bold text-zinc-100 tracking-tighter leading-tight">
+                                "Criamos ferramentas que funcionam."
+                            </h2>
+                        </div>
+                        <div className="md:col-span-3 text-lg md:text-xl text-zinc-400 leading-relaxed space-y-6">
+                            <p>
+                            A FlowCorp é um estúdio de IA. Construímos e lançamos nossos próprios produtos com tecnologia avançada.
+                            </p>
+                            <p>
+                            Tudo o que desenvolvemos é nosso — feito para resolver algo que só a IA de hoje permite, com velocidade e propósito.
+                            </p>
+                        </div>
+                    </div>
+                </AnimatedSection>
+            </div>
+        </section>
 
-            <section ref={productsRef}>
+        <section ref={productsRef} id="products" className="py-24 md:py-32 bg-zinc-950">
+            <div className="container mx-auto px-6 md:px-8">
                 <AnimatedSection className="w-full">
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                    {products.map((product, index) => (
+                    <h2 className="text-center text-3xl md:text-4xl font-bold text-zinc-100 mb-12 tracking-tight">
+                        Nossos Produtos
+                    </h2>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+                    {products.map((product) => (
                         <ProductCard key={product.title} product={product} />
                     ))}
                     </div>
                 </AnimatedSection>
-            </section>
-
-            <AnimatedSection className="max-w-3xl mx-auto text-center border-t border-neutral-800 pt-16">
-                <p className="text-base text-neutral-400 flex items-center justify-center">
-                    <WrenchIcon />
-                    Também desenvolvemos sites simples com IA sob demanda, quando o projeto faz sentido.
-                </p>
-                <p className="text-sm text-neutral-600 mt-4">
-                    (Esse é só um extra. Nosso foco são nossos próprios produtos.)
-                </p>
-            </AnimatedSection>
-        </div>
-
-        <footer className="text-center py-16 mt-24 md:mt-32 border-t border-neutral-800 text-neutral-500 text-sm">
-            <p>© {new Date().getFullYear()} FlowCorp</p>
-            <div className="flex justify-center items-center gap-6 my-4">
-                <a href="https://x.com/SelfBrain_" target="_blank" rel="noopener noreferrer" aria-label="Siga-nos no X" className="text-neutral-500 transition-colors hover:text-neutral-300">
-                    <XIcon />
-                </a>
-                <a href="https://www.instagram.com/selfbrain_/" target="_blank" rel="noopener noreferrer" aria-label="Siga-nos no Instagram" className="text-neutral-500 transition-colors hover:text-neutral-300">
-                    <InstagramIcon />
-                </a>
             </div>
-            <p className="text-neutral-600">
-                Feito com IA e obsessão por boas ideias.
-            </p>
+        </section>
+
+        <section className="py-24 md:py-32">
+           <div className="container mx-auto px-6 md:px-8">
+              <AnimatedSection className="max-w-3xl mx-auto">
+                <div className="border border-zinc-800 rounded-2xl p-8 flex flex-col sm:flex-row items-start sm:items-center gap-6 bg-zinc-900">
+                  <div className="bg-zinc-800 border border-zinc-700 p-3 rounded-full flex-shrink-0">
+                      <WrenchIcon />
+                  </div>
+                  <div className="flex-grow">
+                      <p className="text-base md:text-lg text-zinc-300">
+                          Também desenvolvemos sites simples com IA sob demanda, quando o projeto faz sentido.
+                      </p>
+                      <p className="text-sm text-zinc-500 mt-2">
+                          (Nosso foco são nossos próprios produtos.)
+                      </p>
+                  </div>
+                </div>
+              </AnimatedSection>
+            </div>
+        </section>
+
+
+        <footer className="container mx-auto px-6 md:px-8 py-8 border-t border-zinc-800 text-sm">
+            <div className="flex flex-col sm:flex-row justify-between items-center gap-4">
+                <p className="text-zinc-500">© {new Date().getFullYear()} FlowCorp. Todos os direitos reservados.</p>
+                <p className="text-zinc-500">
+                    Feito com IA e obsessão por boas ideias.
+                </p>
+            </div>
         </footer>
       </main>
     </div>
