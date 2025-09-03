@@ -23,7 +23,7 @@ const Header: React.FC = () => {
       <div className="container mx-auto px-6 md:px-8">
         <div className="flex justify-between items-center h-20">
           <a href="#" className="text-2xl font-bold text-zinc-100 tracking-tight transition-colors hover:text-zinc-300">
-            FlowCorp
+            Flow corp.
           </a>
           <nav className="flex items-center gap-6">
             <a href="https://www.instagram.com/selfbrain_/" target="_blank" rel="noopener noreferrer" aria-label="Siga-nos no Instagram" className="text-zinc-400 transition-colors hover:text-zinc-100">
