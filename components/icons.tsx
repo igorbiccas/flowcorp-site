@@ -1,13 +1,14 @@
 import React from 'react';
 
-const iconWrapper = 'w-12 h-12 mb-6 rounded-2xl bg-zinc-900/80 border border-zinc-800 flex items-center justify-center shadow-[0_0_40px_-20px_rgba(124,58,237,0.35)]';
+const iconWrapper =
+  'w-12 h-12 mb-6 rounded-2xl border border-slate-200 bg-white flex items-center justify-center shadow-[0_15px_40px_-25px_rgba(15,23,42,0.35)]';
 
 export const SparklesIcon = () => (
   <div className={iconWrapper}>
     <svg
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 32 32"
-      className="w-7 h-7 text-zinc-100"
+      className="h-7 w-7 text-slate-800"
       fill="none"
       stroke="currentColor"
       strokeWidth="1.6"
@@ -26,7 +27,7 @@ export const AnamneseIcon = () => (
     <svg
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 32 32"
-      className="w-7 h-7 text-zinc-100"
+      className="h-7 w-7 text-slate-800"
       fill="none"
       stroke="currentColor"
       strokeWidth="1.6"
@@ -49,14 +50,14 @@ export const InstagramIcon = () => (
     viewBox="0 0 24 24"
     fill="none"
     stroke="currentColor"
-    strokeWidth="1.8"
+    strokeWidth="1.5"
     strokeLinecap="round"
     strokeLinejoin="round"
     className="h-5 w-5"
   >
     <rect width="18" height="18" x="3" y="3" rx="5" />
-    <path d="M15.5 11.4a3.5 3.5 0 1 1-2.9-2.9" />
-    <circle cx="17.5" cy="6.5" r="0.5" fill="currentColor" />
+    <circle cx="12" cy="12" r="3.5" />
+    <circle cx="17" cy="7" r="0.7" fill="currentColor" stroke="none" />
   </svg>
 );
 
