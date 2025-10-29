@@ -1,34 +1,74 @@
 import React from 'react';
 
+const iconWrapper = 'w-12 h-12 mb-6 rounded-2xl bg-zinc-900/80 border border-zinc-800 flex items-center justify-center shadow-[0_0_40px_-20px_rgba(124,58,237,0.35)]';
+
 export const SparklesIcon = () => (
-    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="w-10 h-10 mb-4 text-zinc-200">
-        <path d="M9.9 2.1c.2-.5.8-.8 1.4-.6s1 1 .8 1.5l-1.5 4c-.1.2 0 .5.2.6l3 2.1c.4.3.5.9.2 1.3s-.9.5-1.3.2l-3-2.1c-.2-.1-.5 0-.6.2l-1.5 4c-.2.5-.8.8-1.4.6s-1-1-.8-1.5l1.5-4c.1-.2 0-.5-.2-.6l-3-2.1c-.4-.3-.5-.9-.2-1.3s.9-.5 1.3-.2l3 2.1c.2.1.5 0 .6-.2l1.5-4Z"/>
-        <path d="M18.6 9.6c.2-.5.8-.8 1.4-.6s1 1 .8 1.5l-.8 2.1c-.1.2 0 .5.2.6l1.6 1.1c.4.3.5.9.2 1.3s-.9.5-1.3.2l-1.6-1.1c-.2-.1-.5 0-.6.2l-.8 2.1c-.2.5-.8.8-1.4.6s-1-1-.8-1.5l.8-2.1c.1-.2 0-.5-.2-.6l-1.6-1.1c-.4-.3-.5-.9-.2-1.3s.9-.5 1.3-.2l1.6 1.1c.2.1.5 0 .6-.2l.8-2.1Z"/>
-        <path d="M6.2 18.2c.2-.5.8-.8 1.4-.6s1 1 .8 1.5l-1.1 2.9c-.1.2 0 .5.2.6l2.1 1.5c.4.3.5.9.2 1.3s-.9.5-1.3.2l-2.1-1.5c-.2-.1-.5 0-.6.2l-1.1 2.9c-.2.5-.8.8-1.4.6s-1-1-.8-1.5l1.1-2.9c.1-.2 0-.5-.2-.6l-2.1-1.5c-.4-.3-.5-.9-.2-1.3s.9-.5 1.3-.2l2.1 1.5c.2.1.5 0 .6-.2l1.1-2.9Z"/>
+  <div className={iconWrapper}>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 32 32"
+      className="w-7 h-7 text-zinc-100"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="1.6"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
+      <path d="M15.9 4.2c-1.5-2.6-5.3-2.4-6.5.3l-1.3 3.1c-.3.7-.9 1.2-1.7 1.3l-3.4.4c-2.9.3-4.1 4-1.9 5.9l2.6 2.2c.6.5.9 1.3.8 2.1l-.7 3.3c-.6 2.8 2.5 4.8 4.9 3.4l2.9-1.7c.7-.4 1.5-.4 2.2 0l2.9 1.7c2.5 1.4 5.5-.6 4.9-3.4l-.7-3.3c-.2-.8.2-1.6.8-2.1l2.6-2.2c2.2-1.9 1-5.6-1.9-5.9l-3.4-.4c-.8-.1-1.4-.6-1.7-1.3l-1.3-3.1Z" />
+      <path d="M12 15.5c1-2 3.7-2 4.7 0" />
+      <path d="M13.3 18.8c.9.8 2.4.8 3.3 0" />
     </svg>
+  </div>
 );
 
 export const AnamneseIcon = () => (
-    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="w-10 h-10 mb-4 text-zinc-200">
-        <path d="M8 2v4" />
-        <path d="M16 2v4" />
-        <rect x="3" y="4" width="18" height="18" rx="2" />
-        <path d="M8 10h8" />
-        <path d="M8 14h8" />
-        <path d="M8 18h4" />
+  <div className={iconWrapper}>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 32 32"
+      className="w-7 h-7 text-zinc-100"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="1.6"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
+      <rect x="5" y="6" width="22" height="22" rx="6" />
+      <path d="M16 11v12" />
+      <path d="M10 17h12" />
+      <path d="M12.5 5.5 16 3l3.5 2.5" />
     </svg>
+  </div>
 );
 
 export const InstagramIcon = () => (
-    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-5 h-5">
-        <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
-        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
-        <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line>
-    </svg>
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="20"
+    height="20"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="1.8"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    className="h-5 w-5"
+  >
+    <rect width="18" height="18" x="3" y="3" rx="5" />
+    <path d="M15.5 11.4a3.5 3.5 0 1 1-2.9-2.9" />
+    <circle cx="17.5" cy="6.5" r="0.5" fill="currentColor" />
+  </svg>
 );
 
 export const ArrowRightIcon = () => (
-  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="inline-block ml-1.5 transition-transform group-hover/button:translate-x-1 duration-200">
-    <path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+  <svg
+    width="20"
+    height="20"
+    viewBox="0 0 24 24"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className="ml-1.5 inline-block transition-transform duration-200 group-hover/button:translate-x-1"
+  >
+    <path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
   </svg>
 );
