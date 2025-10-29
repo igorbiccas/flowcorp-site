@@ -24,7 +24,7 @@ const products: Product[] = [
       'Coleta pré-consulta com linguagem natural, integrando prontuários e garantindo consistência para profissionais de saúde.',
     status: 'Em desenvolvimento',
     buttonText: 'Ver',
-    url: '#',
+    url: 'https://datadocs.vercel.app/',
   },
 ];
 
