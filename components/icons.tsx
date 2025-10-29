@@ -44,29 +44,19 @@ export const AnamneseIcon = () => (
 export const InstagramIcon = () => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
+    width="20"
+    height="20"
     viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="1.8"
+    strokeLinecap="round"
+    strokeLinejoin="round"
     className="h-5 w-5"
-    aria-hidden="true"
   >
-    <defs>
-      <linearGradient id="igGradient" x1="0%" y1="100%" x2="100%" y2="0%">
-        <stop offset="0%" stopColor="#f58529" />
-        <stop offset="50%" stopColor="#dd2a7b" />
-        <stop offset="100%" stopColor="#515bd4" />
-      </linearGradient>
-    </defs>
-    <rect
-      x="2.75"
-      y="2.75"
-      width="18.5"
-      height="18.5"
-      rx="5.5"
-      stroke="url(#igGradient)"
-      strokeWidth="1.5"
-      fill="none"
-    />
-    <circle cx="12" cy="12" r="4.2" stroke="url(#igGradient)" strokeWidth="1.5" fill="none" />
-    <circle cx="17.2" cy="6.8" r="0.8" fill="url(#igGradient)" />
+    <rect width="18" height="18" x="3" y="3" rx="5" />
+    <path d="M15.5 11.4a3.5 3.5 0 1 1-2.9-2.9" />
+    <circle cx="17.5" cy="6.5" r="0.5" fill="currentColor" />
   </svg>
 );
 

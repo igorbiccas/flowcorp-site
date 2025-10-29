@@ -33,6 +33,9 @@ const Header: React.FC = () => {
             <a href="#products" className="transition hover:text-zinc-100">
               Produtos
             </a>
+            <a href="mailto:hello@flowcorp.ai" className="transition hover:text-zinc-100">
+              Contato
+            </a>
             <a
               href="https://www.instagram.com/selfbrain_/"
               target="_blank"
