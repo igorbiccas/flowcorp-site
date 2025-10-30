@@ -1,14 +1,14 @@
 import React from 'react';
 
 const iconWrapper =
-  'w-12 h-12 mb-6 rounded-2xl border border-white/10 bg-white/10 flex items-center justify-center shadow-[0_25px_65px_-40px_rgba(59,130,246,0.65)] backdrop-blur';
+  'w-12 h-12 mb-6 rounded-2xl border border-white/10 bg-white/10 flex items-center justify-center shadow-[0_25px_65px_-40px_rgba(148,163,184,0.45)] backdrop-blur';
 
 export const SparklesIcon = () => (
   <div className={iconWrapper}>
     <svg
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 32 32"
-      className="h-7 w-7 text-blue-200"
+      className="h-7 w-7 text-slate-200"
       fill="none"
       stroke="currentColor"
       strokeWidth="1.6"
@@ -27,7 +27,7 @@ export const AnamneseIcon = () => (
     <svg
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 32 32"
-      className="h-7 w-7 text-blue-200"
+      className="h-7 w-7 text-slate-200"
       fill="none"
       stroke="currentColor"
       strokeWidth="1.6"
@@ -48,25 +48,16 @@ export const InstagramIcon = () => (
     width="20"
     height="20"
     viewBox="0 0 24 24"
-    className="h-5 w-5"
+    className="h-5 w-5 text-slate-200"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="1.6"
+    strokeLinecap="round"
+    strokeLinejoin="round"
   >
-    <defs>
-      <linearGradient id="ig-gradient" x1="0%" y1="100%" x2="100%" y2="0%">
-        <stop offset="0%" stopColor="#f58529" />
-        <stop offset="50%" stopColor="#dd2a7b" />
-        <stop offset="100%" stopColor="#8134af" />
-      </linearGradient>
-    </defs>
-    <path
-      d="M7 3h10a4 4 0 0 1 4 4v10a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4V7a4 4 0 0 1 4-4Z"
-      fill="none"
-      stroke="url(#ig-gradient)"
-      strokeWidth="1.6"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    />
-    <circle cx="12" cy="12" r="3.6" fill="none" stroke="url(#ig-gradient)" strokeWidth="1.6" />
-    <circle cx="17" cy="7" r="1.1" fill="url(#ig-gradient)" />
+    <rect x="3" y="3" width="18" height="18" rx="5" />
+    <circle cx="12" cy="12" r="3.5" />
+    <circle cx="17" cy="7" r="1" fill="currentColor" stroke="none" />
   </svg>
 );
 

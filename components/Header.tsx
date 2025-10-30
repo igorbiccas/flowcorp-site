@@ -14,17 +14,17 @@ const Header: React.FC = () => {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 border-b transition-all duration-300 ease-in-out ${
-        isScrolled
-          ? 'border-white/10 bg-[#020617]/90 backdrop-blur-xl shadow-lg'
-          : 'border-transparent bg-transparent'
-      }`}
+        className={`fixed top-0 left-0 right-0 z-50 border-b transition-all duration-300 ease-in-out ${
+          isScrolled
+            ? 'border-white/10 bg-[#0a0a0a]/90 backdrop-blur-xl shadow-lg'
+            : 'border-transparent bg-transparent'
+        }`}
     >
       <div className="container mx-auto px-6 md:px-8">
         <div className="flex h-20 items-center justify-between">
           <a
             href="#"
-            className="text-lg font-semibold tracking-[0.2em] text-slate-100 transition-colors hover:text-blue-300"
+            className="text-lg font-semibold tracking-[0.2em] text-slate-100 transition-colors hover:text-slate-300"
             aria-label="Flow corp"
           >
             FLOW CORP
@@ -32,9 +32,6 @@ const Header: React.FC = () => {
           <nav className="flex items-center gap-8 text-sm text-slate-300">
             <a href="#products" className="transition hover:text-white">
               Produtos
-            </a>
-            <a href="mailto:hello@flowcorp.ai" className="transition hover:text-white">
-              Contato
             </a>
             <a
               href="https://www.instagram.com/selfbrain_/"
