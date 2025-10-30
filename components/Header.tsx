@@ -16,7 +16,7 @@ const Header: React.FC = () => {
     <header
       className={`fixed top-0 left-0 right-0 z-50 border-b transition-all duration-300 ease-in-out ${
         isScrolled
-          ? 'border-slate-200/80 bg-white/85 backdrop-blur-xl shadow-sm'
+          ? 'border-white/10 bg-[#020617]/90 backdrop-blur-xl shadow-lg'
           : 'border-transparent bg-transparent'
       }`}
     >
@@ -24,16 +24,16 @@ const Header: React.FC = () => {
         <div className="flex h-20 items-center justify-between">
           <a
             href="#"
-            className="text-lg font-semibold tracking-[0.2em] text-slate-900 transition-colors hover:text-slate-600"
+            className="text-lg font-semibold tracking-[0.2em] text-slate-100 transition-colors hover:text-blue-300"
             aria-label="Flow corp"
           >
             FLOW CORP
           </a>
-          <nav className="flex items-center gap-8 text-sm text-slate-500">
-            <a href="#products" className="transition hover:text-slate-900">
+          <nav className="flex items-center gap-8 text-sm text-slate-300">
+            <a href="#products" className="transition hover:text-white">
               Produtos
             </a>
-            <a href="mailto:hello@flowcorp.ai" className="transition hover:text-slate-900">
+            <a href="mailto:hello@flowcorp.ai" className="transition hover:text-white">
               Contato
             </a>
             <a
@@ -41,7 +41,7 @@ const Header: React.FC = () => {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Siga-nos no Instagram"
-              className="rounded-full border border-slate-200 bg-white/80 p-2 text-slate-600 transition hover:border-slate-300 hover:text-slate-900 hover:shadow-sm"
+              className="rounded-full border border-white/10 bg-white/5 p-2 text-slate-100 transition hover:border-white/20 hover:bg-white/10"
             >
               <InstagramIcon />
             </a>
