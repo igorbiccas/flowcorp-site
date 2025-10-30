@@ -19,13 +19,13 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
       <div className="absolute inset-x-0 top-0 h-32 bg-gradient-to-b from-slate-100/70 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100 group-focus-visible:opacity-100" aria-hidden="true" />
       {product.icon}
       <div className="space-y-2">
-        <span className="inline-flex items-center gap-2 rounded-full border border-slate-200 bg-slate-50 px-3 py-1 text-xs font-medium uppercase tracking-[0.2em] text-slate-500">
+        <span className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/10 px-3 py-1 text-xs font-medium uppercase tracking-[0.2em] text-slate-200">
           {status}
         </span>
-        <h3 className="text-2xl font-semibold tracking-tight text-slate-900">{product.title}</h3>
-        <p className="text-sm font-medium text-slate-500">{product.subtitle}</p>
+        <h3 className="text-2xl font-semibold tracking-tight text-white">{product.title}</h3>
+        <p className="text-sm font-medium text-slate-200/80">{product.subtitle}</p>
       </div>
-      <p className="text-base leading-relaxed text-slate-600">{product.description}</p>
+      <p className="text-base leading-relaxed text-slate-200/80">{product.description}</p>
       <div className="mt-auto pt-2">
         <span className="group/button inline-flex items-center justify-center gap-2 rounded-full border border-slate-900/10 bg-slate-900 px-5 py-2 text-sm font-semibold text-white transition group-hover:bg-slate-800 group-focus-visible:bg-slate-800">
           <span>{product.buttonText}</span>
