@@ -30,74 +30,114 @@ const products: Product[] = [
 
 const App: React.FC = () => {
   return (
-    <div className="relative min-h-screen overflow-hidden bg-[#080808] text-slate-100">
+    <div className="relative min-h-screen overflow-hidden bg-[#050505] text-neutral-100">
+      <div aria-hidden="true" className="pointer-events-none absolute inset-0">
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(255,255,255,0.08),_transparent_60%)]" />
+        <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.04)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.04)_1px,transparent_1px)] bg-[size:120px_120px] opacity-20" />
+      </div>
 
       <Header />
 
       <main className="relative z-10">
-        <section className="container mx-auto flex min-h-[90vh] flex-col items-center justify-center px-6 pb-32 pt-40 text-center md:px-8">
-          <AnimatedSection className="w-full">
-            <div className="mx-auto max-w-3xl space-y-12">
-              <h1 className="text-4xl font-semibold tracking-tight text-slate-50 sm:text-5xl md:text-6xl">
-                Inteligência artificial humana, feita no Brasil.
+        <section className="container mx-auto grid min-h-[90vh] items-center gap-20 px-6 pb-32 pt-40 md:grid-cols-[minmax(0,1fr)_minmax(0,0.6fr)] md:px-8">
+          <AnimatedSection className="space-y-12">
+            <div className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-4 py-2 text-xs uppercase tracking-[0.35em] text-neutral-300">
+              Flowcorp • IA com intenção
+            </div>
+            <div className="space-y-8">
+              <h1 className="text-[clamp(2.75rem,5vw,3.75rem)] font-medium leading-tight text-neutral-100">
+                Inteligência artificial para pessoas que pensam longe.
               </h1>
-              <p className="text-lg leading-relaxed text-slate-300 md:text-xl">
-                Criamos experiências de IA conscientes do contexto e desenhadas para o cotidiano. Produtos minimalistas com tecnologia de ponta e foco em confiança.
+              <p className="max-w-xl text-base leading-7 text-neutral-400">
+                Projetamos produtos de IA que equilibram tecnologia proprietária com delicadeza de experiência. Cada interação é pensada para respeitar contextos, garantir confiança e criar impacto real.
               </p>
-              <div className="flex flex-col items-center justify-center gap-5 sm:flex-row">
-                <a
-                  href="#products"
-                  className="inline-flex items-center justify-center rounded-full border border-white/20 px-8 py-3 text-sm font-semibold text-white transition hover:border-white/40 hover:bg-white/10"
-                >
-                  Explorar produtos
-                </a>
+            </div>
+            <div className="flex flex-wrap items-center gap-4">
+              <a
+                href="#products"
+                className="inline-flex items-center gap-3 rounded-full bg-[#f5f1e6] px-6 py-3 text-sm font-medium text-[#050505] transition hover:bg-[#f0ead9]"
+              >
+                Explorar produtos
+              </a>
+              <a
+                href="mailto:contato@flowcorp.ai"
+                className="inline-flex items-center gap-3 rounded-full border border-white/15 px-6 py-3 text-sm font-medium text-neutral-100 transition hover:border-white/30"
+              >
+                Falar com a equipe
+              </a>
+            </div>
+          </AnimatedSection>
+          <AnimatedSection className="space-y-6">
+            <div className="space-y-6">
+              <div className="space-y-4 rounded-3xl border border-white/10 bg-white/5 p-8 backdrop-blur">
+                <p className="text-xs uppercase tracking-[0.25em] text-neutral-400">Processos</p>
+                <p className="text-lg font-medium text-neutral-100">
+                  Ritualizamos descobertas junto aos especialistas de cada setor para transformar conhecimento tácito em fluxos inteligentes.
+                </p>
               </div>
-              <ul className="mx-auto flex max-w-2xl flex-col gap-6 text-left text-sm text-slate-400 sm:grid sm:grid-cols-2">
-                <li className="flex items-start gap-4">
-                  <span className="mt-1 inline-flex h-1.5 w-1.5 rounded-full bg-slate-600" aria-hidden="true" />
-                  Modelos proprietários com memória contínua.
-                </li>
-                <li className="flex items-start gap-4">
-                  <span className="mt-1 inline-flex h-1.5 w-1.5 rounded-full bg-slate-600" aria-hidden="true" />
-                  Design centrado em privacidade e acessibilidade.
-                </li>
-                <li className="flex items-start gap-4">
-                  <span className="mt-1 inline-flex h-1.5 w-1.5 rounded-full bg-slate-600" aria-hidden="true" />
-                  Infraestrutura auditável e observabilidade em tempo real.
-                </li>
-                <li className="flex items-start gap-4">
-                  <span className="mt-1 inline-flex h-1.5 w-1.5 rounded-full bg-slate-600" aria-hidden="true" />
-                  Equipe multidisciplinar focada em impacto tangível.
-                </li>
-              </ul>
+              <div className="space-y-4 rounded-3xl border border-white/10 bg-white/5 p-8 backdrop-blur">
+                <p className="text-xs uppercase tracking-[0.25em] text-neutral-400">Resultados</p>
+                <p className="text-lg font-medium text-neutral-100">
+                  Plataformas enxutas, auditáveis e preparadas para crescer com governança de dados transparente.
+                </p>
+              </div>
             </div>
           </AnimatedSection>
         </section>
 
-        <section className="py-28 md:py-36">
+        <section id="manifesto" className="py-28 md:py-36">
           <div className="container mx-auto px-6 md:px-8">
-            <AnimatedSection className="mx-auto max-w-4xl text-center">
-              <p className="text-sm uppercase tracking-[0.4em] text-slate-500">Propósito</p>
-              <h2 className="mt-10 text-3xl font-semibold tracking-tight text-slate-50 md:text-4xl">
-                Resolvemos problemas reais com velocidade e cuidado.
-              </h2>
-              <p className="mt-10 text-lg leading-relaxed text-slate-300 md:text-xl">
-                Da saúde à educação, desenhamos soluções de IA que se integram ao fluxo de trabalho das pessoas. Nossos produtos nascem de parcerias próximas com especialistas de cada domínio.
-              </p>
+            <AnimatedSection className="grid gap-16 md:grid-cols-[minmax(0,0.6fr)_minmax(0,0.4fr)] md:items-center">
+              <div className="space-y-6">
+                <p className="text-xs uppercase tracking-[0.4em] text-neutral-400">Propósito</p>
+                <h2 className="text-[clamp(2rem,4vw,2.75rem)] font-medium leading-tight text-neutral-50">
+                  Resolvemos problemas reais com ritmo e cuidado extremo.
+                </h2>
+                <p className="text-base leading-7 text-neutral-400">
+                  Da saúde à educação, desenhamos soluções de IA que se integram aos fluxos de trabalho existentes. Construímos ao lado de equipes que conhecem profundamente seus desafios e precisam de parceiros confiáveis.
+                </p>
+              </div>
+              <div className="space-y-6 border-l border-white/10 pl-8">
+                <div className="space-y-2">
+                  <p className="text-xs uppercase tracking-[0.35em] text-neutral-400">Tempo médio</p>
+                  <p className="text-lg font-medium text-neutral-100">6 semanas para o primeiro piloto validado</p>
+                </div>
+                <div className="space-y-2">
+                  <p className="text-xs uppercase tracking-[0.35em] text-neutral-400">Especialistas</p>
+                  <p className="text-lg font-medium text-neutral-100">Rede de parceiros médicos, jurídicos e educacionais</p>
+                </div>
+                <div className="space-y-2">
+                  <p className="text-xs uppercase tracking-[0.35em] text-neutral-400">Governança</p>
+                  <p className="text-lg font-medium text-neutral-100">Auditoria contínua e métricas compartilháveis por fluxo</p>
+                </div>
+              </div>
             </AnimatedSection>
           </div>
         </section>
 
         <section id="products" className="py-32 md:py-40">
           <div className="container mx-auto px-6 md:px-8">
-            <AnimatedSection className="w-full">
-              <div className="mx-auto max-w-3xl text-center">
-                <h2 className="text-3xl font-semibold tracking-tight text-slate-50 md:text-4xl">Nossos produtos</h2>
-                <p className="mt-8 text-base text-slate-300 md:text-lg">
-                  Cada iniciativa é construída em diálogo com clientes estratégicos para garantir segurança, qualidade de dados e experiências fluidas.
-                </p>
+            <AnimatedSection className="space-y-16">
+              <div className="grid gap-10 md:grid-cols-[minmax(0,0.65fr)_minmax(0,0.35fr)] md:items-end">
+                <div className="space-y-6">
+                  <p className="text-xs uppercase tracking-[0.4em] text-neutral-400">Nossos produtos</p>
+                  <h2 className="text-[clamp(2rem,4vw,2.75rem)] font-medium leading-tight text-neutral-50">
+                    Camadas de inteligência feitas para ampliar equipes humanas.
+                  </h2>
+                  <p className="max-w-xl text-base leading-7 text-neutral-400">
+                    Cada iniciativa nasce de co-criação com clientes estratégicos para garantir segurança, qualidade de dados e jornadas fluídas do primeiro contato à operação contínua.
+                  </p>
+                </div>
+                <div className="space-y-4">
+                  <p className="text-sm font-medium text-neutral-200">
+                    Manifestamos rigor técnico com sensibilidade de design. Os produtos abaixo estão em evolução contínua junto às equipes que os utilizam diariamente.
+                  </p>
+                  <p className="text-sm text-neutral-500">
+                    Consulte-nos para pilotos direcionados, integrações customizadas e gestão de mudanças centrada em pessoas.
+                  </p>
+                </div>
               </div>
-              <div className="mt-20 grid grid-cols-1 gap-12 md:grid-cols-2">
+              <div className="grid grid-cols-1 gap-12 md:grid-cols-2">
                 {products.map((product) => (
                   <ProductCard key={product.title} product={product} />
                 ))}
@@ -106,10 +146,27 @@ const App: React.FC = () => {
           </div>
         </section>
 
-        <footer className="border-t border-white/10 bg-black/30 backdrop-blur">
-          <div className="container mx-auto flex flex-col items-center justify-between gap-4 px-6 py-12 text-sm text-slate-300 md:flex-row md:px-8">
-            <p>© {new Date().getFullYear()} Flow corp. Todos os direitos reservados.</p>
-            <p className="text-slate-400">Construído com respeito ao tempo das pessoas.</p>
+        <footer id="contato" className="border-t border-white/10 bg-transparent">
+          <div className="container mx-auto grid gap-6 px-6 py-12 text-sm text-neutral-400 md:grid-cols-[1fr_auto_auto] md:items-center md:px-8">
+            <p className="text-neutral-500">© {new Date().getFullYear()} Flow corp. Todos os direitos reservados.</p>
+            <div className="flex items-center gap-4 text-xs uppercase tracking-[0.3em] text-neutral-500">
+              <a href="#" className="transition hover:text-neutral-200">
+                Política
+              </a>
+              <a
+                href="https://www.linkedin.com/company/flowcorp"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="transition hover:text-neutral-200"
+              >
+                LinkedIn
+              </a>
+            </div>
+            <div className="inline-flex items-center gap-3 rounded-full border border-white/10 px-4 py-2 text-xs font-medium text-neutral-200">
+              <span>Flowcorp</span>
+              <span className="inline-flex h-2 w-2 rounded-full bg-neutral-400" aria-hidden="true" />
+              <span>{new Date().getFullYear()}</span>
+            </div>
           </div>
         </footer>
       </main>
