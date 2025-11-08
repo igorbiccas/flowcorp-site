@@ -118,12 +118,6 @@ const App: React.FC = () => {
                 >
                   Instagram
                 </a>
-                <a href="mailto:contato@flowcorp.ai" className="transition-all duration-200 hover:text-white">
-                  contato@flowcorp.ai
-                </a>
-                <a href="https://github.com/flowcorp" className="transition-all duration-200 hover:text-white">
-                  GitHub
-                </a>
               </nav>
             </div>
             <p>© 2025 FlowCorp — Construído no Brasil com respeito ao seu tempo e aos seus dados.</p>

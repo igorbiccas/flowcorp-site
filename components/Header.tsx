@@ -28,18 +28,6 @@ const Header: React.FC = () => {
         </a>
         <nav className="flex items-center gap-3">
           <a
-            href="#products"
-            className="inline-flex items-center rounded-full border border-white/20 px-4 py-2 text-sm font-medium text-white/80 transition-all duration-200 hover:border-white/40 hover:text-white"
-          >
-            Produtos
-          </a>
-          <a
-            href="mailto:contato@flowcorp.ai"
-            className="inline-flex items-center rounded-full bg-white/10 px-4 py-2 text-sm font-medium text-white transition-all duration-200 hover:bg-white/15"
-          >
-            Contato
-          </a>
-          <a
             href="https://www.instagram.com/selfbrain_/"
             target="_blank"
             rel="noopener noreferrer"
