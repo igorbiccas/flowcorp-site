@@ -30,53 +30,61 @@ const products: Product[] = [
 
 const App: React.FC = () => {
   return (
-    <div className="relative min-h-screen overflow-hidden bg-[#080808] text-slate-100">
+    <div className="relative min-h-screen overflow-hidden bg-gradient-to-b from-neutral-950 via-neutral-950/95 to-neutral-900 text-slate-100">
 
       <Header />
 
-      <main className="relative z-10">
-        <section className="container mx-auto flex min-h-[90vh] flex-col items-center justify-center px-6 pb-32 pt-40 text-center md:px-8">
-          <AnimatedSection className="w-full">
-            <div className="mx-auto max-w-3xl space-y-12">
-              <h1 className="text-4xl font-semibold tracking-tight text-slate-50 sm:text-5xl md:text-6xl">
-                Inteligência artificial humana, feita no Brasil.
+      <main className="relative z-10 flex flex-col">
+        <section className="relative flex min-h-[calc(100vh-6rem)] w-full items-center justify-center px-[5%] pb-32 pt-32 text-center">
+          <div className="mx-auto w-full max-w-[680px] space-y-12">
+            <AnimatedSection className="w-full" delay="duration-700">
+              <h1 className="text-4xl font-bold leading-tight tracking-tight text-slate-50 sm:text-5xl md:text-6xl">
+                Inteligência Artificial humana.
+                <br />
+                Feita no Brasil.
               </h1>
+            </AnimatedSection>
+            <AnimatedSection className="w-full" delay="duration-700 delay-150">
               <p className="text-lg leading-relaxed text-slate-300 md:text-xl">
-                Criamos experiências de IA conscientes do contexto e desenhadas para o cotidiano. Produtos minimalistas com tecnologia de ponta e foco em confiança.
+                Criamos IAs conscientes do contexto, feitas para o cotidiano. Design minimalista, tecnologia de ponta e foco em confiança.
               </p>
+            </AnimatedSection>
+            <AnimatedSection className="w-full" delay="duration-700 delay-200">
               <div className="flex flex-col items-center justify-center gap-5 sm:flex-row">
                 <a
                   href="#products"
-                  className="inline-flex items-center justify-center rounded-full border border-white/20 px-8 py-3 text-sm font-semibold text-white transition hover:border-white/40 hover:bg-white/10"
+                  className="group inline-flex w-full items-center justify-center rounded-full bg-gradient-to-r from-indigo-500 via-violet-500 to-sky-400 px-10 py-4 text-sm font-semibold text-white shadow-[0_25px_60px_-25px_rgba(56,189,248,0.45)] transition-all duration-300 hover:shadow-[0_25px_80px_-25px_rgba(56,189,248,0.65)] sm:w-auto"
                 >
                   Explorar produtos
                 </a>
               </div>
-              <ul className="mx-auto flex max-w-2xl flex-col gap-6 text-left text-sm text-slate-400 sm:grid sm:grid-cols-2">
+            </AnimatedSection>
+            <AnimatedSection className="w-full" delay="duration-700 delay-300">
+              <ul className="mx-auto flex flex-col gap-6 text-left text-sm text-slate-300 sm:grid sm:grid-cols-2">
                 <li className="flex items-start gap-4">
-                  <span className="mt-1 inline-flex h-1.5 w-1.5 rounded-full bg-slate-600" aria-hidden="true" />
+                  <span className="mt-0.5 text-xl" aria-hidden="true">🧠</span>
                   Modelos proprietários com memória contínua.
                 </li>
                 <li className="flex items-start gap-4">
-                  <span className="mt-1 inline-flex h-1.5 w-1.5 rounded-full bg-slate-600" aria-hidden="true" />
+                  <span className="mt-0.5 text-xl" aria-hidden="true">🔒</span>
                   Design centrado em privacidade e acessibilidade.
                 </li>
                 <li className="flex items-start gap-4">
-                  <span className="mt-1 inline-flex h-1.5 w-1.5 rounded-full bg-slate-600" aria-hidden="true" />
+                  <span className="mt-0.5 text-xl" aria-hidden="true">⚙️</span>
                   Infraestrutura auditável e observabilidade em tempo real.
                 </li>
                 <li className="flex items-start gap-4">
-                  <span className="mt-1 inline-flex h-1.5 w-1.5 rounded-full bg-slate-600" aria-hidden="true" />
+                  <span className="mt-0.5 text-xl" aria-hidden="true">🤝</span>
                   Equipe multidisciplinar focada em impacto tangível.
                 </li>
               </ul>
-            </div>
-          </AnimatedSection>
+            </AnimatedSection>
+          </div>
         </section>
 
-        <section className="py-28 md:py-36">
-          <div className="container mx-auto px-6 md:px-8">
-            <AnimatedSection className="mx-auto max-w-4xl text-center">
+        <section id="purpose" className="py-28 md:py-36">
+          <div className="mx-auto w-full max-w-4xl px-[5%] text-center">
+            <AnimatedSection className="w-full">
               <p className="text-sm uppercase tracking-[0.4em] text-slate-500">Propósito</p>
               <h2 className="mt-10 text-3xl font-semibold tracking-tight text-slate-50 md:text-4xl">
                 Resolvemos problemas reais com velocidade e cuidado.
@@ -89,7 +97,7 @@ const App: React.FC = () => {
         </section>
 
         <section id="products" className="py-32 md:py-40">
-          <div className="container mx-auto px-6 md:px-8">
+          <div className="mx-auto w-full max-w-5xl px-[5%]">
             <AnimatedSection className="w-full">
               <div className="mx-auto max-w-3xl text-center">
                 <h2 className="text-3xl font-semibold tracking-tight text-slate-50 md:text-4xl">Nossos produtos</h2>
