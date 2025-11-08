@@ -19,10 +19,9 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
       <div className="absolute inset-x-0 top-0 h-32 bg-gradient-to-b from-white/10 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100 group-focus-visible:opacity-100" aria-hidden="true" />
       {product.icon}
       <div className="space-y-2">
-        <span className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-3 py-1 text-xs font-medium uppercase tracking-[0.2em] text-slate-100">
-          {status}
-        </span>
-        <h3 className="text-2xl font-semibold tracking-tight text-white">{product.title}</h3>
+        <h3 className="text-2xl font-semibold tracking-tight text-white">
+          {status} — {product.title}
+        </h3>
         <p className="text-sm font-medium text-slate-300">{product.subtitle}</p>
       </div>
       <p className="text-base leading-relaxed text-slate-300">{product.description}</p>

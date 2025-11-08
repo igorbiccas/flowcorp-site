@@ -11,7 +11,7 @@ const products: Product[] = [
     title: 'SelfBrain',
     subtitle: 'Assistente cognitivo com memória contínua.',
     description:
-      'Plataforma modular para equipes criarem fluxos de IA persistentes com governança de dados de ponta a ponta.',
+      'Plataforma modular para criar agentes e fluxos persistentes com governança de dados de ponta a ponta.',
     status: 'Em beta',
     buttonText: 'Ver',
     url: 'https://selfbrain.vercel.app/',
@@ -21,7 +21,7 @@ const products: Product[] = [
     title: 'DataDoc',
     subtitle: 'Anamneses clínicas sem fricção.',
     description:
-      'Coleta pré-consulta com linguagem natural, integrando prontuários e garantindo consistência para profissionais de saúde.',
+      'Coleta pré-consulta por linguagem natural, integra prontuários e entrega resumos consistentes para profissionais de saúde.',
     status: 'Em desenvolvimento',
     buttonText: 'Ver',
     url: 'https://datadocs.vercel.app/',
@@ -39,14 +39,14 @@ const App: React.FC = () => {
           <div className="mx-auto w-full max-w-[680px] space-y-12">
             <AnimatedSection className="w-full" delay="duration-700">
               <h1 className="text-4xl font-bold leading-tight tracking-tight text-slate-50 sm:text-5xl md:text-6xl">
-                Inteligência Artificial humana.
+                Inteligência artificial com memória contínua.
                 <br />
                 Feita no Brasil.
               </h1>
             </AnimatedSection>
             <AnimatedSection className="w-full" delay="duration-700 delay-150">
               <p className="text-lg leading-relaxed text-slate-300 md:text-xl">
-                Criamos IAs conscientes do contexto, feitas para o cotidiano. Design minimalista, tecnologia de ponta e foco em confiança.
+                Criamos IAs conscientes do contexto para o dia a dia. Design minimalista, alta confiabilidade e controle total.
               </p>
             </AnimatedSection>
             <AnimatedSection className="w-full" delay="duration-700 delay-200">
@@ -63,19 +63,19 @@ const App: React.FC = () => {
               <ul className="mx-auto flex flex-col gap-6 text-left text-sm text-slate-300 sm:grid sm:grid-cols-2">
                 <li className="flex items-start gap-4">
                   <span className="mt-0.5 text-xl" aria-hidden="true">🧠</span>
-                  Modelos proprietários com memória contínua.
+                  Memória contínua proprietária, plugável aos melhores modelos.
                 </li>
                 <li className="flex items-start gap-4">
                   <span className="mt-0.5 text-xl" aria-hidden="true">🔒</span>
-                  Design centrado em privacidade e acessibilidade.
+                  Privacidade por padrão e acessibilidade real.
                 </li>
                 <li className="flex items-start gap-4">
                   <span className="mt-0.5 text-xl" aria-hidden="true">⚙️</span>
-                  Infraestrutura auditável e observabilidade em tempo real.
+                  Infraestrutura auditável com observabilidade em tempo real.
                 </li>
                 <li className="flex items-start gap-4">
                   <span className="mt-0.5 text-xl" aria-hidden="true">🤝</span>
-                  Equipe multidisciplinar focada em impacto tangível.
+                  Equipe multidisciplinar orientada a impacto tangível.
                 </li>
               </ul>
             </AnimatedSection>
@@ -87,10 +87,10 @@ const App: React.FC = () => {
             <AnimatedSection className="w-full">
               <p className="text-sm uppercase tracking-[0.4em] text-slate-500">Propósito</p>
               <h2 className="mt-10 text-3xl font-semibold tracking-tight text-slate-50 md:text-4xl">
-                Resolvemos problemas reais com velocidade e cuidado.
+                Entregar valor real com velocidade e cuidado.
               </h2>
               <p className="mt-10 text-lg leading-relaxed text-slate-300 md:text-xl">
-                Da saúde à educação, desenhamos soluções de IA que se integram ao fluxo de trabalho das pessoas. Nossos produtos nascem de parcerias próximas com especialistas de cada domínio.
+                Da saúde à educação, integramos IA ao fluxo de trabalho das pessoas em parceria com especialistas.
               </p>
             </AnimatedSection>
           </div>
@@ -100,9 +100,9 @@ const App: React.FC = () => {
           <div className="mx-auto w-full max-w-5xl px-[5%]">
             <AnimatedSection className="w-full">
               <div className="mx-auto max-w-3xl text-center">
-                <h2 className="text-3xl font-semibold tracking-tight text-slate-50 md:text-4xl">Nossos produtos</h2>
+                <h2 className="text-3xl font-semibold tracking-tight text-slate-50 md:text-4xl">Produtos</h2>
                 <p className="mt-8 text-base text-slate-300 md:text-lg">
-                  Cada iniciativa é construída em diálogo com clientes estratégicos para garantir segurança, qualidade de dados e experiências fluidas.
+                  Construídos lado a lado com clientes estratégicos para garantir segurança, qualidade de dados e experiências fluidas.
                 </p>
               </div>
               <div className="mt-20 grid grid-cols-1 gap-12 md:grid-cols-2">
@@ -116,8 +116,8 @@ const App: React.FC = () => {
 
         <footer className="border-t border-white/10 bg-black/30 backdrop-blur">
           <div className="container mx-auto flex flex-col items-center justify-between gap-4 px-6 py-12 text-sm text-slate-300 md:flex-row md:px-8">
-            <p>© {new Date().getFullYear()} Flow corp. Todos os direitos reservados.</p>
-            <p className="text-slate-400">Construído com respeito ao tempo das pessoas.</p>
+            <p>© 2025 FlowCorp. Todos os direitos reservados.</p>
+            <p className="text-slate-400">Construído no Brasil com respeito ao seu tempo e aos seus dados.</p>
           </div>
         </footer>
       </main>
