@@ -1,14 +1,14 @@
 import React from 'react';
 
 const iconWrapper =
-  'w-12 h-12 mb-6 rounded-2xl border border-white/10 bg-white/10 flex items-center justify-center shadow-[0_25px_65px_-40px_rgba(148,163,184,0.45)] backdrop-blur';
+  'flex h-12 w-12 items-center justify-center rounded-2xl border border-sky-200/20 bg-sky-200/5 text-sky-100/80 backdrop-blur';
 
 export const SparklesIcon = () => (
   <div className={iconWrapper}>
     <svg
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 32 32"
-      className="h-7 w-7 text-slate-200"
+      className="h-6 w-6"
       fill="none"
       stroke="currentColor"
       strokeWidth="1.6"
@@ -27,7 +27,7 @@ export const AnamneseIcon = () => (
     <svg
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 32 32"
-      className="h-7 w-7 text-slate-200"
+      className="h-6 w-6"
       fill="none"
       stroke="currentColor"
       strokeWidth="1.6"
