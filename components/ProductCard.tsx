@@ -6,6 +6,9 @@ interface ProductCardProps {
 }
 
 const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
+  const primaryIsPlaceholder = product.primaryCta.url === '#';
+  const secondaryIsPlaceholder = product.secondaryCta.url === '#';
+
   return (
     <article className="group relative flex h-full flex-col justify-between overflow-hidden rounded-2xl border border-white/10 bg-white/[0.03] p-6 transition-all duration-200 hover:-translate-y-1 hover:border-white/20 hover:bg-white/[0.06]">
       <div className="absolute inset-0 -z-10 opacity-0 transition-opacity duration-200 group-hover:opacity-100" aria-hidden="true">
@@ -21,16 +24,16 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
       <div className="mt-8 flex flex-wrap gap-3">
         <a
           href={product.primaryCta.url}
-          target="_blank"
-          rel="noopener noreferrer"
+          target={primaryIsPlaceholder ? undefined : '_blank'}
+          rel={primaryIsPlaceholder ? undefined : 'noopener noreferrer'}
           className="inline-flex items-center rounded-full bg-gradient-to-r from-indigo-500 via-violet-500 to-sky-500 px-4 py-2 text-sm font-medium text-white shadow-[0_0_20px_rgba(99,102,241,0.2)] transition-all duration-200 hover:shadow-[0_0_28px_rgba(99,102,241,0.3)]"
         >
           {product.primaryCta.label}
         </a>
         <a
           href={product.secondaryCta.url}
-          target="_blank"
-          rel="noopener noreferrer"
+          target={secondaryIsPlaceholder ? undefined : '_blank'}
+          rel={secondaryIsPlaceholder ? undefined : 'noopener noreferrer'}
           className="inline-flex items-center rounded-full border border-white/30 px-4 py-2 text-sm font-medium text-white/80 transition-all duration-200 hover:border-white/50 hover:text-white"
         >
           {product.secondaryCta.label}
