@@ -7,7 +7,10 @@ interface ProductCardProps {
 
 const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
   return (
-    <article className="group flex h-full flex-col justify-between rounded-2xl border border-white/10 bg-white/[0.03] p-6 transition-all duration-200 hover:-translate-y-1 hover:border-white/20 hover:bg-white/[0.05]">
+    <article className="group relative flex h-full flex-col justify-between overflow-hidden rounded-2xl border border-white/10 bg-white/[0.03] p-6 transition-all duration-200 hover:-translate-y-1 hover:border-white/20 hover:bg-white/[0.06]">
+      <div className="absolute inset-0 -z-10 opacity-0 transition-opacity duration-200 group-hover:opacity-100" aria-hidden="true">
+        <div className="absolute inset-0 bg-gradient-to-br from-indigo-500/10 via-violet-500/10 to-sky-500/10 blur-xl" />
+      </div>
       <div>
         <span className="inline-flex items-center rounded-full bg-white/10 px-2.5 py-1 text-xs font-medium uppercase tracking-[0.2em] text-white/70">
           {product.status}
