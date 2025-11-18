@@ -16,7 +16,7 @@ const whatWeDo = [
   {
     title: 'Inovação onde poucos entram',
     description:
-      'Atuamos em saúde, educação, governo e tecnologias emergentes — áreas onde o lucro encontra o futuro.',
+      'Atuamos em saúde, educação, governo e tecnologias emergentes.',
   },
 ];
 
@@ -39,7 +39,7 @@ const whyFlowCorp = [
   'Você trabalha direto com o fundador (velocidade máxima).',
   'Entregas em tempo recorde, sem burocracia.',
   'Foco em margens elevadas: investimos em resultado, não em promessas.',
-  'Marca orientada para o bilhão — porque cada projeto conta.',
+  'Velocidade, foco e inteligência.',
 ];
 
 const App: React.FC = () => {
@@ -172,7 +172,7 @@ const App: React.FC = () => {
 
       <footer className="relative z-10 border-t border-white/10 bg-black/40 px-6 py-10 text-center text-sm text-white/60 md:px-8">
         <div className="mx-auto flex max-w-5xl flex-col items-center gap-4 md:flex-row md:justify-between md:text-left">
-          <span>© 2025 FlowCorp - Construído no Brasil com respeito ao seu tempo e aos seus dados.</span>
+          <span>© 2025 FlowCorp - Construído no Brasil</span>
         </div>
       </footer>
     </div>
