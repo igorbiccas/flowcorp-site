@@ -16,7 +16,7 @@ const whatWeDo = [
   {
     title: 'Inovação onde poucos entram',
     description:
-      'Atuamos em saúde, educação, governo e tecnologias emergentes — áreas onde o lucro encontra o futuro.',
+      'Atuamos em saúde, educação, governo e tecnologias emergentes.',
   },
 ];
 
@@ -39,7 +39,7 @@ const whyFlowCorp = [
   'Você trabalha direto com o fundador (velocidade máxima).',
   'Entregas em tempo recorde, sem burocracia.',
   'Foco em margens elevadas: investimos em resultado, não em promessas.',
-  'Marca orientada para o bilhão — porque cada projeto conta.',
+  'Velocidade, foco e inteligência.',
 ];
 
 const App: React.FC = () => {
@@ -63,8 +63,8 @@ const App: React.FC = () => {
         <section className="relative flex min-h-[calc(100vh-6rem)] w-full items-center px-6 pb-24 pt-32 text-left md:px-8 md:pt-40">
           <div className="pointer-events-none absolute inset-y-0 right-6 hidden w-[420px] max-w-[38vw] rounded-3xl border border-white/10 bg-white/10 bg-[linear-gradient(135deg,rgba(165,180,252,0.14),rgba(14,165,233,0.12),rgba(236,72,153,0.18))] opacity-70 blur-2xl sm:block" aria-hidden="true" />
           <div className="mx-auto w-full max-w-[960px]">
-            <AnimatedSection className="w-full space-y-6" delay="duration-700">
-              <span className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-4 py-1 text-[11px] font-medium uppercase tracking-[0.2em] text-slate-200">
+            <AnimatedSection className="w-full" delay="duration-700">
+              <span className="inline-flex items-center gap-2 rounded-full bg-white/5 px-4 py-1 text-[11px] font-medium tracking-[0.3em] text-white/70">
                 FlowCorp
               </span>
               <h1 className="text-5xl font-semibold leading-[1.08] tracking-tight text-slate-50 sm:text-[64px]">Tecnologia inteligente para soluções reais.</h1>
@@ -78,9 +78,24 @@ const App: React.FC = () => {
               <div className="mt-10 flex flex-wrap items-center gap-4">
                 <a
                   href="#contato"
-                  className="inline-flex items-center rounded-full bg-gradient-to-r from-indigo-500 via-violet-500 to-sky-500 px-6 py-3 text-sm font-medium text-white shadow-[0_0_20px_rgba(99,102,241,0.2)] transition-all duration-200 hover:shadow-[0_0_28px_rgba(99,102,241,0.3)]"
+                  className="inline-flex items-center gap-2 rounded-full bg-white px-6 py-3 text-sm font-semibold text-slate-900 shadow-[0_10px_30px_rgba(15,23,42,0.25)] transition-[box-shadow,transform] duration-200 hover:-translate-y-0.5 hover:shadow-[0_18px_45px_rgba(15,23,42,0.3)]"
                 >
                   Vamos conversar
+                  <svg
+                    className="h-3.5 w-3.5"
+                    viewBox="0 0 14 14"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M2.333 11.667 11.667 2.333m0 0H4.667m7 0v7"
+                      stroke="currentColor"
+                      strokeWidth="1.5"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                  </svg>
                 </a>
               </div>
             </AnimatedSection>
@@ -172,7 +187,7 @@ const App: React.FC = () => {
 
       <footer className="relative z-10 border-t border-white/10 bg-black/40 px-6 py-10 text-center text-sm text-white/60 md:px-8">
         <div className="mx-auto flex max-w-5xl flex-col items-center gap-4 md:flex-row md:justify-between md:text-left">
-          <span>© 2025 FlowCorp - Construído no Brasil com respeito ao seu tempo e aos seus dados.</span>
+          <span>© 2025 FlowCorp - Construído no Brasil</span>
         </div>
       </footer>
     </div>
