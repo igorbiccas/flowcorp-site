@@ -67,7 +67,7 @@ const App: React.FC = () => {
               <span className="inline-flex items-center gap-2 rounded-full bg-white/5 px-4 py-1 text-[11px] font-medium tracking-[0.3em] text-white/70">
                 FlowCorp
               </span>
-              <h1 className="mt-6 text-5xl font-semibold leading-[1.08] tracking-tight text-slate-50 sm:text-[64px]">Tecnologia inteligente para soluções reais.</h1>
+              <h1 className="text-5xl font-semibold leading-[1.08] tracking-tight text-slate-50 sm:text-[64px]">Tecnologia inteligente para soluções reais.</h1>
             </AnimatedSection>
             <AnimatedSection className="w-full" delay="duration-700 delay-150">
               <p className="mt-5 max-w-3xl text-lg leading-snug text-slate-200/85 md:text-xl">
@@ -104,13 +104,13 @@ const App: React.FC = () => {
 
         <section className="px-6 pb-20 pt-12 md:px-8 md:pt-16">
           <div className="mx-auto w-full max-w-6xl">
-            <AnimatedSection className="w-full" delay="duration-700">
+            <AnimatedSection className="w-full space-y-10" delay="duration-700">
               <h2 className="text-3xl font-semibold tracking-tight text-slate-50 md:text-4xl">O que fazemos</h2>
-              <div className="mt-10 grid gap-6 md:grid-cols-3">
+              <div className="grid gap-6 md:grid-cols-3">
                 {whatWeDo.map((item) => (
-                  <div key={item.title} className="rounded-3xl border border-white/10 bg-white/5 p-6">
+                  <div key={item.title} className="space-y-3 rounded-3xl border border-white/10 bg-white/5 p-6">
                     <h3 className="text-lg font-semibold text-white">{item.title}</h3>
-                    <p className="mt-3 text-sm text-white/80">{item.description}</p>
+                    <p className="text-base leading-relaxed text-white/80 md:text-lg">{item.description}</p>
                   </div>
                 ))}
               </div>
@@ -122,9 +122,9 @@ const App: React.FC = () => {
           <div className="mx-auto w-full max-w-6xl">
             <AnimatedSection className="w-full" delay="duration-700">
               <div className="flex flex-col gap-8 lg:flex-row lg:items-start lg:justify-between">
-                <div className="max-w-xl">
+                <div className="max-w-xl space-y-4">
                   <h2 className="text-3xl font-semibold tracking-tight text-slate-50 md:text-4xl">Nossos produtos principais</h2>
-                  <p className="mt-4 text-base leading-snug text-slate-300">
+                  <p className="text-base leading-relaxed text-slate-300 md:text-lg">
                     Ferramentas desenhadas para combinar IA aplicada com operação enxuta.
                   </p>
                 </div>
@@ -135,10 +135,10 @@ const App: React.FC = () => {
                       href={product.href}
                       target="_blank"
                       rel="noreferrer"
-                      className="rounded-3xl border border-white/10 bg-white/5 p-6 transition-colors duration-200 hover:border-white/40 hover:bg-white/10"
+                      className="space-y-3 rounded-3xl border border-white/10 bg-white/5 p-6 transition-colors duration-200 hover:border-white/40 hover:bg-white/10"
                     >
                       <h3 className="text-lg font-semibold text-white">{product.title}</h3>
-                      <p className="mt-3 text-sm text-white/80">{product.description}</p>
+                      <p className="text-base leading-relaxed text-white/80 md:text-lg">{product.description}</p>
                     </a>
                   ))}
                 </div>
@@ -165,17 +165,17 @@ const App: React.FC = () => {
 
         <section id="contato" className="px-6 pb-28 md:px-8">
           <div className="mx-auto flex w-full max-w-4xl flex-col items-center rounded-3xl border border-white/10 bg-white/[0.04] px-8 py-12 text-center">
-            <AnimatedSection className="w-full" delay="duration-700">
+            <AnimatedSection className="w-full space-y-6" delay="duration-700">
               <h2 className="text-3xl font-semibold text-white">Vamos conversar</h2>
-              <p className="mt-4 text-base text-white/80">
+              <p className="text-base leading-relaxed text-white/80 md:text-lg">
                 Tem uma ideia? Um problema que parece sem solução? Fale com a FlowCorp. Estamos prontos para construir algo grande, rápido e lucrativo.
               </p>
-              <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
+              <div className="flex flex-wrap items-center justify-center gap-4 pt-2">
                 <a
                   href="https://www.instagram.com/selfbrain_/"
                   target="_blank"
                   rel="noreferrer"
-                  className="inline-flex items-center rounded-full bg-white/10 px-6 py-3 text-sm font-semibold text-white transition-colors duration-200 hover:bg-white/20"
+                  className="inline-flex items-center rounded-full bg-white/10 px-6 py-3 text-sm font-medium text-white transition-colors duration-200 hover:bg-white/20"
                 >
                   Instagram
                 </a>
