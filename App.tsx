@@ -1,78 +1,43 @@
 import React from 'react';
-import type { Product } from './types';
 import Header from './components/Header';
-import ProductCard from './components/ProductCard';
 import AnimatedSection from './components/AnimatedSection';
 
-const products: Product[] = [
+const whatWeDo = [
+  {
+    title: 'Produtos que escalam',
+    description:
+      'Criamos aplicações e plataformas que resolvem infraestruturas invisíveis e transformam mercados.',
+  },
+  {
+    title: 'Serviços rápidos e premium',
+    description:
+      'Entrega expressa de soluções digitais e IA para empresas que querem impacto imediato.',
+  },
+  {
+    title: 'Inovação onde poucos entram',
+    description:
+      'Atuamos em saúde, educação, governo e tecnologias emergentes — áreas onde o lucro encontra o futuro.',
+  },
+];
+
+const mainProducts = [
   {
     title: 'SelfBrain',
     description:
-      'Workspace cognitivo que aprende com cada interação e mantém o contexto vivo para heavy users de IA. Pensado para quem conversa muito com IA e não quer perder memória nem insight.',
-    status: 'EM BETA',
-    primaryCta: {
-      label: '[ Abrir ]',
-      url: 'https://selfbrain.vercel.app/',
-    },
-    secondaryCta: {
-      label: '[ Saiba mais ]',
-      url: 'https://selfbrain.vercel.app/',
-    },
+      'Memória contínua para IA. Ferramenta que conecta passado, presente e futuro de interações humanas e digitais.',
   },
   {
     title: 'DataDoc',
     description:
-      'Assistente clínico que automatiza anamneses a partir de áudio e gera texto estruturado para o prontuário. Focado em reduzir tempo de digitação e padronizar informações importantes.',
-    status: 'EM DESENVOLVIMENTO',
-    primaryCta: {
-      label: '[ Em breve ]',
-      url: '#',
-    },
-    secondaryCta: {
-      label: '[ Saiba mais ]',
-      url: '#',
-    },
+      'Anamnese automática + inteligência para clínicas e hospitais. Reduza burocracia, aumente eficiência, libere expertise.',
   },
 ];
 
-const pillars = [
-  'Foco em produto, não em buzzword',
-  'Menos promessa, mais entrega',
-  'Ciclos curtos de teste e aprendizado',
-];
-
-const focusAreas = [
-  {
-    title: 'Memória contínua',
-    description: 'Experiências de IA que lembram do histórico e evoluem com o usuário.',
-  },
-  {
-    title: 'Aplicações em saúde',
-    description: 'Ferramentas para apoiar profissionais, ganhar tempo e reduzir trabalho manual.',
-  },
-  {
-    title: 'Observabilidade simples',
-    description: 'Acompanhamos uso e resultado de forma pragmática, sem complicar a operação.',
-  },
-];
-
-const buildPrinciples = [
-  {
-    title: 'IA desenhada no Brasil',
-    detail: 'Visão de longo prazo em IA aplicada e produtos próprios.',
-  },
-  {
-    title: 'Privacidade pragmática',
-    detail: 'Menos coleta desnecessária, mais foco no que realmente precisa ser salvo.',
-  },
-  {
-    title: 'Entrega acelerada',
-    detail: 'Sprints em semanas. Versão simples primeiro, refinamento depois.',
-  },
-  {
-    title: 'Canvas operacional',
-    detail: 'Nossa visão é ter memórias, fluxos e automações em um único painel para cada produto.',
-  },
+const whyFlowCorp = [
+  'Você trabalha direto com o fundador (velocidade máxima).',
+  'Entregas em tempo recorde, sem burocracia.',
+  'Foco em margens elevadas: investimos em resultado, não em promessas.',
+  'Marca orientada para o bilhão — porque cada projeto conta.',
 ];
 
 const App: React.FC = () => {
@@ -98,26 +63,23 @@ const App: React.FC = () => {
           <div className="mx-auto w-full max-w-[960px]">
             <AnimatedSection className="w-full" delay="duration-700">
               <span className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-4 py-1 text-[11px] font-semibold uppercase tracking-[0.35em] text-slate-200">
-                FLOW CORP
-                <span className="h-1.5 w-1.5 rounded-full bg-emerald-400" />
-                Brasil primeiro
+                FlowCorp
               </span>
-              <h1 className="mt-6 text-5xl font-semibold leading-[1.08] tracking-tight text-slate-50 sm:text-[64px]">FlowCorp AI</h1>
+              <h1 className="mt-6 text-5xl font-semibold leading-[1.08] tracking-tight text-slate-50 sm:text-[64px]">Tecnologia inteligente para soluções reais.</h1>
             </AnimatedSection>
             <AnimatedSection className="w-full" delay="duration-700 delay-150">
-              <p className="mt-5 max-w-2xl text-lg leading-snug text-slate-200/85 md:text-xl">
-                Estúdio independente de IA criado no Brasil. Produtos focados em saúde e memória digital para gerar resultado rápido no mundo real.
+              <p className="mt-5 max-w-3xl text-lg leading-snug text-slate-200/85 md:text-xl">
+                Criamos produtos escaláveis, serviços táticos de alto impacto e atuamos onde o futuro já virou presente.
               </p>
             </AnimatedSection>
             <AnimatedSection className="w-full" delay="duration-700 delay-200">
-              <div className="mt-10 grid w-full gap-4 sm:grid-cols-[minmax(0,1fr)_minmax(0,0.7fr)]">
-                <div className="flex items-center gap-4 rounded-3xl border border-white/10 bg-white/5 p-5">
-                  <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-gradient-to-br from-indigo-500 to-sky-500 text-xl">🇧🇷</div>
-                  <div>
-                    <p className="text-sm font-semibold uppercase tracking-[0.3em] text-white/50">Do Brasil para o Brasil</p>
-                    <p className="mt-1 text-base font-semibold text-white">IA feita aqui, pensando em dados, pessoas e negócios brasileiros.</p>
-                  </div>
-                </div>
+              <div className="mt-10 flex flex-wrap items-center gap-4">
+                <a
+                  href="#contato"
+                  className="inline-flex items-center rounded-full bg-gradient-to-r from-indigo-500 via-violet-500 to-sky-500 px-6 py-3 text-sm font-semibold text-white shadow-[0_0_20px_rgba(99,102,241,0.2)] transition-all duration-200 hover:shadow-[0_0_28px_rgba(99,102,241,0.3)]"
+                >
+                  Vamos conversar
+                </a>
               </div>
             </AnimatedSection>
           </div>
@@ -126,29 +88,34 @@ const App: React.FC = () => {
         <section className="px-6 pb-20 pt-12 md:px-8 md:pt-16">
           <div className="mx-auto w-full max-w-6xl">
             <AnimatedSection className="w-full" delay="duration-700">
-              <div className="flex flex-col gap-10 lg:flex-row lg:items-start lg:justify-between">
+              <h2 className="text-3xl font-semibold tracking-tight text-slate-50 md:text-4xl">O que fazemos</h2>
+              <div className="mt-10 grid gap-6 md:grid-cols-3">
+                {whatWeDo.map((item) => (
+                  <div key={item.title} className="rounded-3xl border border-white/10 bg-white/5 p-6">
+                    <h3 className="text-lg font-semibold text-white">{item.title}</h3>
+                    <p className="mt-3 text-sm text-white/80">{item.description}</p>
+                  </div>
+                ))}
+              </div>
+            </AnimatedSection>
+          </div>
+        </section>
+
+        <section className="px-6 pb-20 md:px-8">
+          <div className="mx-auto w-full max-w-6xl">
+            <AnimatedSection className="w-full" delay="duration-700">
+              <div className="flex flex-col gap-8 lg:flex-row lg:items-start lg:justify-between">
                 <div className="max-w-xl">
-                  <h2 className="text-3xl font-semibold tracking-tight text-slate-50 md:text-4xl">Por que FlowCorp?</h2>
+                  <h2 className="text-3xl font-semibold tracking-tight text-slate-50 md:text-4xl">Nossos produtos principais</h2>
                   <p className="mt-4 text-base leading-snug text-slate-300">
-                    Plataforma enxuta para colocar IA em produção com o mínimo de fricção.
+                    Ferramentas desenhadas para combinar IA aplicada com operação enxuta.
                   </p>
-                  <div className="mt-8 flex flex-col gap-2 text-sm text-white/80">
-                    {pillars.map((item) => (
-                      <div key={item} className="flex items-start gap-2">
-                        <span aria-hidden="true">•</span>
-                        <span>{item}</span>
-                      </div>
-                    ))}
-                  </div>
                 </div>
-                <div className="grid w-full max-w-2xl grid-cols-1 gap-4 sm:grid-cols-3">
-                  <div className="sm:col-span-3">
-                    <h3 className="text-lg font-semibold uppercase tracking-[0.25em] text-white/60">O que fazemos hoje</h3>
-                  </div>
-                  {focusAreas.map((area) => (
-                    <div key={area.title} className="rounded-2xl border border-white/10 bg-white/5 p-6">
-                      <h3 className="text-lg font-semibold text-white">{area.title}</h3>
-                      <p className="mt-3 text-sm text-white/70">{area.description}</p>
+                <div className="grid w-full gap-6 md:grid-cols-2">
+                  {mainProducts.map((product) => (
+                    <div key={product.title} className="rounded-3xl border border-white/10 bg-white/5 p-6">
+                      <h3 className="text-lg font-semibold text-white">{product.title}</h3>
+                      <p className="mt-3 text-sm text-white/80">{product.description}</p>
                     </div>
                   ))}
                 </div>
@@ -157,30 +124,15 @@ const App: React.FC = () => {
           </div>
         </section>
 
-        <section id="produtos" className="px-6 pb-20 md:px-8">
-          <div className="mx-auto w-full max-w-6xl">
-            <AnimatedSection className="w-full text-center" delay="duration-700">
-              <h2 className="text-3xl font-semibold tracking-tight text-slate-50 md:text-4xl">Produtos</h2>
-            </AnimatedSection>
-            <div className="mt-12 grid gap-6 md:grid-cols-2">
-              {products.map((product) => (
-                <AnimatedSection key={product.title} delay="duration-700">
-                  <ProductCard product={product} />
-                </AnimatedSection>
-              ))}
-            </div>
-          </div>
-        </section>
-
         <section className="px-6 pb-20 md:px-8">
           <div className="mx-auto w-full max-w-5xl">
             <AnimatedSection className="w-full" delay="duration-700">
-              <h2 className="text-3xl font-semibold tracking-tight text-slate-50 md:text-4xl">Como construímos</h2>
-              <div className="mt-10 grid gap-6 md:grid-cols-2">
-                {buildPrinciples.map((principle) => (
-                  <div key={principle.title} className="rounded-2xl border border-white/10 bg-white/5 p-6">
-                    <h3 className="text-lg font-semibold text-white">{principle.title}</h3>
-                    <p className="mt-3 text-sm text-white/70">{principle.detail}</p>
+              <h2 className="text-3xl font-semibold tracking-tight text-slate-50 md:text-4xl">Por que escolher a FlowCorp</h2>
+              <div className="mt-8 flex flex-col gap-4 text-base text-white/85">
+                {whyFlowCorp.map((reason) => (
+                  <div key={reason} className="flex items-start gap-2">
+                    <span className="mt-1 h-2 w-2 rounded-full bg-emerald-400" aria-hidden="true" />
+                    <p className="leading-snug">{reason}</p>
                   </div>
                 ))}
               </div>
@@ -188,19 +140,27 @@ const App: React.FC = () => {
           </div>
         </section>
 
-        <section className="px-6 pb-28 md:px-8">
+        <section id="contato" className="px-6 pb-28 md:px-8">
           <div className="mx-auto flex w-full max-w-4xl flex-col items-center rounded-3xl border border-white/10 bg-white/[0.04] px-8 py-12 text-center">
             <AnimatedSection className="w-full" delay="duration-700">
-              <h2 className="text-3xl font-semibold text-white">Pronto para pilotar</h2>
+              <h2 className="text-3xl font-semibold text-white">Vamos conversar</h2>
               <p className="mt-4 text-base text-white/80">
-                Quer testar SelfBrain ou acompanhar o desenvolvimento do DataDoc com a FlowCorp.
+                Tem uma ideia? Um problema que parece sem solução? Fale com a FlowCorp. Estamos prontos para construir algo grande, rápido e lucrativo.
               </p>
-              <div className="mt-8">
+              <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
                 <a
-                  href="#produtos"
-                  className="inline-flex items-center rounded-full bg-gradient-to-r from-indigo-500 via-violet-500 to-sky-500 px-6 py-3 text-sm font-semibold text-white shadow-[0_0_20px_rgba(99,102,241,0.2)] transition-all duration-200 hover:shadow-[0_0_28px_rgba(99,102,241,0.3)]"
+                  href="mailto:oi@flowcorp.com"
+                  className="inline-flex items-center rounded-full border border-white/30 px-6 py-3 text-sm font-semibold text-white transition-colors duration-200 hover:border-white"
                 >
-                  [ Explorar produtos ↗ ]
+                  Enviar mensagem
+                </a>
+                <a
+                  href="https://instagram.com/flowcorp"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="inline-flex items-center rounded-full bg-white/10 px-6 py-3 text-sm font-semibold text-white transition-colors duration-200 hover:bg-white/20"
+                >
+                  Instagram
                 </a>
               </div>
             </AnimatedSection>
