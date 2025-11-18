@@ -63,11 +63,11 @@ const App: React.FC = () => {
         <section className="relative flex min-h-[calc(100vh-6rem)] w-full items-center px-6 pb-24 pt-32 text-left md:px-8 md:pt-40">
           <div className="pointer-events-none absolute inset-y-0 right-6 hidden w-[420px] max-w-[38vw] rounded-3xl border border-white/10 bg-white/10 bg-[linear-gradient(135deg,rgba(165,180,252,0.14),rgba(14,165,233,0.12),rgba(236,72,153,0.18))] opacity-70 blur-2xl sm:block" aria-hidden="true" />
           <div className="mx-auto w-full max-w-[960px]">
-            <AnimatedSection className="w-full" delay="duration-700">
-              <span className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-4 py-1 text-[11px] font-semibold uppercase tracking-[0.35em] text-slate-200">
+            <AnimatedSection className="w-full space-y-6" delay="duration-700">
+              <span className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-4 py-1 text-[11px] font-medium uppercase tracking-[0.2em] text-slate-200">
                 FlowCorp
               </span>
-              <h1 className="mt-6 text-5xl font-semibold leading-[1.08] tracking-tight text-slate-50 sm:text-[64px]">Tecnologia inteligente para soluções reais.</h1>
+              <h1 className="text-5xl font-semibold leading-[1.08] tracking-tight text-slate-50 sm:text-[64px]">Tecnologia inteligente para soluções reais.</h1>
             </AnimatedSection>
             <AnimatedSection className="w-full" delay="duration-700 delay-150">
               <p className="mt-5 max-w-3xl text-lg leading-snug text-slate-200/85 md:text-xl">
@@ -78,7 +78,7 @@ const App: React.FC = () => {
               <div className="mt-10 flex flex-wrap items-center gap-4">
                 <a
                   href="#contato"
-                  className="inline-flex items-center rounded-full bg-gradient-to-r from-indigo-500 via-violet-500 to-sky-500 px-6 py-3 text-sm font-semibold text-white shadow-[0_0_20px_rgba(99,102,241,0.2)] transition-all duration-200 hover:shadow-[0_0_28px_rgba(99,102,241,0.3)]"
+                  className="inline-flex items-center rounded-full bg-gradient-to-r from-indigo-500 via-violet-500 to-sky-500 px-6 py-3 text-sm font-medium text-white shadow-[0_0_20px_rgba(99,102,241,0.2)] transition-all duration-200 hover:shadow-[0_0_28px_rgba(99,102,241,0.3)]"
                 >
                   Vamos conversar
                 </a>
@@ -89,13 +89,13 @@ const App: React.FC = () => {
 
         <section className="px-6 pb-20 pt-12 md:px-8 md:pt-16">
           <div className="mx-auto w-full max-w-6xl">
-            <AnimatedSection className="w-full" delay="duration-700">
+            <AnimatedSection className="w-full space-y-10" delay="duration-700">
               <h2 className="text-3xl font-semibold tracking-tight text-slate-50 md:text-4xl">O que fazemos</h2>
-              <div className="mt-10 grid gap-6 md:grid-cols-3">
+              <div className="grid gap-6 md:grid-cols-3">
                 {whatWeDo.map((item) => (
-                  <div key={item.title} className="rounded-3xl border border-white/10 bg-white/5 p-6">
+                  <div key={item.title} className="space-y-3 rounded-3xl border border-white/10 bg-white/5 p-6">
                     <h3 className="text-lg font-semibold text-white">{item.title}</h3>
-                    <p className="mt-3 text-sm text-white/80">{item.description}</p>
+                    <p className="text-base leading-relaxed text-white/80 md:text-lg">{item.description}</p>
                   </div>
                 ))}
               </div>
@@ -107,9 +107,9 @@ const App: React.FC = () => {
           <div className="mx-auto w-full max-w-6xl">
             <AnimatedSection className="w-full" delay="duration-700">
               <div className="flex flex-col gap-8 lg:flex-row lg:items-start lg:justify-between">
-                <div className="max-w-xl">
+                <div className="max-w-xl space-y-4">
                   <h2 className="text-3xl font-semibold tracking-tight text-slate-50 md:text-4xl">Nossos produtos principais</h2>
-                  <p className="mt-4 text-base leading-snug text-slate-300">
+                  <p className="text-base leading-relaxed text-slate-300 md:text-lg">
                     Ferramentas desenhadas para combinar IA aplicada com operação enxuta.
                   </p>
                 </div>
@@ -120,10 +120,10 @@ const App: React.FC = () => {
                       href={product.href}
                       target="_blank"
                       rel="noreferrer"
-                      className="rounded-3xl border border-white/10 bg-white/5 p-6 transition-colors duration-200 hover:border-white/40 hover:bg-white/10"
+                      className="space-y-3 rounded-3xl border border-white/10 bg-white/5 p-6 transition-colors duration-200 hover:border-white/40 hover:bg-white/10"
                     >
                       <h3 className="text-lg font-semibold text-white">{product.title}</h3>
-                      <p className="mt-3 text-sm text-white/80">{product.description}</p>
+                      <p className="text-base leading-relaxed text-white/80 md:text-lg">{product.description}</p>
                     </a>
                   ))}
                 </div>
@@ -150,17 +150,17 @@ const App: React.FC = () => {
 
         <section id="contato" className="px-6 pb-28 md:px-8">
           <div className="mx-auto flex w-full max-w-4xl flex-col items-center rounded-3xl border border-white/10 bg-white/[0.04] px-8 py-12 text-center">
-            <AnimatedSection className="w-full" delay="duration-700">
+            <AnimatedSection className="w-full space-y-6" delay="duration-700">
               <h2 className="text-3xl font-semibold text-white">Vamos conversar</h2>
-              <p className="mt-4 text-base text-white/80">
+              <p className="text-base leading-relaxed text-white/80 md:text-lg">
                 Tem uma ideia? Um problema que parece sem solução? Fale com a FlowCorp. Estamos prontos para construir algo grande, rápido e lucrativo.
               </p>
-              <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
+              <div className="flex flex-wrap items-center justify-center gap-4 pt-2">
                 <a
                   href="https://www.instagram.com/selfbrain_/"
                   target="_blank"
                   rel="noreferrer"
-                  className="inline-flex items-center rounded-full bg-white/10 px-6 py-3 text-sm font-semibold text-white transition-colors duration-200 hover:bg-white/20"
+                  className="inline-flex items-center rounded-full bg-white/10 px-6 py-3 text-sm font-medium text-white transition-colors duration-200 hover:bg-white/20"
                 >
                   Instagram
                 </a>
