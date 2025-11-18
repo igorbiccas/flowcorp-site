@@ -25,11 +25,13 @@ const mainProducts = [
     title: 'SelfBrain',
     description:
       'Memória contínua para IA. Ferramenta que conecta passado, presente e futuro de interações humanas e digitais.',
+    href: 'https://selfbrain.vercel.app',
   },
   {
     title: 'DataDoc',
     description:
       'Anamnese automática + inteligência para clínicas e hospitais. Reduza burocracia, aumente eficiência, libere expertise.',
+    href: 'https://datadocs.vercel.app',
   },
 ];
 
@@ -113,10 +115,16 @@ const App: React.FC = () => {
                 </div>
                 <div className="grid w-full gap-6 md:grid-cols-2">
                   {mainProducts.map((product) => (
-                    <div key={product.title} className="rounded-3xl border border-white/10 bg-white/5 p-6">
+                    <a
+                      key={product.title}
+                      href={product.href}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="rounded-3xl border border-white/10 bg-white/5 p-6 transition-colors duration-200 hover:border-white/40 hover:bg-white/10"
+                    >
                       <h3 className="text-lg font-semibold text-white">{product.title}</h3>
                       <p className="mt-3 text-sm text-white/80">{product.description}</p>
-                    </div>
+                    </a>
                   ))}
                 </div>
               </div>
@@ -149,13 +157,7 @@ const App: React.FC = () => {
               </p>
               <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
                 <a
-                  href="mailto:oi@flowcorp.com"
-                  className="inline-flex items-center rounded-full border border-white/30 px-6 py-3 text-sm font-semibold text-white transition-colors duration-200 hover:border-white"
-                >
-                  Enviar mensagem
-                </a>
-                <a
-                  href="https://instagram.com/flowcorp"
+                  href="https://www.instagram.com/selfbrain_/"
                   target="_blank"
                   rel="noreferrer"
                   className="inline-flex items-center rounded-full bg-white/10 px-6 py-3 text-sm font-semibold text-white transition-colors duration-200 hover:bg-white/20"
@@ -170,7 +172,6 @@ const App: React.FC = () => {
 
       <footer className="relative z-10 border-t border-white/10 bg-black/40 px-6 py-10 text-center text-sm text-white/60 md:px-8">
         <div className="mx-auto flex max-w-5xl flex-col items-center gap-4 md:flex-row md:justify-between md:text-left">
-          <span>Instagram</span>
           <span>© 2025 FlowCorp - Construído no Brasil com respeito ao seu tempo e aos seus dados.</span>
         </div>
       </footer>

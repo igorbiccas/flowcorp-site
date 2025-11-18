@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import { InstagramIcon } from './icons';
 
 const Header: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -26,17 +25,6 @@ const Header: React.FC = () => {
         >
           FLOW CORP
         </a>
-        <nav className="flex items-center gap-3">
-          <a
-            href="https://www.instagram.com/selfbrain_/"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Instagram"
-            className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-white/20 text-white/40 transition-all duration-200 hover:border-white/40 hover:text-white hover:shadow-[0_0_25px_rgba(148,163,255,0.45)]"
-          >
-            <InstagramIcon />
-          </a>
-        </nav>
       </div>
     </header>
   );
