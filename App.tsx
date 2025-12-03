@@ -8,8 +8,8 @@ const whatWeDo = [
     description: 'Aplicações prontas para crescer junto com o negócio.',
   },
   {
-    title: 'Serviços com SLAs claros',
-    description: 'Execução de IA e software com governança e previsibilidade.',
+    title: 'Serviços sob medida',
+    description: 'Software e IA entregues com ritmo.',
   },
   {
     title: 'Inovação em setores críticos',
