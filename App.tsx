@@ -6,17 +6,17 @@ const whatWeDo = [
   {
     title: 'Produtos que escalam',
     description:
-      'Criamos aplicações e plataformas que resolvem infraestruturas invisíveis e transformam mercados.',
+      'Aplicações que sustentam crescimento sem complicar a operação.',
   },
   {
     title: 'Serviços rápidos e premium',
     description:
-      'Entrega expressa de soluções digitais e IA para empresas que querem impacto imediato.',
+      'Projetos de IA e software entregues no ritmo do seu negócio.',
   },
   {
     title: 'Inovação onde poucos entram',
     description:
-      'Atuamos em saúde, educação, governo e tecnologias emergentes.',
+      'Atuação direta em saúde, educação, governo e novas tecnologias.',
   },
 ];
 
@@ -24,22 +24,22 @@ const mainProducts = [
   {
     title: 'SelfBrain',
     description:
-      'Memória contínua para IA. Ferramenta que conecta passado, presente e futuro de interações humanas e digitais.',
+      'Memória contínua para IA. Contexto vivo em cada interação.',
     href: 'https://selfbrain.vercel.app',
   },
   {
     title: 'DataDoc',
     description:
-      'Anamnese automática + inteligência para clínicas e hospitais. Reduza burocracia, aumente eficiência, libere expertise.',
+      'Anamnese automática e inteligência para clínicas e hospitais.',
     href: 'https://datadocs.vercel.app',
   },
 ];
 
 const whyFlowCorp = [
-  'Você trabalha direto com o fundador (velocidade máxima).',
-  'Entregas em tempo recorde, sem burocracia.',
-  'Foco em margens elevadas: investimos em resultado, não em promessas.',
-  'Velocidade, foco e inteligência.',
+  'Contato direto com quem decide.',
+  'Entrega em ritmo de sprint.',
+  'Negócios com margem alta e sem desculpas.',
+  'Velocidade com disciplina.',
 ];
 
 const App: React.FC = () => {
@@ -64,11 +64,11 @@ const App: React.FC = () => {
           <div className="pointer-events-none absolute inset-y-0 right-6 hidden w-[420px] max-w-[38vw] rounded-3xl border border-white/10 bg-white/10 bg-[linear-gradient(135deg,rgba(165,180,252,0.14),rgba(14,165,233,0.12),rgba(236,72,153,0.18))] opacity-70 blur-2xl sm:block" aria-hidden="true" />
           <div className="mx-auto w-full max-w-[960px]">
             <AnimatedSection className="w-full space-y-4" delay="duration-700">
-              <h1 className="text-5xl font-semibold leading-[1.08] tracking-tight text-slate-50 sm:text-[64px]">Tecnologia inteligente para soluções reais.</h1>
+              <h1 className="text-5xl font-semibold leading-[1.08] tracking-tight text-slate-50 sm:text-[64px]">Tecnologia ágil para resultados reais.</h1>
             </AnimatedSection>
             <AnimatedSection className="w-full" delay="duration-700 delay-150">
               <p className="mt-5 max-w-3xl text-lg leading-snug text-slate-200/85 md:text-xl">
-                Criamos produtos escaláveis, serviços táticos de alto impacto e atuamos onde o futuro já virou presente.
+                Produtos escaláveis e serviços táticos de IA para quem quer impacto imediato.
               </p>
             </AnimatedSection>
           </div>
@@ -97,7 +97,7 @@ const App: React.FC = () => {
                 <div className="max-w-xl space-y-4">
                   <h2 className="text-3xl font-semibold tracking-tight text-slate-50 md:text-4xl">Nossos produtos principais</h2>
                   <p className="text-base leading-relaxed text-slate-300 md:text-lg">
-                    Ferramentas desenhadas para combinar IA aplicada com operação enxuta.
+                    Ferramentas que unem IA aplicada e execução enxuta.
                   </p>
                 </div>
                 <div className="grid w-full gap-6 md:grid-cols-2">
@@ -140,7 +140,7 @@ const App: React.FC = () => {
             <AnimatedSection className="w-full space-y-6" delay="duration-700">
               <h2 className="text-3xl font-semibold text-white">Vamos conversar</h2>
               <p className="text-base leading-relaxed text-white/80 md:text-lg">
-                Tem uma ideia? Um problema que parece sem solução? Fale com a FlowCorp. Estamos prontos para construir algo grande, rápido e lucrativo.
+                Tem uma ideia ou urgência? Chame a FlowCorp e vamos acelerar juntos.
               </p>
               <div className="flex flex-wrap items-center justify-center gap-4 pt-2">
                 <a
