@@ -4,37 +4,37 @@ import AnimatedSection from './components/AnimatedSection';
 
 const whatWeDo = [
   {
-    title: 'Produtos que escalam',
-    description: 'Aplicações prontas para crescer junto com o negócio.',
+    title: 'SaaS de IA prontos para uso',
+    description: 'Produtos desenhados para crescer junto com o cliente e gerar valor desde o primeiro dia.',
   },
   {
-    title: 'Serviços sob medida',
-    description: 'Software e IA entregues com ritmo.',
+    title: 'Soluções customizadas de alta velocidade',
+    description: 'Construção rápida de software e IA sob medida, com acesso direto à liderança técnica.',
   },
   {
     title: 'Inovação em setores críticos',
-    description: 'Atuação direta em saúde, educação, governo e tecnologias emergentes.',
+    description: 'Saúde, governo, educação e operações que exigem precisão e impacto real.',
   },
 ];
 
 const mainProducts = [
   {
     title: 'SelfBrain',
-    description: 'Memória contínua de IA com segurança e contexto.',
+    description: 'IA com memória contínua. Experiências personalizadas que evoluem conforme o uso.',
     href: 'https://selfbrain.vercel.app',
   },
   {
     title: 'DataDoc',
-    description: 'Anamnese automatizada e inteligência clínica.',
+    description: 'Anamnese automática e inteligência clínica. Minutos viram documentação completa.',
     href: 'https://datadocs.vercel.app',
   },
 ];
 
 const whyFlowCorp = [
-  'Interlocução direta com a liderança.',
-  'Entrega em cadência de sprint.',
-  'Modelos sustentáveis e orientados a margem.',
-  'Rapidez com governança.',
+  'Execução rápida e orientada a resultado.',
+  'Entrega em cadência de sprint, sempre com foco em margem e eficiência.',
+  'Modelos aplicados no mundo real, não protótipos.',
+  'Governança simples, comunicação direta e decisões rápidas.',
 ];
 
 const App: React.FC = () => {
@@ -59,10 +59,10 @@ const App: React.FC = () => {
           <div className="pointer-events-none absolute inset-y-0 right-6 hidden w-[420px] max-w-[38vw] rounded-3xl border border-white/10 bg-white/10 bg-[linear-gradient(135deg,rgba(165,180,252,0.14),rgba(14,165,233,0.12),rgba(236,72,153,0.18))] opacity-70 blur-2xl sm:block" aria-hidden="true" />
           <div className="mx-auto w-full max-w-[960px]">
             <AnimatedSection className="w-full space-y-4" delay="duration-700">
-              <h1 className="text-5xl font-semibold leading-[1.08] tracking-tight text-slate-50 sm:text-[64px]">Tecnologia ágil e objetiva.</h1>
+              <h1 className="text-5xl font-semibold leading-[1.08] tracking-tight text-slate-50 sm:text-[64px]">IA aplicada para resultados imediatos.</h1>
             </AnimatedSection>
             <AnimatedSection className="w-full" delay="duration-700 delay-150">
-              <p className="mt-5 max-w-3xl text-lg leading-snug text-slate-200/85 md:text-xl">Produtos e serviços de IA focados em entrega.</p>
+              <p className="mt-5 max-w-3xl text-lg leading-snug text-slate-200/85 md:text-xl">Tecnologia direta, rápida e criada para escalar.</p>
             </AnimatedSection>
           </div>
         </section>
@@ -88,8 +88,8 @@ const App: React.FC = () => {
             <AnimatedSection className="w-full" delay="duration-700">
               <div className="flex flex-col gap-8 lg:flex-row lg:items-start lg:justify-between">
                 <div className="max-w-xl space-y-4">
-                  <h2 className="text-3xl font-semibold tracking-tight text-slate-50 md:text-4xl">Nossos produtos principais</h2>
-                  <p className="text-base leading-relaxed text-slate-300 md:text-lg">Soluções com IA aplicada e execução enxuta.</p>
+                  <h2 className="text-3xl font-semibold tracking-tight text-slate-50 md:text-4xl">Nossos produtos</h2>
+                  <p className="text-base leading-relaxed text-slate-300 md:text-lg">SaaS prontos para gerar valor desde o primeiro dia.</p>
                 </div>
                 <div className="grid w-full gap-6 md:grid-cols-2">
                   {mainProducts.map((product) => (
@@ -126,10 +126,21 @@ const App: React.FC = () => {
           </div>
         </section>
 
+        <section className="px-6 pb-24 md:px-8">
+          <div className="mx-auto w-full max-w-5xl">
+            <AnimatedSection className="w-full space-y-4" delay="duration-700">
+              <h2 className="text-3xl font-semibold tracking-tight text-slate-50 md:text-4xl">Nossa visão</h2>
+              <p className="text-base leading-relaxed text-white/85 md:text-lg">
+                Ser a empresa de IA mais eficiente do Brasil, capaz de transformar qualquer processo em escala.
+              </p>
+            </AnimatedSection>
+          </div>
+        </section>
+
         <section id="contato" className="px-6 pb-32 md:px-8">
           <div className="mx-auto flex w-full max-w-4xl flex-col items-center rounded-3xl border border-white/10 bg-white/[0.04] px-8 py-12 text-center">
             <AnimatedSection className="w-full space-y-6" delay="duration-700">
-              <h2 className="text-3xl font-semibold text-white">Vamos conversar</h2>
+              <h2 className="text-3xl font-semibold text-white">Entre em contato</h2>
               <div className="flex flex-wrap items-center justify-center gap-4 pt-2">
                 <a
                   href="https://www.instagram.com/selfbrain_/"
@@ -147,7 +158,7 @@ const App: React.FC = () => {
 
       <footer className="relative z-10 border-t border-white/10 bg-black/40 px-6 py-10 text-center text-sm text-white/60 md:px-8">
         <div className="mx-auto flex max-w-5xl flex-col items-center gap-4 md:flex-row md:justify-between md:text-left">
-          <span>© 2025 FlowCorp - Construído no Brasil</span>
+          <span>© 2025 FlowCorp Construído no Brasil</span>
         </div>
       </footer>
     </div>

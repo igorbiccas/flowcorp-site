@@ -23,7 +23,7 @@ const Header: React.FC = () => {
           className="text-sm font-semibold uppercase tracking-[0.25em] text-white transition-colors duration-200 hover:text-white/70"
           aria-label="FlowCorp"
         >
-          FLOW CORP
+          FLOWCORP
         </a>
       </div>
     </header>
