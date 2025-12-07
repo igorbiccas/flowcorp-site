@@ -13,14 +13,14 @@ const Header: React.FC = () => {
 
   return (
     <header
-      className={`fixed inset-x-0 top-0 z-50 border-b border-white/10 bg-black/40 backdrop-blur-md transition-all duration-200 ease-in-out ${
-        isScrolled ? 'shadow-[0_20px_60px_-35px_rgba(15,23,42,0.75)]' : ''
+      className={`fixed inset-x-0 top-0 z-50 border-b border-zinc-800 bg-[#0b0f19]/85 backdrop-blur-md transition-all duration-200 ease-in-out ${
+        isScrolled ? 'shadow-[0_18px_50px_-30px_rgba(0,0,0,0.7)]' : ''
       }`}
     >
       <div className="mx-auto flex h-20 w-full max-w-6xl items-center justify-between px-6 md:px-8">
         <a
           href="#"
-          className="text-sm font-semibold uppercase tracking-[0.25em] text-white transition-colors duration-200 hover:text-white/70"
+          className="text-sm font-semibold uppercase tracking-[0.25em] text-zinc-100 transition-colors duration-200 hover:text-zinc-300"
           aria-label="FlowCorp"
         >
           FLOWCORP
