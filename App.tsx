@@ -134,7 +134,7 @@ const App: React.FC = () => {
               <h2 className="text-3xl font-semibold text-zinc-50">Entre em contato</h2>
               <div className="flex flex-wrap items-center justify-center gap-4 pt-2">
                 <a
-                  href="https://www.instagram.com/selfbrain_/"
+                  href="https://www.instagram.com/flowcorp_"
                   target="_blank"
                   rel="noreferrer"
                   className="inline-flex items-center rounded-full border border-zinc-700 px-6 py-3 text-sm font-medium text-zinc-100 transition-colors duration-200 hover:border-zinc-500 hover:bg-zinc-800"
