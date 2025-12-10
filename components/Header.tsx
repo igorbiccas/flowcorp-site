@@ -27,10 +27,22 @@ const Header: React.FC = () => {
         </a>
         <nav className="flex items-center gap-4 text-sm font-medium text-zinc-200">
           <a
-            href="/?page=support"
-            className="rounded-full border border-transparent px-4 py-2 transition-colors duration-200 hover:border-zinc-600 hover:bg-zinc-900"
+            href="/selfbrain"
+            className="rounded-full border border-transparent p-2 transition-colors duration-200 hover:border-zinc-600 hover:bg-zinc-900"
+            aria-label="Open SelfBrain support"
+            title="SelfBrain"
           >
-            Support
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 48 48"
+              className="h-6 w-6 fill-none stroke-zinc-200"
+              role="img"
+              aria-hidden="true"
+            >
+              <circle cx="24" cy="24" r="20" strokeWidth="3" />
+              <path d="M24 4v40" strokeWidth="3" strokeLinecap="round" />
+              <path d="M24 24c9 0 16 7 16 16" strokeWidth="3" strokeLinecap="round" />
+            </svg>
           </a>
         </nav>
       </div>
