@@ -13,9 +13,9 @@ const root = ReactDOM.createRoot(rootElement);
 const currentUrl = new URL(window.location.href);
 const normalizedHash = currentUrl.hash.replace(/^#\/?/, '');
 const supportRequested =
-  currentUrl.pathname.startsWith('/support') ||
-  currentUrl.searchParams.get('page') === 'support' ||
-  normalizedHash === 'support';
+  currentUrl.pathname.startsWith('/selfbrain') ||
+  currentUrl.searchParams.get('page') === 'selfbrain' ||
+  normalizedHash === 'selfbrain';
 
 root.render(
   <React.StrictMode>
