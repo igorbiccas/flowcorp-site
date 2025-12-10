@@ -27,7 +27,7 @@ const Header: React.FC = () => {
         </a>
         <nav className="flex items-center gap-4 text-sm font-medium text-zinc-200">
           <a
-            href="/?page=support"
+            href="https://flowcorp.vercel.app/?page=selfbrain"
             className="rounded-full border border-transparent px-4 py-2 transition-colors duration-200 hover:border-zinc-600 hover:bg-zinc-900"
           >
             Support
