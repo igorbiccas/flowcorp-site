@@ -10,10 +10,15 @@ if (!rootElement) {
 }
 
 const root = ReactDOM.createRoot(rootElement);
-const pathname = window.location.pathname;
+const currentUrl = new URL(window.location.href);
+const normalizedHash = currentUrl.hash.replace(/^#\/?/, '');
+const supportRequested =
+  currentUrl.pathname.startsWith('/support') ||
+  currentUrl.searchParams.get('page') === 'support' ||
+  normalizedHash === 'support';
 
 root.render(
   <React.StrictMode>
-    {pathname.startsWith('/support') ? <SupportPage /> : <App />}
+    {supportRequested ? <SupportPage /> : <App />}
   </React.StrictMode>
 );
