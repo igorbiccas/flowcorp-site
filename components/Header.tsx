@@ -19,12 +19,20 @@ const Header: React.FC = () => {
     >
       <div className="mx-auto flex h-20 w-full max-w-6xl items-center justify-between px-6 md:px-8">
         <a
-          href="#"
+          href="/"
           className="text-sm font-semibold uppercase tracking-[0.25em] text-zinc-100 transition-colors duration-200 hover:text-zinc-300"
           aria-label="FlowCorp"
         >
           FLOWCORP
         </a>
+        <nav className="flex items-center gap-4 text-sm font-medium text-zinc-200">
+          <a
+            href="/support"
+            className="rounded-full border border-transparent px-4 py-2 transition-colors duration-200 hover:border-zinc-600 hover:bg-zinc-900"
+          >
+            Support
+          </a>
+        </nav>
       </div>
     </header>
   );
