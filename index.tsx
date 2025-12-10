@@ -2,6 +2,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
+import SupportPage from './SupportPage';
 
 const rootElement = document.getElementById('root');
 if (!rootElement) {
@@ -9,8 +10,10 @@ if (!rootElement) {
 }
 
 const root = ReactDOM.createRoot(rootElement);
+const pathname = window.location.pathname;
+
 root.render(
   <React.StrictMode>
-    <App />
+    {pathname.startsWith('/support') ? <SupportPage /> : <App />}
   </React.StrictMode>
 );
