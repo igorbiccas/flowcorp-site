@@ -28,6 +28,12 @@ const mainProducts = [
     description: 'Anamnese automática e inteligência clínica. Minutos viram documentação completa.',
     href: 'https://datadocs.vercel.app',
   },
+  {
+    title: 'Gaia Link',
+    description: 'Gaia Link is a simple app to create a public profile with your links and discover other people on a map.',
+    href: '/gaialink',
+    target: '_self',
+  },
 ];
 
 const whyFlowCorp = [
@@ -87,7 +93,7 @@ const App: React.FC = () => {
                     <a
                       key={product.title}
                       href={product.href}
-                      target="_blank"
+                      target={(product as any).target || "_blank"}
                       rel="noreferrer"
                       className="space-y-3 rounded-3xl border border-zinc-800 bg-zinc-900/70 p-6 transition-colors duration-200 hover:border-zinc-600 hover:bg-zinc-900"
                     >
