@@ -13,9 +13,8 @@ const Header: React.FC = () => {
 
   return (
     <header
-      className={`fixed inset-x-0 top-0 z-50 border-b border-zinc-800 bg-[#0b0f19]/85 backdrop-blur-md transition-all duration-200 ease-in-out ${
-        isScrolled ? 'shadow-[0_18px_50px_-30px_rgba(0,0,0,0.7)]' : ''
-      }`}
+      className={`fixed inset-x-0 top-0 z-50 border-b border-zinc-800 bg-[#0b0f19]/85 backdrop-blur-md transition-all duration-200 ease-in-out ${isScrolled ? 'shadow-[0_18px_50px_-30px_rgba(0,0,0,0.7)]' : ''
+        }`}
     >
       <div className="mx-auto flex h-20 w-full max-w-6xl items-center justify-between px-6 md:px-8">
         <a
@@ -26,12 +25,7 @@ const Header: React.FC = () => {
           FLOWCORP
         </a>
         <nav className="flex items-center gap-4 text-sm font-medium text-zinc-200">
-          <a
-            href="https://flowcorp.vercel.app/?page=selfbrain"
-            className="rounded-full border border-transparent px-4 py-2 transition-colors duration-200 hover:border-zinc-600 hover:bg-zinc-900"
-          >
-            Support
-          </a>
+          {/* Support link removed */}
         </nav>
       </div>
     </header>

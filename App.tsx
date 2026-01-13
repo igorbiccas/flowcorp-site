@@ -21,7 +21,8 @@ const mainProducts = [
   {
     title: 'SelfBrain',
     description: 'IA com memória contínua. Experiências personalizadas que evoluem conforme o uso.',
-    href: 'https://selfbrain.vercel.app',
+    href: '/selfbrain',
+    target: '_self',
   },
   {
     title: 'DataDoc',
@@ -36,12 +37,7 @@ const mainProducts = [
   },
 ];
 
-const whyFlowCorp = [
-  'Execução rápida e orientada a resultado.',
-  'Entrega em cadência de sprint, sempre com foco em margem e eficiência.',
-  'Modelos aplicados no mundo real, não protótipos.',
-  'Governança simples, comunicação direta e decisões rápidas.',
-];
+
 
 const App: React.FC = () => {
   return (
@@ -58,9 +54,7 @@ const App: React.FC = () => {
             <AnimatedSection className="w-full space-y-4" delay="duration-700">
               <h1 className="text-5xl font-semibold leading-[1.08] tracking-tight text-zinc-50 sm:text-[64px]">IA aplicada para resultados imediatos.</h1>
             </AnimatedSection>
-            <AnimatedSection className="w-full" delay="duration-700 delay-150">
-              <p className="mt-5 max-w-3xl text-lg leading-snug text-zinc-300 md:text-xl">Tecnologia direta, rápida e criada para escalar.</p>
-            </AnimatedSection>
+
           </div>
         </section>
 
@@ -107,32 +101,9 @@ const App: React.FC = () => {
           </div>
         </section>
 
-        <section className="px-6 pb-24 md:px-8">
-          <div className="mx-auto w-full max-w-5xl">
-            <AnimatedSection className="w-full" delay="duration-700">
-              <h2 className="text-3xl font-semibold tracking-tight text-zinc-50 md:text-4xl">Por que escolher a FlowCorp</h2>
-              <div className="mt-8 flex flex-col gap-4 text-base text-zinc-300">
-                {whyFlowCorp.map((reason) => (
-                  <div key={reason} className="flex items-start gap-2">
-                    <span className="mt-1 h-2 w-2 rounded-full bg-zinc-400" aria-hidden="true" />
-                    <p className="leading-snug">{reason}</p>
-                  </div>
-                ))}
-              </div>
-            </AnimatedSection>
-          </div>
-        </section>
 
-        <section className="px-6 pb-24 md:px-8">
-          <div className="mx-auto w-full max-w-5xl">
-            <AnimatedSection className="w-full space-y-4" delay="duration-700">
-              <h2 className="text-3xl font-semibold tracking-tight text-zinc-50 md:text-4xl">Nossa visão</h2>
-              <p className="text-base leading-relaxed text-zinc-300 md:text-lg">
-                Ser a empresa de IA mais eficiente do Brasil, capaz de transformar qualquer processo em escala.
-              </p>
-            </AnimatedSection>
-          </div>
-        </section>
+
+
 
         <section id="contato" className="px-6 pb-32 md:px-8">
           <div className="mx-auto flex w-full max-w-4xl flex-col items-center rounded-3xl border border-zinc-800 bg-zinc-900/60 px-8 py-12 text-center">
