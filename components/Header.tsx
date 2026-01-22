@@ -13,19 +13,19 @@ const Header: React.FC = () => {
 
   return (
     <header
-      className={`fixed inset-x-0 top-0 z-50 border-b border-zinc-800 bg-[#0b0f19]/85 backdrop-blur-md transition-all duration-200 ease-in-out ${isScrolled ? 'shadow-[0_18px_50px_-30px_rgba(0,0,0,0.7)]' : ''
+      className={`fixed inset-x-0 top-0 z-50 transition-all duration-300 ease-in-out ${isScrolled ? 'border-b border-white/5 bg-black/80 backdrop-blur-lg py-4' : 'bg-transparent py-6'
         }`}
     >
-      <div className="mx-auto flex h-20 w-full max-w-6xl items-center justify-between px-6 md:px-8">
+      <div className="mx-auto flex w-full max-w-5xl items-center justify-between px-6 md:px-8">
         <a
           href="/"
-          className="text-sm font-semibold uppercase tracking-[0.25em] text-zinc-100 transition-colors duration-200 hover:text-zinc-300"
+          className="text-xs font-semibold uppercase tracking-[0.3em] text-white transition-opacity hover:opacity-70"
           aria-label="FlowCorp"
         >
           FLOWCORP
         </a>
-        <nav className="flex items-center gap-4 text-sm font-medium text-zinc-200">
-          {/* Support link removed */}
+        <nav className="flex items-center gap-8">
+          {/* Nav links removed */}
         </nav>
       </div>
     </header>
