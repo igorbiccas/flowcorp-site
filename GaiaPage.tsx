@@ -30,10 +30,18 @@ const GaiaPage: React.FC = () => {
           <div className="flex flex-col items-center gap-8 rounded-2xl border border-white/5 bg-white/[0.02] p-12 text-center">
             <h2 className="text-3xl font-medium tracking-tight text-white">Pronto para começar?</h2>
             <a
+              href="https://gaialink.vercel.app/"
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex h-12 items-center justify-center rounded-full bg-white px-8 text-sm font-bold text-black transition-transform duration-200 hover:scale-[1.02] active:scale-[0.98]"
+            >
+              Acessar Gaia Link
+            </a>
+            <a
               href="https://www.instagram.com/flowcorp_"
               target="_blank"
               rel="noreferrer"
-              className="inline-flex h-12 items-center justify-center rounded-full bg-white px-8 text-sm font-medium text-black transition-transform duration-200 hover:scale-[1.02] active:scale-[0.98]"
+              className="text-sm font-medium text-zinc-400 transition-colors hover:text-white"
             >
               Contact support on Instagram
             </a>

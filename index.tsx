@@ -5,6 +5,7 @@ import App from './App';
 import SupportPage from './SupportPage';
 
 import GaiaPage from './GaiaPage';
+import DataDocPage from './DataDocPage';
 
 const rootElement = document.getElementById('root');
 if (!rootElement) {
@@ -25,9 +26,15 @@ const gaiaRequested =
   currentUrl.searchParams.get('page') === 'gaialink' ||
   normalizedHash === 'gaialink';
 
+const dataDocRequested =
+  currentUrl.pathname.startsWith('/datadoc') ||
+  currentUrl.searchParams.get('page') === 'datadoc' ||
+  normalizedHash === 'datadoc';
+
 let Component = App;
 if (supportRequested) Component = SupportPage;
 if (gaiaRequested) Component = GaiaPage;
+if (dataDocRequested) Component = DataDocPage;
 
 root.render(
   <React.StrictMode>

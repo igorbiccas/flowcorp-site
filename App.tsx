@@ -13,7 +13,8 @@ const mainProducts = [
   {
     title: 'DataDoc',
     description: 'Anamnese automática e inteligência clínica. Transforme consultas em documentação completa.',
-    href: 'https://datadocs.vercel.app',
+    href: '/datadoc',
+    target: '_self',
   },
   {
     title: 'Gaia Link',
