@@ -1,3 +1,4 @@
+
 import React from 'react';
 
 const iconWrapper =
@@ -80,5 +81,33 @@ export const ArrowRightIcon = () => (
     className="ml-1.5 inline-block transition-transform duration-200 group-hover/button:translate-x-1"
   >
     <path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+  </svg>
+);
+
+export const BrazilFlagIcon = () => (
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 72 48" className="h-4 w-6 rounded-sm shadow-sm">
+    <rect width="72" height="48" fill="#009c3b" />
+    <path fill="#ffdf00" d="M36 4L68 24L36 44L4 24z" />
+    <circle cx="36" cy="24" r="12" fill="#002776" />
+    <path fill="#fff" d="M36 24V22A12 12 0 0 0 47.9 23.1L48 24A12 12 0 0 1 36 24Z" />
+  </svg>
+);
+
+export const USAFlagIcon = () => (
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 72 48" className="h-4 w-6 rounded-sm shadow-sm">
+    <rect width="72" height="48" fill="#bf0a30" />
+    <rect width="72" height="48" y="3.69" fill="#fff" />
+    <rect width="72" height="48" y="7.38" fill="#bf0a30" />
+    <rect width="72" height="48" y="11.07" fill="#fff" />
+    <rect width="72" height="48" y="14.76" fill="#bf0a30" />
+    <rect width="72" height="48" y="18.45" fill="#fff" />
+    <rect width="72" height="48" y="22.14" fill="#bf0a30" />
+    <rect width="72" height="48" y="25.83" fill="#fff" />
+    <rect width="72" height="48" y="29.52" fill="#bf0a30" />
+    <rect width="72" height="48" y="33.21" fill="#fff" />
+    <rect width="72" height="48" y="36.9" fill="#bf0a30" />
+    <rect width="72" height="48" y="40.59" fill="#fff" />
+    <rect width="72" height="48" y="44.28" fill="#bf0a30" />
+    <rect width="28.8" height="25.85" fill="#002868" />
   </svg>
 );

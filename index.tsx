@@ -3,6 +3,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
 import SupportPage from './SupportPage';
+import { LanguageProvider } from './contexts/LanguageContext';
 
 import GaiaPage from './GaiaPage';
 import DataDocPage from './DataDocPage';
@@ -36,8 +37,12 @@ if (supportRequested) Component = SupportPage;
 if (gaiaRequested) Component = GaiaPage;
 if (dataDocRequested) Component = DataDocPage;
 
+
+
 root.render(
   <React.StrictMode>
-    <Component />
+    <LanguageProvider>
+      <Component />
+    </LanguageProvider>
   </React.StrictMode>
 );

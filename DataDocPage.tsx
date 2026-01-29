@@ -1,9 +1,13 @@
+
 import React from 'react';
 import Header from './components/Header';
 import AnimatedSection from './components/AnimatedSection';
 import { AnamneseIcon, SparklesIcon, ArrowRightIcon } from './components/icons';
+import { useLanguage } from './contexts/LanguageContext';
 
 const DataDocPage: React.FC = () => {
+    const { t } = useLanguage();
+
     React.useEffect(() => {
         document.title = 'DataDoc | Inteligência Clínica - FlowCorp';
     }, []);
@@ -29,15 +33,15 @@ const DataDocPage: React.FC = () => {
                 <AnimatedSection className="space-y-8" delay="duration-1000">
                     <div className="space-y-4">
                         <div className="flex items-center gap-3">
-                            <p className="text-xs font-medium uppercase tracking-[0.2em] text-zinc-500">Product</p>
+                            <p className="text-xs font-medium uppercase tracking-[0.2em] text-zinc-500">{t.datadoc.productLabel}</p>
                             <span className="h-px w-8 bg-zinc-800"></span>
-                            <span className="text-xs font-medium uppercase tracking-[0.2em] text-sky-400">Inteligência Clínica</span>
+                            <span className="text-xs font-medium uppercase tracking-[0.2em] text-sky-400">{t.datadoc.clinicalIntelligence}</span>
                         </div>
                         <h1 className="text-4xl font-medium tracking-tighter text-white md:text-7xl">
-                            DataDoc
+                            {t.datadoc.heroTitle}
                         </h1>
                         <p className="max-w-2xl text-lg leading-relaxed text-zinc-400 md:text-2xl">
-                            A revolução na anamnese médica. Transforme conversas naturais em documentação clínica estruturada com o poder da IA.
+                            {t.datadoc.heroDescription}
                         </p>
                     </div>
                 </AnimatedSection>
@@ -46,16 +50,16 @@ const DataDocPage: React.FC = () => {
                 <AnimatedSection className="grid gap-8 md:grid-cols-2" delay="duration-700">
                     <div className="group space-y-4 rounded-2xl border border-white/5 bg-white/[0.02] p-8 transition-all hover:bg-white/[0.04]">
                         <AnamneseIcon />
-                        <h3 className="text-xl font-medium text-white">Anamnese Automática</h3>
+                        <h3 className="text-xl font-medium text-white">{t.datadoc.features.anamnesisTitle}</h3>
                         <p className="text-zinc-400">
-                            Capture a consulta em tempo real e deixe que nossa IA organize os sintomas, histórico e queixas em um formato médico padrão.
+                            {t.datadoc.features.anamnesisDesc}
                         </p>
                     </div>
                     <div className="group space-y-4 rounded-2xl border border-white/5 bg-white/[0.02] p-8 transition-all hover:bg-white/[0.04]">
                         <SparklesIcon />
-                        <h3 className="text-xl font-medium text-white">Inteligência Clínica</h3>
+                        <h3 className="text-xl font-medium text-white">{t.datadoc.features.intelligenceTitle}</h3>
                         <p className="text-zinc-400">
-                            Sugestões inteligentes e insights baseados em protocolos médicos atualizados, auxiliando na precisão do diagnóstico.
+                            {t.datadoc.features.intelligenceDesc}
                         </p>
                     </div>
                 </AnimatedSection>
@@ -63,19 +67,19 @@ const DataDocPage: React.FC = () => {
                 {/* Benefits Section */}
                 <AnimatedSection className="space-y-12" delay="duration-700">
                     <div className="space-y-6">
-                        <h2 className="text-2xl font-medium tracking-tight text-white md:text-4xl">Por que escolher o DataDoc?</h2>
+                        <h2 className="text-2xl font-medium tracking-tight text-white md:text-4xl">{t.datadoc.benefits.title}</h2>
                         <div className="grid gap-6 md:grid-cols-3">
                             <div className="space-y-2">
-                                <div className="text-sky-400 font-medium">Economia de Tempo</div>
-                                <p className="text-sm text-zinc-500">Reduza em até 70% o tempo gasto com burocracia e preenchimento de prontuários.</p>
+                                <div className="text-sky-400 font-medium">{t.datadoc.benefits.timeTitle}</div>
+                                <p className="text-sm text-zinc-500">{t.datadoc.benefits.timeDesc}</p>
                             </div>
                             <div className="space-y-2">
-                                <div className="text-sky-400 font-medium">Foco no Paciente</div>
-                                <p className="text-sm text-zinc-500">Mantenha contato visual e atenção total no paciente enquanto a IA cuida das notas.</p>
+                                <div className="text-sky-400 font-medium">{t.datadoc.benefits.focusTitle}</div>
+                                <p className="text-sm text-zinc-500">{t.datadoc.benefits.focusDesc}</p>
                             </div>
                             <div className="space-y-2">
-                                <div className="text-sky-400 font-medium">Padronização</div>
-                                <p className="text-sm text-zinc-500">Garanta que todos os prontuários sigam uma estrutura clara, rica e profissional.</p>
+                                <div className="text-sky-400 font-medium">{t.datadoc.benefits.standardTitle}</div>
+                                <p className="text-sm text-zinc-500">{t.datadoc.benefits.standardDesc}</p>
                             </div>
                         </div>
                     </div>
@@ -85,10 +89,10 @@ const DataDocPage: React.FC = () => {
                 <AnimatedSection className="relative overflow-hidden rounded-3xl border border-white/10 bg-white/[0.02] px-8 py-16 text-center md:px-12 md:py-24" delay="duration-700">
                     <div className="relative z-10 mx-auto max-w-2xl space-y-8">
                         <h2 className="text-3xl font-medium tracking-tight text-white md:text-5xl">
-                            Pronto para elevar sua prática clínica?
+                            {t.datadoc.cta.title}
                         </h2>
                         <p className="text-lg text-zinc-400">
-                            Junte-se a centenas de médicos que já estão transformando seu fluxo de trabalho com o DataDoc.
+                            {t.datadoc.cta.description}
                         </p>
                         <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
                             <a
@@ -97,7 +101,7 @@ const DataDocPage: React.FC = () => {
                                 rel="noreferrer"
                                 className="group/button inline-flex h-14 items-center justify-center rounded-full bg-white px-10 text-base font-semibold text-black transition-all hover:scale-[1.02] hover:bg-zinc-200 active:scale-[0.98]"
                             >
-                                Acessar Plataforma
+                                {t.datadoc.cta.button}
                                 <ArrowRightIcon />
                             </a>
                         </div>
@@ -112,11 +116,11 @@ const DataDocPage: React.FC = () => {
             <footer className="relative z-10 border-t border-white/5 bg-[#0f0f12] px-6 py-12 md:px-8">
                 <div className="mx-auto flex max-w-4xl flex-col items-center justify-between gap-6 md:flex-row md:gap-0">
                     <div className="flex items-center gap-4">
-                        <span className="text-xs uppercase tracking-widest text-zinc-500">© 2025 FlowCorp</span>
+                        <span className="text-xs uppercase tracking-widest text-zinc-500">{t.common.footerCopyright}</span>
                     </div>
                     <a href="/" className="group flex items-center gap-2 text-xs font-medium uppercase tracking-widest text-zinc-400 transition-colors hover:text-white">
                         <span className="transition-transform group-hover:-translate-x-1">←</span>
-                        Voltar para a Home
+                        {t.common.backHome}
                     </a>
                 </div>
             </footer>

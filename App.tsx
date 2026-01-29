@@ -1,30 +1,34 @@
+
 import React from 'react';
 import Header from './components/Header';
 import AnimatedSection from './components/AnimatedSection';
 import { InstagramIcon, WhatsAppIcon } from './components/icons';
-
-const mainProducts = [
-  {
-    title: 'SelfBrain',
-    description: 'IA com memória contínua. Experiências personalizadas que evoluem conforme o uso.',
-    href: '/selfbrain',
-    target: '_self',
-  },
-  {
-    title: 'DataDoc',
-    description: 'Anamnese automática e inteligência clínica. Transforme consultas em documentação completa.',
-    href: '/datadoc',
-    target: '_self',
-  },
-  {
-    title: 'Gaia Link',
-    description: 'Crie seu perfil público, adicione seus links e descubra outras pessoas no mapa.',
-    href: '/gaialink',
-    target: '_self',
-  },
-];
+import { useLanguage } from './contexts/LanguageContext';
 
 const App: React.FC = () => {
+  const { t } = useLanguage();
+
+  const mainProducts = [
+    {
+      title: t.app.selfbrain.title,
+      description: t.app.selfbrain.description,
+      href: '/selfbrain',
+      target: '_self',
+    },
+    {
+      title: t.app.datadoc.title,
+      description: t.app.datadoc.description,
+      href: '/datadoc',
+      target: '_self',
+    },
+    {
+      title: t.app.gaialink.title,
+      description: t.app.gaialink.description,
+      href: '/gaialink',
+      target: '_self',
+    },
+  ];
+
   return (
     <div className="relative min-h-screen bg-[#0f0f12] text-white selection:bg-white/10">
       {/* Subtle Glow Background */}
@@ -47,7 +51,7 @@ const App: React.FC = () => {
           <div className="mx-auto w-full max-w-5xl">
             <AnimatedSection className="w-full space-y-16" delay="duration-700">
               <div className="max-w-2xl">
-                <h2 className="text-sm font-medium uppercase tracking-[0.2em] text-zinc-500">Projetos</h2>
+                <h2 className="text-sm font-medium uppercase tracking-[0.2em] text-zinc-500">{t.app.projectsTitle}</h2>
               </div>
               <div className="grid w-full gap-4 md:grid-cols-2 lg:grid-cols-3">
                 {mainProducts.map((product) => (
@@ -61,7 +65,7 @@ const App: React.FC = () => {
                     <h3 className="text-lg font-medium text-white">{product.title}</h3>
                     <p className="text-sm leading-relaxed text-zinc-400">{product.description}</p>
                     <div className="pt-4 text-xs font-medium uppercase tracking-widest text-zinc-500 transition-colors group-hover:text-white">
-                      Explorar →
+                      {t.app.explore}
                     </div>
                   </a>
                 ))}
@@ -101,7 +105,7 @@ const App: React.FC = () => {
 
       <footer className="relative z-10 border-t border-white/5 bg-[#0f0f12]/80 backdrop-blur-sm px-6 py-12 md:px-8">
         <div className="mx-auto flex max-w-5xl flex-col items-center justify-between gap-6 md:flex-row md:gap-0">
-          <span className="text-xs uppercase tracking-widest text-zinc-500">© 2025 FlowCorp</span>
+          <span className="text-xs uppercase tracking-widest text-zinc-500">{t.common.footerCopyright}</span>
           <div className="flex gap-8">
             {/* Add secondary links if needed */}
           </div>
