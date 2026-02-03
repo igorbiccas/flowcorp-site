@@ -3,7 +3,11 @@ import React, { useState, useEffect } from 'react';
 import { useLanguage } from '../contexts/LanguageContext';
 import { BrazilFlagIcon } from './icons';
 
-const Header: React.FC = () => {
+interface HeaderProps {
+  showLanguageSelector?: boolean;
+}
+
+const Header: React.FC<HeaderProps> = ({ showLanguageSelector = true }) => {
   const [isScrolled, setIsScrolled] = useState(false);
   const { language, toggleLanguage } = useLanguage();
 
@@ -33,17 +37,19 @@ const Header: React.FC = () => {
           <nav className="flex items-center gap-8">
             {/* Nav links removed */}
           </nav>
-          <button
-            onClick={toggleLanguage}
-            className="flex h-8 w-12 items-center justify-center rounded-lg border border-white/5 bg-white/5 transition-transform hover:scale-110 hover:bg-white/10 active:scale-95"
-            title={language === 'en' ? "Translate to Portuguese" : "Translate to English"}
-          >
-            {language === 'en' ? (
-              <BrazilFlagIcon />
-            ) : (
-              <span className="text-xs font-bold text-zinc-400">EN</span>
-            )}
-          </button>
+          {showLanguageSelector && (
+            <button
+              onClick={toggleLanguage}
+              className="flex h-8 w-12 items-center justify-center rounded-lg border border-white/5 bg-white/5 transition-transform hover:scale-110 hover:bg-white/10 active:scale-95"
+              title={language === 'en' ? "Translate to Portuguese" : "Translate to English"}
+            >
+              {language === 'en' ? (
+                <BrazilFlagIcon />
+              ) : (
+                <span className="text-xs font-bold text-zinc-400">EN</span>
+              )}
+            </button>
+          )}
         </div>
       </div>
     </header>
