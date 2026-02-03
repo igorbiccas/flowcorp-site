@@ -7,8 +7,42 @@ export const translations = {
       contactInstagram: "Fale com o suporte no Instagram",
     },
     app: {
+      heroBadge: "IA aplicada a negócios",
+      heroTitle: "Fluxos inteligentes que aceleram produtos digitais.",
+      heroSubtitle: "Criamos experiências de IA sob medida para empresas e miniapps. Mais eficiência, mais clareza e menos esforço operacional para sua equipe.",
+      heroPrimaryCta: "Conhecer soluções",
+      heroSecondaryCta: "Falar com a equipe",
+      heroHighlights: [
+        {
+          title: "Entrega estratégica",
+          description: "Mapeamos o cenário atual, priorizamos impacto e desenhamos soluções com foco em resultados reais.",
+        },
+        {
+          title: "Arquitetura escalável",
+          description: "Integrações seguras com dados críticos, mantendo performance mesmo com alto volume.",
+        },
+        {
+          title: "UX orientada a valor",
+          description: "Fluxos simples para usuários finais e painéis claros para times internos.",
+        },
+      ],
       projectsTitle: "Soluções B2B",
       miniAppsTitle: "Miniapps da World",
+      differentialsTitle: "Por que FlowCorp",
+      differentials: [
+        {
+          title: "Diagnóstico consultivo",
+          description: "Analisamos processos e dados antes de propor qualquer automação.",
+        },
+        {
+          title: "Automação com IA",
+          description: "Modelos combinados a regras de negócio para reduzir tempo e ruído operacional.",
+        },
+        {
+          title: "Entrega contínua",
+          description: "Roadmap evolutivo com métricas e melhorias semanais.",
+        },
+      ],
       explore: "Explorar →",
       selfbrain: {
         title: "SelfBrain",
@@ -113,8 +147,42 @@ export const translations = {
       contactInstagram: "Contact support on Instagram",
     },
     app: {
+      heroBadge: "AI for business",
+      heroTitle: "Intelligent flows that accelerate digital products.",
+      heroSubtitle: "We build tailored AI experiences for companies and mini apps. More efficiency, more clarity, and less operational load for your team.",
+      heroPrimaryCta: "Explore solutions",
+      heroSecondaryCta: "Talk to our team",
+      heroHighlights: [
+        {
+          title: "Strategic delivery",
+          description: "We map the current landscape, prioritize impact, and design solutions focused on real results.",
+        },
+        {
+          title: "Scalable architecture",
+          description: "Secure integrations with critical data while maintaining performance at scale.",
+        },
+        {
+          title: "Value-driven UX",
+          description: "Simple flows for end-users and clear dashboards for internal teams.",
+        },
+      ],
       projectsTitle: "B2B Solutions",
       miniAppsTitle: "World Mini-Apps",
+      differentialsTitle: "Why FlowCorp",
+      differentials: [
+        {
+          title: "Consultative diagnosis",
+          description: "We analyze processes and data before proposing any automation.",
+        },
+        {
+          title: "AI automation",
+          description: "Models combined with business rules to reduce time and operational noise.",
+        },
+        {
+          title: "Continuous delivery",
+          description: "An evolving roadmap with metrics and weekly improvements.",
+        },
+      ],
       explore: "Explore →",
       selfbrain: {
         title: "SelfBrain",
