@@ -141,6 +141,20 @@ const App: React.FC = () => {
                   </a>
                 ))}
               </div>
+              <div className="grid gap-6 rounded-3xl border border-white/10 bg-white/[0.04] px-8 py-10 text-center shadow-[0_20px_60px_-40px_rgba(59,130,246,0.4)] md:grid-cols-3">
+                <div className="space-y-2">
+                  <div className="text-3xl font-semibold tracking-tight text-white md:text-4xl">963</div>
+                  <div className="text-xs font-semibold uppercase tracking-[0.35em] text-zinc-400">Usuários</div>
+                </div>
+                <div className="space-y-2">
+                  <div className="text-3xl font-semibold tracking-tight text-white md:text-4xl">3</div>
+                  <div className="text-xs font-semibold uppercase tracking-[0.35em] text-zinc-400">Apps</div>
+                </div>
+                <div className="space-y-2">
+                  <div className="text-3xl font-semibold tracking-tight text-white md:text-4xl">22</div>
+                  <div className="text-xs font-semibold uppercase tracking-[0.35em] text-zinc-400">Países</div>
+                </div>
+              </div>
             </AnimatedSection>
           </div>
         </section>
