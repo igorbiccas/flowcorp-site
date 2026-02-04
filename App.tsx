@@ -66,22 +66,6 @@ const App: React.FC = () => {
       <Header />
 
       <main className="relative z-10 flex flex-col pt-32 md:pt-48">
-        {/* Stats Section */}
-        <section className="px-6 md:px-8">
-          <div className="mx-auto w-full max-w-5xl">
-            <AnimatedSection className="w-full" delay="duration-700">
-              <div className="grid gap-6 rounded-3xl border border-white/10 bg-white/[0.04] px-8 py-10 text-center shadow-[0_20px_60px_-40px_rgba(59,130,246,0.4)] md:grid-cols-3">
-                {stats.map((stat) => (
-                  <div key={stat.label} className="space-y-2">
-                    <div className="text-4xl font-semibold tracking-tight text-white md:text-5xl">{stat.value}</div>
-                    <div className="text-xs font-semibold uppercase tracking-[0.35em] text-zinc-400">{stat.label}</div>
-                  </div>
-                ))}
-              </div>
-            </AnimatedSection>
-          </div>
-        </section>
-
         {/* B2B Products Section */}
         <section className="mt-24 px-6 md:px-8">
           <div className="mx-auto w-full max-w-5xl">
@@ -168,6 +152,22 @@ const App: React.FC = () => {
                 >
                   <WhatsAppIcon />
                 </a>
+              </div>
+            </AnimatedSection>
+          </div>
+        </section>
+
+        {/* Stats Section */}
+        <section className="px-6 pb-24 md:px-8">
+          <div className="mx-auto w-full max-w-5xl">
+            <AnimatedSection className="w-full" delay="duration-700">
+              <div className="grid gap-6 rounded-3xl border border-white/10 bg-white/[0.04] px-8 py-10 text-center shadow-[0_20px_60px_-40px_rgba(59,130,246,0.4)] md:grid-cols-3">
+                {stats.map((stat) => (
+                  <div key={stat.label} className="space-y-2">
+                    <div className="text-4xl font-semibold tracking-tight text-white md:text-5xl">{stat.value}</div>
+                    <div className="text-xs font-semibold uppercase tracking-[0.35em] text-zinc-400">{stat.label}</div>
+                  </div>
+                ))}
               </div>
             </AnimatedSection>
           </div>
