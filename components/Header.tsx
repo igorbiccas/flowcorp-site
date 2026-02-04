@@ -21,13 +21,13 @@ const Header: React.FC<HeaderProps> = ({ showLanguageSelector = true }) => {
 
   return (
     <header
-      className={`fixed inset-x-0 top-0 z-50 transition-all duration-300 ease-in-out ${isScrolled ? 'border-b border-white/5 bg-black/80 backdrop-blur-lg py-4' : 'bg-transparent py-6'
+      className={`fixed inset-x-0 top-0 z-50 transition-all duration-300 ease-in-out ${isScrolled ? 'border-b border-white/10 bg-[#07070a]/80 backdrop-blur-xl py-4' : 'bg-transparent py-6'
         }`}
     >
       <div className="mx-auto flex w-full max-w-5xl items-center justify-between px-6 md:px-8">
         <a
           href="/"
-          className="text-xs font-semibold uppercase tracking-[0.3em] text-white transition-opacity hover:opacity-70"
+          className="bg-gradient-to-r from-white via-cyan-100 to-purple-200 bg-clip-text text-xs font-semibold uppercase tracking-[0.3em] text-transparent transition-opacity hover:opacity-70"
           aria-label="FlowCorp"
         >
           FLOWCORP
@@ -40,7 +40,7 @@ const Header: React.FC<HeaderProps> = ({ showLanguageSelector = true }) => {
           {showLanguageSelector && (
             <button
               onClick={toggleLanguage}
-              className="flex h-8 w-12 items-center justify-center rounded-lg border border-white/5 bg-white/5 transition-transform hover:scale-110 hover:bg-white/10 active:scale-95"
+              className="flex h-8 w-12 items-center justify-center rounded-lg border border-white/10 bg-white/10 shadow-[0_8px_30px_-16px_rgba(255,255,255,0.6)] transition-transform hover:scale-110 hover:bg-white/20 active:scale-95"
               title={language === 'en' ? "Translate to Portuguese" : "Translate to English"}
             >
               {language === 'en' ? (
