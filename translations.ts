@@ -10,6 +10,11 @@ export const translations = {
       projectsTitle: "Soluções B2B",
       miniAppsTitle: "Miniapps da World",
       explore: "Explorar →",
+      stats: {
+        usersLabel: "Usuários",
+        appsLabel: "Apps",
+        countriesLabel: "Países",
+      },
       selfbrain: {
         title: "SelfBrain",
         description: "IA com memória contínua. Experiências personalizadas que evoluem conforme o uso.",
@@ -116,6 +121,11 @@ export const translations = {
       projectsTitle: "B2B Solutions",
       miniAppsTitle: "World Mini-Apps",
       explore: "Explore →",
+      stats: {
+        usersLabel: "Users",
+        appsLabel: "Apps",
+        countriesLabel: "Countries",
+      },
       selfbrain: {
         title: "SelfBrain",
         description: "AI with continuous memory. Personalized experiences that evolve with use.",
