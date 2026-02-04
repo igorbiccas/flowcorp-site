@@ -7,6 +7,9 @@ import { useLanguage } from './contexts/LanguageContext';
 
 const App: React.FC = () => {
   const { t } = useLanguage();
+  const heroHighlights = t.app.heroHighlights as Array<{ label: string; value: string }>;
+  const heroPillars = t.app.heroPillars as string[];
+  const differentials = t.app.differentials as Array<{ title: string; description: string }>;
 
   const b2bProducts = [
     {
@@ -49,8 +52,66 @@ const App: React.FC = () => {
       <Header />
 
       <main className="relative z-10 flex flex-col pt-32 md:pt-48">
-        {/* B2B Products Section */}
+        {/* Hero Section */}
         <section className="px-6 md:px-8">
+          <div className="mx-auto w-full max-w-5xl">
+            <AnimatedSection className="w-full" delay="duration-700">
+              <div className="grid gap-12 md:grid-cols-[1.2fr_0.8fr] md:items-center">
+                <div className="space-y-6">
+                  <span className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-2 text-xs font-semibold uppercase tracking-[0.3em] text-zinc-400">
+                    {t.app.heroBadge}
+                  </span>
+                  <h1 className="text-balance text-4xl font-semibold leading-tight text-white md:text-6xl">
+                    {t.app.heroTitle}
+                  </h1>
+                  <p className="text-balance text-base leading-relaxed text-zinc-400 md:text-lg">
+                    {t.app.heroSubtitle}
+                  </p>
+                  <div className="flex flex-wrap gap-3">
+                    {heroPillars.map((pillar) => (
+                      <span
+                        key={pillar}
+                        className="rounded-full border border-white/10 bg-white/5 px-4 py-2 text-[11px] font-semibold uppercase tracking-[0.2em] text-zinc-300"
+                      >
+                        {pillar}
+                      </span>
+                    ))}
+                  </div>
+                  <div className="flex flex-wrap gap-4">
+                    <a
+                      href="#solucoes"
+                      className="rounded-full bg-white px-6 py-3 text-sm font-semibold uppercase tracking-widest text-black transition-all hover:scale-[1.02] hover:bg-zinc-200"
+                    >
+                      {t.app.heroPrimaryCta}
+                    </a>
+                    <a
+                      href="#contato"
+                      className="rounded-full border border-white/15 px-6 py-3 text-sm font-semibold uppercase tracking-widest text-white transition-all hover:scale-[1.02] hover:border-white/40"
+                    >
+                      {t.app.heroSecondaryCta}
+                    </a>
+                  </div>
+                </div>
+                <div className="grid gap-4 sm:grid-cols-2">
+                  {heroHighlights.map((item) => (
+                    <div
+                      key={item.label}
+                      className="rounded-2xl border border-white/10 bg-gradient-to-br from-white/15 via-white/5 to-transparent p-6 shadow-[0_0_80px_-50px_rgba(255,255,255,0.7)]"
+                    >
+                      <p className="text-3xl font-semibold text-white">{item.value}</p>
+                      <p className="mt-3 text-xs font-semibold uppercase tracking-[0.3em] text-zinc-500">
+                        {item.label}
+                      </p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </AnimatedSection>
+          </div>
+        </section>
+
+        {/* B2B Products Section */}
+        <section id="solucoes" className="mt-24 px-6 md:px-8">
           <div className="mx-auto w-full max-w-5xl">
             <AnimatedSection className="w-full space-y-12" delay="duration-700">
               <div className="max-w-2xl">
@@ -79,8 +140,32 @@ const App: React.FC = () => {
           </div>
         </section>
 
+        {/* Differentials Section */}
+        <section className="mt-24 px-6 md:px-8">
+          <div className="mx-auto w-full max-w-5xl">
+            <AnimatedSection className="w-full space-y-10" delay="duration-700">
+              <div className="max-w-2xl">
+                <h2 className="text-sm font-medium uppercase tracking-[0.2em] text-zinc-500">
+                  {t.app.differentialsTitle}
+                </h2>
+              </div>
+              <div className="grid gap-6 md:grid-cols-3">
+                {differentials.map((item) => (
+                  <div
+                    key={item.title}
+                    className="rounded-2xl border border-white/10 bg-gradient-to-br from-white/10 via-white/5 to-transparent p-6"
+                  >
+                    <h3 className="text-lg font-medium text-white">{item.title}</h3>
+                    <p className="mt-3 text-sm leading-relaxed text-zinc-400">{item.description}</p>
+                  </div>
+                ))}
+              </div>
+            </AnimatedSection>
+          </div>
+        </section>
+
         {/* Mini Apps Section */}
-        <section className="mt-32 px-6 md:px-8">
+        <section id="miniapps" className="mt-32 px-6 md:px-8">
           <div className="mx-auto w-full max-w-5xl">
             <AnimatedSection className="w-full space-y-12" delay="duration-700">
               <div className="max-w-2xl">

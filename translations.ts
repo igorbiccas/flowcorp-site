@@ -7,8 +7,43 @@ export const translations = {
       contactInstagram: "Fale com o suporte no Instagram",
     },
     app: {
+      heroBadge: "IA aplicada a negócios",
+      heroTitle: "Fluxos inteligentes que aceleram produtos digitais.",
+      heroSubtitle: "IA sob medida para equipes que precisam de velocidade.",
+      heroPrimaryCta: "Conhecer soluções",
+      heroSecondaryCta: "Falar com a equipe",
+      heroPillars: ["Estratégia", "Design", "IA aplicada", "Entrega rápida"],
+      heroHighlights: [
+        {
+          value: "+45%",
+          label: "Eficiência média",
+        },
+        {
+          value: "2-6",
+          label: "Semanas para MVP",
+        },
+        {
+          value: "24/7",
+          label: "Monitoramento",
+        },
+      ],
       projectsTitle: "Soluções B2B",
       miniAppsTitle: "Miniapps da World",
+      differentialsTitle: "Por que FlowCorp",
+      differentials: [
+        {
+          title: "Diagnóstico consultivo",
+          description: "Processos e dados primeiro.",
+        },
+        {
+          title: "Automação com IA",
+          description: "Modelos + regras do negócio.",
+        },
+        {
+          title: "Entrega contínua",
+          description: "Métricas e ajustes semanais.",
+        },
+      ],
       explore: "Explorar →",
       selfbrain: {
         title: "SelfBrain",
@@ -113,8 +148,43 @@ export const translations = {
       contactInstagram: "Contact support on Instagram",
     },
     app: {
+      heroBadge: "AI for business",
+      heroTitle: "Intelligent flows that accelerate digital products.",
+      heroSubtitle: "Tailored AI for teams that need speed.",
+      heroPrimaryCta: "Explore solutions",
+      heroSecondaryCta: "Talk to our team",
+      heroPillars: ["Strategy", "Design", "Applied AI", "Fast delivery"],
+      heroHighlights: [
+        {
+          value: "+45%",
+          label: "Avg efficiency",
+        },
+        {
+          value: "2-6",
+          label: "Weeks to MVP",
+        },
+        {
+          value: "24/7",
+          label: "Monitoring",
+        },
+      ],
       projectsTitle: "B2B Solutions",
       miniAppsTitle: "World Mini-Apps",
+      differentialsTitle: "Why FlowCorp",
+      differentials: [
+        {
+          title: "Consultative diagnosis",
+          description: "Process + data first.",
+        },
+        {
+          title: "AI automation",
+          description: "Models + business rules.",
+        },
+        {
+          title: "Continuous delivery",
+          description: "Metrics and weekly tuning.",
+        },
+      ],
       explore: "Explore →",
       selfbrain: {
         title: "SelfBrain",
