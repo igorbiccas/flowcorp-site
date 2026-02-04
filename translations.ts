@@ -9,21 +9,22 @@ export const translations = {
     app: {
       heroBadge: "IA aplicada a negócios",
       heroTitle: "Fluxos inteligentes que aceleram produtos digitais.",
-      heroSubtitle: "Criamos experiências de IA sob medida para empresas e miniapps. Mais eficiência, mais clareza e menos esforço operacional para sua equipe.",
+      heroSubtitle: "IA sob medida para equipes que precisam de velocidade.",
       heroPrimaryCta: "Conhecer soluções",
       heroSecondaryCta: "Falar com a equipe",
+      heroPillars: ["Estratégia", "Design", "IA aplicada", "Entrega rápida"],
       heroHighlights: [
         {
-          title: "Entrega estratégica",
-          description: "Mapeamos o cenário atual, priorizamos impacto e desenhamos soluções com foco em resultados reais.",
+          value: "+45%",
+          label: "Eficiência média",
         },
         {
-          title: "Arquitetura escalável",
-          description: "Integrações seguras com dados críticos, mantendo performance mesmo com alto volume.",
+          value: "2-6",
+          label: "Semanas para MVP",
         },
         {
-          title: "UX orientada a valor",
-          description: "Fluxos simples para usuários finais e painéis claros para times internos.",
+          value: "24/7",
+          label: "Monitoramento",
         },
       ],
       projectsTitle: "Soluções B2B",
@@ -32,15 +33,15 @@ export const translations = {
       differentials: [
         {
           title: "Diagnóstico consultivo",
-          description: "Analisamos processos e dados antes de propor qualquer automação.",
+          description: "Processos e dados primeiro.",
         },
         {
           title: "Automação com IA",
-          description: "Modelos combinados a regras de negócio para reduzir tempo e ruído operacional.",
+          description: "Modelos + regras do negócio.",
         },
         {
           title: "Entrega contínua",
-          description: "Roadmap evolutivo com métricas e melhorias semanais.",
+          description: "Métricas e ajustes semanais.",
         },
       ],
       explore: "Explorar →",
@@ -149,21 +150,22 @@ export const translations = {
     app: {
       heroBadge: "AI for business",
       heroTitle: "Intelligent flows that accelerate digital products.",
-      heroSubtitle: "We build tailored AI experiences for companies and mini apps. More efficiency, more clarity, and less operational load for your team.",
+      heroSubtitle: "Tailored AI for teams that need speed.",
       heroPrimaryCta: "Explore solutions",
       heroSecondaryCta: "Talk to our team",
+      heroPillars: ["Strategy", "Design", "Applied AI", "Fast delivery"],
       heroHighlights: [
         {
-          title: "Strategic delivery",
-          description: "We map the current landscape, prioritize impact, and design solutions focused on real results.",
+          value: "+45%",
+          label: "Avg efficiency",
         },
         {
-          title: "Scalable architecture",
-          description: "Secure integrations with critical data while maintaining performance at scale.",
+          value: "2-6",
+          label: "Weeks to MVP",
         },
         {
-          title: "Value-driven UX",
-          description: "Simple flows for end-users and clear dashboards for internal teams.",
+          value: "24/7",
+          label: "Monitoring",
         },
       ],
       projectsTitle: "B2B Solutions",
@@ -172,15 +174,15 @@ export const translations = {
       differentials: [
         {
           title: "Consultative diagnosis",
-          description: "We analyze processes and data before proposing any automation.",
+          description: "Process + data first.",
         },
         {
           title: "AI automation",
-          description: "Models combined with business rules to reduce time and operational noise.",
+          description: "Models + business rules.",
         },
         {
           title: "Continuous delivery",
-          description: "An evolving roadmap with metrics and weekly improvements.",
+          description: "Metrics and weekly tuning.",
         },
       ],
       explore: "Explore →",

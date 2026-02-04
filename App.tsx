@@ -7,7 +7,8 @@ import { useLanguage } from './contexts/LanguageContext';
 
 const App: React.FC = () => {
   const { t } = useLanguage();
-  const heroHighlights = t.app.heroHighlights as Array<{ title: string; description: string }>;
+  const heroHighlights = t.app.heroHighlights as Array<{ label: string; value: string }>;
+  const heroPillars = t.app.heroPillars as string[];
   const differentials = t.app.differentials as Array<{ title: string; description: string }>;
 
   const b2bProducts = [
@@ -66,6 +67,16 @@ const App: React.FC = () => {
                   <p className="text-balance text-base leading-relaxed text-zinc-400 md:text-lg">
                     {t.app.heroSubtitle}
                   </p>
+                  <div className="flex flex-wrap gap-3">
+                    {heroPillars.map((pillar) => (
+                      <span
+                        key={pillar}
+                        className="rounded-full border border-white/10 bg-white/5 px-4 py-2 text-[11px] font-semibold uppercase tracking-[0.2em] text-zinc-300"
+                      >
+                        {pillar}
+                      </span>
+                    ))}
+                  </div>
                   <div className="flex flex-wrap gap-4">
                     <a
                       href="#solucoes"
@@ -81,14 +92,16 @@ const App: React.FC = () => {
                     </a>
                   </div>
                 </div>
-                <div className="space-y-4">
+                <div className="grid gap-4 sm:grid-cols-2">
                   {heroHighlights.map((item) => (
                     <div
-                      key={item.title}
-                      className="rounded-2xl border border-white/10 bg-white/5 p-6 shadow-[0_0_60px_-40px_rgba(255,255,255,0.6)]"
+                      key={item.label}
+                      className="rounded-2xl border border-white/10 bg-gradient-to-br from-white/15 via-white/5 to-transparent p-6 shadow-[0_0_80px_-50px_rgba(255,255,255,0.7)]"
                     >
-                      <p className="text-xs font-semibold uppercase tracking-[0.3em] text-zinc-500">{item.title}</p>
-                      <p className="mt-3 text-sm leading-relaxed text-zinc-300">{item.description}</p>
+                      <p className="text-3xl font-semibold text-white">{item.value}</p>
+                      <p className="mt-3 text-xs font-semibold uppercase tracking-[0.3em] text-zinc-500">
+                        {item.label}
+                      </p>
                     </div>
                   ))}
                 </div>
