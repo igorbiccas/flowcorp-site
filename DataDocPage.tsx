@@ -11,15 +11,11 @@ const DataDocPage: React.FC = () => {
     const heroHighlights = [
         {
             title: 'Decisões em segundos',
-            description: 'Organize informações clínicas com clareza e velocidade para atendimentos premium.',
+            description: 'Organize informações clínicas com clareza e velocidade.',
         },
         {
             title: 'Fluxo inteligente',
-            description: 'Automatize partes críticas do atendimento com foco em precisão e contexto.',
-        },
-        {
-            title: 'Padrão institucional',
-            description: 'Entregue um nível consistente de qualidade para toda a equipe.',
+            description: 'Automatize partes críticas do atendimento com precisão.',
         },
     ];
 
@@ -99,7 +95,7 @@ const DataDocPage: React.FC = () => {
                                     >
                                         <div className="flex items-start gap-4">
                                             <div className="mt-1">
-                                                {index === 0 ? <AnamneseIcon /> : index === 1 ? <InsightIcon /> : <SparklesIcon />}
+                                                {index === 0 ? <AnamneseIcon /> : <InsightIcon />}
                                             </div>
                                             <div>
                                                 <div className="text-sm font-semibold uppercase tracking-[0.2em] text-sky-300">
@@ -180,53 +176,8 @@ const DataDocPage: React.FC = () => {
                     </div>
                 </AnimatedSection>
 
-                {/* Try It */}
-                <AnimatedSection className="mb-32" delay="duration-700">
-                    <div className="rounded-[2.5rem] border border-white/10 bg-white/[0.03] px-10 py-16 text-center md:px-16">
-                        <div className="mx-auto mb-6 inline-flex items-center gap-2 rounded-full border border-sky-400/30 bg-sky-400/10 px-4 py-2 text-xs font-semibold uppercase tracking-[0.3em] text-sky-200">
-                            Premium experience
-                        </div>
-                        <h2 className="text-3xl font-light tracking-tight text-white md:text-4xl leading-tight mb-6">
-                            {t.datadoc.trial.title}
-                        </h2>
-                        <p className="text-lg text-zinc-400 font-light leading-relaxed max-w-3xl mx-auto">
-                            {t.datadoc.trial.description}
-                        </p>
-                    </div>
-                </AnimatedSection>
-
-                {/* Audience */}
-                <AnimatedSection className="mb-40" delay="duration-700">
-                    <div className="grid gap-10 lg:grid-cols-[1fr_1.1fr] lg:items-center">
-                        <div>
-                            <div className="text-xs font-semibold uppercase tracking-[0.35em] text-zinc-500">
-                                {t.datadoc.audience.title}
-                            </div>
-                            <h2 className="mt-4 text-3xl font-light tracking-tight text-white md:text-4xl leading-tight">
-                                Para equipes que querem precisão, tempo e confiança
-                            </h2>
-                            <p className="mt-6 text-lg font-light leading-relaxed text-zinc-300">
-                                {t.datadoc.audience.description}
-                            </p>
-                        </div>
-                        <div className="rounded-[2rem] border border-white/10 bg-gradient-to-br from-white/5 to-transparent p-8">
-                            <div className="text-sm font-semibold uppercase tracking-[0.3em] text-sky-300">
-                                Experiência sob medida
-                            </div>
-                            <div className="mt-6 space-y-4 text-sm font-light text-zinc-300">
-                                {t.datadoc.pricing.includesItems.map((item) => (
-                                    <div key={item} className="flex items-center gap-3">
-                                        <span className="h-1.5 w-1.5 rounded-full bg-emerald-400" />
-                                        <span>{item}</span>
-                                    </div>
-                                ))}
-                            </div>
-                        </div>
-                    </div>
-                </AnimatedSection>
-
                 {/* Pricing Section */}
-                <AnimatedSection className="mb-40" delay="duration-700">
+                <AnimatedSection className="mb-32" delay="duration-700">
                     <div className="text-center mb-16">
                         <h2 className="text-3xl font-light tracking-tight text-white md:text-5xl leading-tight">
                             {t.datadoc.pricing.title}
@@ -264,7 +215,7 @@ const DataDocPage: React.FC = () => {
                 </AnimatedSection>
 
                 {/* CTA Section */}
-                <AnimatedSection className="relative overflow-hidden rounded-[3rem] border border-white/10 bg-white/[0.03] px-8 py-24 text-center md:py-32" delay="duration-700">
+                <AnimatedSection className="relative overflow-hidden rounded-[3rem] border border-white/10 bg-white/[0.03] px-8 py-24 text-center md:py-28" delay="duration-700">
                     {/* Interior glow */}
                     <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-sky-500/50 to-transparent" />
 
