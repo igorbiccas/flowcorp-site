@@ -41,32 +41,75 @@ export const translations = {
       productLabel: "Produto",
       clinicalIntelligence: "Inteligência Clínica",
       heroTitle: "DataDoc",
-      heroDescription: "A revolução na anamnese médica. Transforme conversas naturais em documentação clínica estruturada com o poder da IA.",
-      features: {
-        anamnesisTitle: "Anamnese Automática",
-        anamnesisDesc: "Capture a consulta em tempo real e deixe que nossa IA organize os sintomas, histórico e queixas em um formato médico padrão.",
-        intelligenceTitle: "Inteligência Clínica",
-        intelligenceDesc: "Sugestões inteligentes e insights baseados em protocolos médicos atualizados, auxiliando na precisão do diagnóstico.",
+      heroDescription:
+        "Pare de digitar anamnese. Foque no paciente. Grave a consulta normalmente. O DataDoc transforma o áudio em uma anamnese estruturada, pronta para usar no prontuário. Menos tempo escrevendo. Menos retrabalho. Mais consultas com a mesma equipe.",
+      howItWorks: {
+        title: "Como funciona",
+        steps: [
+          {
+            title: "1",
+            description: "Você grava a conversa da consulta.",
+          },
+          {
+            title: "2",
+            description: "O DataDoc gera a anamnese organizada no modelo clínico.",
+          },
+          {
+            title: "3",
+            description: "Você revisa e usa no prontuário.",
+          },
+        ],
+        note: "Sem mudar sua rotina. Sem aprender sistema novo.",
       },
-      benefits: {
-        title: "Por que escolher o DataDoc?",
-        timeTitle: "Economia de Tempo",
-        timeDesc: "Reduza em até 70% o tempo gasto com burocracia e preenchimento de prontuários.",
-        focusTitle: "Foco no Paciente",
-        focusDesc: "Mantenha contato visual e atenção total no paciente enquanto a IA cuida das notas.",
-        standardTitle: "Padronização",
-        standardDesc: "Garanta que todos os prontuários sigam uma estrutura clara, rica e profissional.",
+      why: {
+        title: "Por que usar",
+        items: [
+          {
+            title: "Economize minutos preciosos",
+            description: "em cada consulta.",
+          },
+          {
+            title: "Reduza o desgaste",
+            description: "pós-atendimento.",
+          },
+          {
+            title: "Padronize a documentação",
+            description: "da clínica.",
+          },
+          {
+            title: "Mais foco no paciente",
+            description: "menos burocracia.",
+          },
+        ],
+      },
+      trial: {
+        title: "Teste na prática",
+        description:
+          "Use gratuitamente até 3 anamneses por dia, sem cartão e sem compromisso. Veja no mesmo dia se isso faz sentido pra sua rotina.",
+      },
+      audience: {
+        title: "Para quem é",
+        description:
+          "Clínicas privadas e consultórios com alto volume de atendimento que querem ganhar tempo sem complicar a operação.",
       },
       pricing: {
-        title: "Plano DataDoc",
+        title: "Modelo simples",
         price: "R$ 3.000 / mês",
         includesTitle: "Inclui",
-        includesItems: ["Até 2.000 anamneses/mês", "Suporte (WhatsApp / e-mail)"],
+        includesItems: [
+          "Mensalidade fixa",
+          "Limite claro de uso",
+          "Sem cobrança por médico",
+          "Sem surpresas",
+          "Até 2.000 anamneses/mês",
+        ],
+        note: "(Implantação e planos sob consulta)",
       },
       cta: {
-        title: "Pronto para elevar sua prática clínica?",
-        description: "Junte-se a centenas de médicos que já estão transformando seu fluxo de trabalho com o DataDoc.",
-        button: "Acessar Plataforma",
+        title: "Pronto para testar o DataDoc?",
+        description: "Comece agora ou fale com o nosso time para entender o melhor plano.",
+        primaryButton: "Testar agora",
+        secondaryButton: "Falar com a gente",
       },
     },
     support: {
