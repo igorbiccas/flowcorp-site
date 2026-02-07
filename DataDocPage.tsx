@@ -3,7 +3,6 @@ import React from 'react';
 import Header from './components/Header';
 import AnimatedSection from './components/AnimatedSection';
 import { AnamneseIcon, SparklesIcon, ArrowRightIcon } from './components/icons';
-import { useLanguage } from './contexts/LanguageContext';
 import { translations } from './translations';
 
 const DataDocPage: React.FC = () => {
@@ -44,50 +43,75 @@ const DataDocPage: React.FC = () => {
                     </p>
                 </AnimatedSection>
 
-                {/* Features Grid */}
-                <AnimatedSection className="grid gap-6 md:grid-cols-2 mb-40" delay="duration-700">
-                    <div className="group relative overflow-hidden rounded-3xl border border-white/5 bg-white/[0.01] p-10 transition-all duration-500 hover:bg-white/[0.03] hover:border-white/10">
-                        <div className="mb-8">
-                            <AnamneseIcon />
-                        </div>
-                        <h3 className="text-2xl font-medium text-white mb-4">{t.datadoc.features.anamnesisTitle}</h3>
-                        <p className="text-zinc-400 leading-relaxed text-lg font-light">
-                            {t.datadoc.features.anamnesisDesc}
-                        </p>
+                {/* How It Works */}
+                <AnimatedSection className="mb-40" delay="duration-700">
+                    <div className="text-center mb-16">
+                        <h2 className="text-3xl font-light tracking-tight text-white md:text-5xl leading-tight">
+                            {t.datadoc.howItWorks.title}
+                        </h2>
                     </div>
 
-                    <div className="group relative overflow-hidden rounded-3xl border border-white/5 bg-white/[0.01] p-10 transition-all duration-500 hover:bg-white/[0.03] hover:border-white/10">
-                        <div className="mb-8">
-                            <SparklesIcon />
-                        </div>
-                        <h3 className="text-2xl font-medium text-white mb-4">{t.datadoc.features.intelligenceTitle}</h3>
-                        <p className="text-zinc-400 leading-relaxed text-lg font-light">
-                            {t.datadoc.features.intelligenceDesc}
+                    <div className="grid gap-6 md:grid-cols-3">
+                        {t.datadoc.howItWorks.steps.map((step, index) => (
+                            <div
+                                key={step.title}
+                                className="group relative overflow-hidden rounded-3xl border border-white/5 bg-white/[0.01] p-10 transition-all duration-500 hover:bg-white/[0.03] hover:border-white/10"
+                            >
+                                <div className="mb-8">
+                                    {index === 0 ? <AnamneseIcon /> : <SparklesIcon />}
+                                </div>
+                                <div className="text-sky-400 text-sm font-medium uppercase tracking-[0.2em] mb-3">
+                                    {step.title}
+                                </div>
+                                <p className="text-zinc-400 leading-relaxed text-lg font-light">{step.description}</p>
+                            </div>
+                        ))}
+                    </div>
+
+                    <p className="mt-12 text-center text-lg text-zinc-400 font-light">
+                        {t.datadoc.howItWorks.note}
+                    </p>
+                </AnimatedSection>
+
+                {/* Why Use */}
+                <AnimatedSection className="mb-32" delay="duration-700">
+                    <div className="text-center mb-16">
+                        <h2 className="text-3xl font-light tracking-tight text-white md:text-5xl leading-tight">
+                            {t.datadoc.why.title}
+                        </h2>
+                    </div>
+
+                    <div className="grid gap-8 md:grid-cols-2">
+                        {t.datadoc.why.items.map((item) => (
+                            <div key={item.title} className="rounded-3xl border border-white/5 bg-white/[0.01] p-8">
+                                <div className="text-xl font-medium text-white mb-3">{item.title}</div>
+                                <p className="text-zinc-400 text-lg font-light leading-relaxed">{item.description}</p>
+                            </div>
+                        ))}
+                    </div>
+                </AnimatedSection>
+
+                {/* Try It */}
+                <AnimatedSection className="mb-32" delay="duration-700">
+                    <div className="rounded-[2.5rem] border border-white/10 bg-white/[0.02] px-10 py-16 text-center md:px-16">
+                        <h2 className="text-3xl font-light tracking-tight text-white md:text-4xl leading-tight mb-6">
+                            {t.datadoc.trial.title}
+                        </h2>
+                        <p className="text-lg text-zinc-400 font-light leading-relaxed max-w-3xl mx-auto">
+                            {t.datadoc.trial.description}
                         </p>
                     </div>
                 </AnimatedSection>
 
-                {/* Benefits Section */}
+                {/* Audience */}
                 <AnimatedSection className="mb-40" delay="duration-700">
-                    <div className="text-center mb-16">
-                        <h2 className="text-3xl font-light tracking-tight text-white md:text-5xl leading-tight">
-                            {t.datadoc.benefits.title}
+                    <div className="text-center">
+                        <h2 className="text-3xl font-light tracking-tight text-white md:text-4xl leading-tight mb-6">
+                            {t.datadoc.audience.title}
                         </h2>
-                    </div>
-
-                    <div className="grid gap-12 md:grid-cols-3">
-                        <div className="space-y-4 text-center">
-                            <div className="text-sky-400 text-sm font-medium uppercase tracking-[0.2em]">{t.datadoc.benefits.timeTitle}</div>
-                            <p className="text-zinc-400 text-lg leading-relaxed font-light">{t.datadoc.benefits.timeDesc}</p>
-                        </div>
-                        <div className="space-y-4 text-center">
-                            <div className="text-sky-400 text-sm font-medium uppercase tracking-[0.2em]">{t.datadoc.benefits.focusTitle}</div>
-                            <p className="text-zinc-400 text-lg leading-relaxed font-light">{t.datadoc.benefits.focusDesc}</p>
-                        </div>
-                        <div className="space-y-4 text-center">
-                            <div className="text-sky-400 text-sm font-medium uppercase tracking-[0.2em]">{t.datadoc.benefits.standardTitle}</div>
-                            <p className="text-zinc-400 text-lg leading-relaxed font-light">{t.datadoc.benefits.standardDesc}</p>
-                        </div>
+                        <p className="text-lg text-zinc-400 font-light leading-relaxed max-w-3xl mx-auto">
+                            {t.datadoc.audience.description}
+                        </p>
                     </div>
                 </AnimatedSection>
 
@@ -117,6 +141,9 @@ const DataDocPage: React.FC = () => {
                                         </li>
                                     ))}
                                 </ul>
+                                <p className="mt-6 text-sm font-light text-zinc-500">
+                                    {t.datadoc.pricing.note}
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -134,15 +161,23 @@ const DataDocPage: React.FC = () => {
                         <p className="text-lg text-zinc-400 md:text-xl font-light max-w-xl mx-auto">
                             {t.datadoc.cta.description}
                         </p>
-                        <div className="flex flex-col items-center justify-center pt-8">
+                        <div className="flex flex-col items-center justify-center gap-4 pt-8 sm:flex-row">
                             <a
                                 href="https://datadocs.vercel.app"
                                 target="_blank"
                                 rel="noreferrer"
                                 className="group/button relative inline-flex h-16 items-center justify-center rounded-full bg-white px-12 text-lg font-semibold text-black transition-all duration-300 hover:scale-[1.02] active:scale-[0.98] shadow-[0_0_40px_rgba(255,255,255,0.1)]"
                             >
-                                {t.datadoc.cta.button}
+                                {t.datadoc.cta.primaryButton}
                                 <ArrowRightIcon />
+                            </a>
+                            <a
+                                href="https://www.instagram.com/flowcorp_"
+                                target="_blank"
+                                rel="noreferrer"
+                                className="group/button relative inline-flex h-16 items-center justify-center rounded-full border border-white/20 px-12 text-lg font-semibold text-white transition-all duration-300 hover:border-white/40 hover:bg-white/5 active:scale-[0.98]"
+                            >
+                                {t.datadoc.cta.secondaryButton}
                             </a>
                         </div>
                     </div>
