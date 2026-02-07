@@ -91,6 +91,37 @@ const DataDocPage: React.FC = () => {
                     </div>
                 </AnimatedSection>
 
+                {/* Pricing Section */}
+                <AnimatedSection className="mb-40" delay="duration-700">
+                    <div className="text-center mb-16">
+                        <h2 className="text-3xl font-light tracking-tight text-white md:text-5xl leading-tight">
+                            {t.datadoc.pricing.title}
+                        </h2>
+                    </div>
+
+                    <div className="mx-auto max-w-3xl">
+                        <div className="relative overflow-hidden rounded-[2.5rem] border border-white/10 bg-white/[0.02] p-10 md:p-14">
+                            <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-sky-500/50 to-transparent" />
+                            <div className="flex flex-col items-center text-center">
+                                <div className="text-4xl font-light text-white md:text-5xl">
+                                    {t.datadoc.pricing.price}
+                                </div>
+                                <div className="mt-8 text-sm font-semibold uppercase tracking-[0.3em] text-sky-400">
+                                    {t.datadoc.pricing.includesTitle}
+                                </div>
+                                <ul className="mt-6 space-y-3 text-lg font-light text-zinc-300">
+                                    {t.datadoc.pricing.includesItems.map((item) => (
+                                        <li key={item} className="flex items-center justify-center gap-3">
+                                            <span className="h-1.5 w-1.5 rounded-full bg-sky-400" />
+                                            <span>{item}</span>
+                                        </li>
+                                    ))}
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </AnimatedSection>
+
                 {/* CTA Section */}
                 <AnimatedSection className="relative overflow-hidden rounded-[3rem] border border-white/10 bg-white/[0.02] px-8 py-24 text-center md:py-32" delay="duration-700">
                     {/* Interior glow */}

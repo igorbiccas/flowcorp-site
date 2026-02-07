@@ -57,6 +57,12 @@ export const translations = {
         standardTitle: "Padronização",
         standardDesc: "Garanta que todos os prontuários sigam uma estrutura clara, rica e profissional.",
       },
+      pricing: {
+        title: "Plano DataDoc",
+        price: "R$ 3.000 / mês",
+        includesTitle: "Inclui",
+        includesItems: ["Até 2.000 anamneses/mês", "Suporte (WhatsApp / e-mail)"],
+      },
       cta: {
         title: "Pronto para elevar sua prática clínica?",
         description: "Junte-se a centenas de médicos que já estão transformando seu fluxo de trabalho com o DataDoc.",
@@ -167,6 +173,12 @@ export const translations = {
         focusDesc: "Maintain eye contact and full attention on the patient while AI handles the notes.",
         standardTitle: "Standardization",
         standardDesc: "Ensure all medical records follow a clear, rich, and professional structure.",
+      },
+      pricing: {
+        title: "DataDoc Plan",
+        price: "R$ 3,000 / month",
+        includesTitle: "Includes",
+        includesItems: ["Up to 2,000 anamneses/month", "Support (WhatsApp / email)"],
       },
       cta: {
         title: "Ready to elevate your clinical practice?",
