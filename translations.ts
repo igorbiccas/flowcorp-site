@@ -21,7 +21,7 @@ export const translations = {
       },
       datadoc: {
         title: "DataDoc",
-        description: "Anamnese automática e inteligência clínica. Transforme consultas em documentação completa.",
+        description: "Anamnese automática a partir da consulta, pronta para o prontuário.",
       },
       gaialink: {
         title: "Gaia Link",
@@ -42,42 +42,42 @@ export const translations = {
       clinicalIntelligence: "Inteligência Clínica",
       heroTitle: "DataDoc",
       heroDescription:
-        "Pare de digitar anamnese. Foque no paciente. Grave a consulta normalmente. O DataDoc transforma o áudio em uma anamnese estruturada, pronta para usar no prontuário. Menos tempo escrevendo. Menos retrabalho. Mais consultas com a mesma equipe.",
+        "Grave a consulta e receba a anamnese estruturada, pronta para o prontuário. Mais tempo com o paciente, menos digitação.",
       howItWorks: {
         title: "Como funciona",
         steps: [
           {
             title: "1",
-            description: "Você grava a conversa da consulta.",
+            description: "Grave a consulta.",
           },
           {
             title: "2",
-            description: "O DataDoc gera a anamnese organizada no modelo clínico.",
+            description: "O DataDoc gera a anamnese.",
           },
           {
             title: "3",
-            description: "Você revisa e usa no prontuário.",
+            description: "Revise e use no prontuário.",
           },
         ],
-        note: "Sem mudar sua rotina. Sem aprender sistema novo.",
+        note: "Sem mudar sua rotina.",
       },
       why: {
         title: "Por que usar",
         items: [
           {
-            title: "Economize minutos preciosos",
+            title: "Ganhe tempo",
             description: "em cada consulta.",
           },
           {
-            title: "Reduza o desgaste",
-            description: "pós-atendimento.",
+            title: "Menos desgaste",
+            description: "no pós-atendimento.",
           },
           {
-            title: "Padronize a documentação",
-            description: "da clínica.",
+            title: "Documentação padronizada",
+            description: "para a clínica.",
           },
           {
-            title: "Mais foco no paciente",
+            title: "Foco no paciente",
             description: "menos burocracia.",
           },
         ],
@@ -85,12 +85,12 @@ export const translations = {
       trial: {
         title: "Teste na prática",
         description:
-          "Use gratuitamente até 3 anamneses por dia, sem cartão e sem compromisso. Veja no mesmo dia se isso faz sentido pra sua rotina.",
+          "Use até 3 anamneses por dia, sem cartão. Avalie na sua rotina.",
       },
       audience: {
         title: "Para quem é",
         description:
-          "Clínicas privadas e consultórios com alto volume de atendimento que querem ganhar tempo sem complicar a operação.",
+          "Clínicas e consultórios com alto volume que querem ganhar tempo sem complicar a operação.",
       },
       pricing: {
         title: "Modelo simples",
@@ -103,11 +103,11 @@ export const translations = {
           "Sem surpresas",
           "Até 2.000 anamneses/mês",
         ],
-        note: "(Implantação e planos sob consulta)",
+        note: "(Implantação sob consulta)",
       },
       cta: {
         title: "Pronto para testar o DataDoc?",
-        description: "Comece agora ou fale com o nosso time para entender o melhor plano.",
+        description: "Comece agora ou fale com o time.",
         primaryButton: "Testar agora",
         secondaryButton: "Falar com a gente",
       },
