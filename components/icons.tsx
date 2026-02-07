@@ -2,7 +2,7 @@
 import React from 'react';
 
 const iconWrapper =
-  'flex h-12 w-12 items-center justify-center rounded-2xl border border-sky-200/20 bg-sky-200/5 text-sky-100/80 backdrop-blur';
+  'flex h-12 w-12 items-center justify-center rounded-2xl border border-white/10 bg-gradient-to-br from-white/10 to-white/5 text-white/80 shadow-[0_0_25px_rgba(56,189,248,0.15)] backdrop-blur';
 
 export const SparklesIcon = () => (
   <div className={iconWrapper}>
@@ -12,13 +12,13 @@ export const SparklesIcon = () => (
       className="h-6 w-6"
       fill="none"
       stroke="currentColor"
-      strokeWidth="1.6"
+      strokeWidth="1.4"
       strokeLinecap="round"
       strokeLinejoin="round"
     >
-      <path d="M15.9 4.2c-1.5-2.6-5.3-2.4-6.5.3l-1.3 3.1c-.3.7-.9 1.2-1.7 1.3l-3.4.4c-2.9.3-4.1 4-1.9 5.9l2.6 2.2c.6.5.9 1.3.8 2.1l-.7 3.3c-.6 2.8 2.5 4.8 4.9 3.4l2.9-1.7c.7-.4 1.5-.4 2.2 0l2.9 1.7c2.5 1.4 5.5-.6 4.9-3.4l-.7-3.3c-.2-.8.2-1.6.8-2.1l2.6-2.2c2.2-1.9 1-5.6-1.9-5.9l-3.4-.4c-.8-.1-1.4-.6-1.7-1.3l-1.3-3.1Z" />
-      <path d="M12 15.5c1-2 3.7-2 4.7 0" />
-      <path d="M13.3 18.8c.9.8 2.4.8 3.3 0" />
+      <path d="M16 4.5 18.6 10l5.5 2.6-5.5 2.6L16 20.6l-2.6-5.4L7.9 12.6l5.5-2.6L16 4.5Z" />
+      <path d="M23.5 20.5l1.2 2.6 2.6 1.2-2.6 1.2-1.2 2.6-1.2-2.6-2.6-1.2 2.6-1.2 1.2-2.6Z" />
+      <path d="M8.7 21.1l.9 1.9 1.9.9-1.9.9-.9 1.9-.9-1.9-1.9-.9 1.9-.9.9-1.9Z" />
     </svg>
   </div>
 );
@@ -31,14 +31,14 @@ export const AnamneseIcon = () => (
       className="h-6 w-6"
       fill="none"
       stroke="currentColor"
-      strokeWidth="1.6"
+      strokeWidth="1.4"
       strokeLinecap="round"
       strokeLinejoin="round"
     >
-      <rect x="5" y="6" width="22" height="22" rx="6" />
-      <path d="M16 11v12" />
-      <path d="M10 17h12" />
-      <path d="M12.5 5.5 16 3l3.5 2.5" />
+      <path d="M9 6.5h9l5 5v12.5a2.5 2.5 0 0 1-2.5 2.5H9a2.5 2.5 0 0 1-2.5-2.5V9a2.5 2.5 0 0 1 2.5-2.5Z" />
+      <path d="M18 6.5v5h5" />
+      <path d="M12 16h8" />
+      <path d="M16 12v8" />
     </svg>
   </div>
 );
