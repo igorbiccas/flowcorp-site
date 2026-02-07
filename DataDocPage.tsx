@@ -8,6 +8,20 @@ import { translations } from './translations';
 const DataDocPage: React.FC = () => {
     // Force Portuguese language for this page
     const t = translations.pt;
+    const heroHighlights = [
+        {
+            title: 'Decisões em segundos',
+            description: 'Organize informações clínicas com clareza e velocidade para atendimentos premium.',
+        },
+        {
+            title: 'Fluxo inteligente',
+            description: 'Automatize partes críticas do atendimento com foco em precisão e contexto.',
+        },
+        {
+            title: 'Padrão institucional',
+            description: 'Entregue um nível consistente de qualidade para toda a equipe.',
+        },
+    ];
 
     React.useEffect(() => {
         document.title = 'DataDoc | Inteligência Clínica - FlowCorp';
@@ -52,7 +66,7 @@ const DataDocPage: React.FC = () => {
                                 rel="noreferrer"
                                 className="group inline-flex h-14 items-center justify-center rounded-full bg-white px-10 text-base font-semibold text-black transition-all duration-300 hover:translate-y-[-2px] hover:shadow-[0_20px_50px_rgba(255,255,255,0.15)]"
                             >
-                                {t.datadoc.cta.primaryButton}
+                                Conhecer DataDoc
                                 <ArrowRightIcon />
                             </a>
                             <a
@@ -61,7 +75,7 @@ const DataDocPage: React.FC = () => {
                                 rel="noreferrer"
                                 className="inline-flex h-14 items-center justify-center rounded-full border border-white/20 px-10 text-base font-semibold text-white transition-all duration-300 hover:border-white/40 hover:bg-white/5"
                             >
-                                {t.datadoc.cta.secondaryButton}
+                                Falar com especialistas
                             </a>
                         </div>
                     </div>
@@ -78,9 +92,9 @@ const DataDocPage: React.FC = () => {
                                 </div>
                             </div>
                             <div className="mt-6 space-y-6">
-                                {t.datadoc.howItWorks.steps.map((step, index) => (
+                                {heroHighlights.map((item, index) => (
                                     <div
-                                        key={step.title}
+                                        key={item.title}
                                         className="rounded-2xl border border-white/10 bg-gradient-to-r from-white/5 to-transparent p-5"
                                     >
                                         <div className="flex items-start gap-4">
@@ -89,16 +103,16 @@ const DataDocPage: React.FC = () => {
                                             </div>
                                             <div>
                                                 <div className="text-sm font-semibold uppercase tracking-[0.2em] text-sky-300">
-                                                    {step.title}
+                                                    {item.title}
                                                 </div>
-                                                <p className="mt-2 text-sm font-light text-zinc-300">{step.description}</p>
+                                                <p className="mt-2 text-sm font-light text-zinc-300">{item.description}</p>
                                             </div>
                                         </div>
                                     </div>
                                 ))}
                             </div>
                             <div className="mt-8 rounded-2xl border border-white/10 bg-white/5 px-5 py-4 text-sm text-zinc-300">
-                                {t.datadoc.howItWorks.note}
+                                Inteligência clínica com estética premium e operação enxuta.
                             </div>
                         </div>
                     </div>
