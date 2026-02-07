@@ -43,6 +43,27 @@ export const AnamneseIcon = () => (
   </div>
 );
 
+export const InsightIcon = () => (
+  <div className={iconWrapper}>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 32 32"
+      className="h-6 w-6"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="1.4"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
+      <path d="M6.5 18.5a9.5 9.5 0 0 1 19 0" />
+      <path d="M10 18.5a6 6 0 0 1 12 0" />
+      <path d="M16 23.5v2.5" />
+      <path d="M12.5 26h7" />
+      <circle cx="16" cy="18.5" r="1.5" />
+    </svg>
+  </div>
+);
+
 export const InstagramIcon = () => (
   <svg
     xmlns="http://www.w3.org/2000/svg"

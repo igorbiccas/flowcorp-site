@@ -2,7 +2,7 @@
 import React from 'react';
 import Header from './components/Header';
 import AnimatedSection from './components/AnimatedSection';
-import { AnamneseIcon, SparklesIcon, ArrowRightIcon } from './components/icons';
+import { AnamneseIcon, SparklesIcon, InsightIcon, ArrowRightIcon } from './components/icons';
 import { translations } from './translations';
 
 const DataDocPage: React.FC = () => {
@@ -85,7 +85,7 @@ const DataDocPage: React.FC = () => {
                                     >
                                         <div className="flex items-start gap-4">
                                             <div className="mt-1">
-                                                {index === 0 ? <AnamneseIcon /> : <SparklesIcon />}
+                                                {index === 0 ? <AnamneseIcon /> : index === 1 ? <InsightIcon /> : <SparklesIcon />}
                                             </div>
                                             <div>
                                                 <div className="text-sm font-semibold uppercase tracking-[0.2em] text-sky-300">
@@ -125,7 +125,9 @@ const DataDocPage: React.FC = () => {
                                     </div>
                                     <div className="text-xs font-semibold text-zinc-500">0{index + 1}</div>
                                 </div>
-                                <div className="mt-6">{index === 0 ? <AnamneseIcon /> : <SparklesIcon />}</div>
+                                <div className="mt-6">
+                                    {index === 0 ? <AnamneseIcon /> : index === 1 ? <InsightIcon /> : <SparklesIcon />}
+                                </div>
                                 <p className="mt-6 text-lg font-light leading-relaxed text-zinc-300">{step.description}</p>
                             </div>
                         ))}
