@@ -102,41 +102,28 @@ const App: React.FC = () => {
       <main className="relative z-10 flex flex-col pt-32 md:pt-48">
         {/* Hero Section */}
         <section className="px-6 md:px-8">
-          <div className="mx-auto w-full max-w-6xl">
-            <AnimatedSection className="grid gap-8 md:grid-cols-[minmax(0,1.1fr)_minmax(0,0.9fr)] md:items-end md:gap-10" delay="duration-700">
-              <div className="space-y-8 md:space-y-10">
-                <span className="inline-flex items-center rounded-full border border-cyan-300/20 bg-cyan-300/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.22em] text-cyan-100/90">
-                  FlowCorp AI Studio
-                </span>
-
-                <div className="space-y-6">
-                  <h1 className="max-w-2xl text-4xl font-semibold leading-[1.03] tracking-tight text-white md:text-7xl">
-                    {t.app.hero.title}
-                  </h1>
-                  <p className="max-w-xl text-lg leading-relaxed text-zinc-300 md:text-xl md:leading-8">
-                    {t.app.hero.subtitle}
-                  </p>
-                </div>
-
-                <div className="flex flex-wrap items-center gap-4">
-                  <a
-                    href="#contato"
-                    className="inline-flex items-center justify-center rounded-full border border-white/15 bg-white px-7 py-3 text-sm font-semibold uppercase tracking-[0.18em] text-zinc-900 transition-all duration-300 hover:scale-[1.02] hover:border-white hover:bg-zinc-100"
-                  >
-                    {t.app.hero.contactButton}
-                  </a>
-                  <span className="text-sm text-zinc-400">Projetos sob medida com foco em resultado real.</span>
-                </div>
+          <div className="mx-auto w-full max-w-5xl">
+            <AnimatedSection className="space-y-10 md:space-y-12" delay="duration-700">
+              <div className="max-w-3xl space-y-6 md:space-y-7">
+                <h1 className="text-4xl font-semibold leading-[1.1] tracking-tight text-white md:text-6xl">
+                  {t.app.hero.title}
+                </h1>
+                <p className="max-w-2xl text-lg leading-8 text-zinc-300 md:text-xl">
+                  {t.app.hero.subtitle}
+                </p>
+                <a
+                  href="#contato"
+                  className="inline-flex items-center justify-center rounded-full bg-white px-7 py-3 text-sm font-semibold uppercase tracking-[0.16em] text-zinc-900 transition-colors duration-300 hover:bg-zinc-200"
+                >
+                  {t.app.hero.contactButton}
+                </a>
               </div>
 
-              <div className="rounded-3xl border border-white/10 bg-gradient-to-br from-white/[0.08] via-white/[0.04] to-transparent p-7 shadow-[0_25px_70px_-40px_rgba(59,130,246,0.7)] backdrop-blur-sm md:p-10">
-                <h2 className="text-2xl font-semibold text-white md:text-[30px]">{t.app.hero.whatWeDoTitle}</h2>
-                <ul className="mt-7 space-y-4">
+              <div className="max-w-3xl border-l border-white/15 pl-5 md:pl-6">
+                <h2 className="text-xl font-medium text-white md:text-2xl">{t.app.hero.whatWeDoTitle}</h2>
+                <ul className="mt-5 space-y-3 text-base leading-relaxed text-zinc-300 md:text-lg">
                   {t.app.hero.whatWeDoItems.map((item) => (
-                    <li key={item} className="flex items-start gap-3 text-base leading-relaxed text-zinc-200 md:text-lg">
-                      <span className="mt-2 h-2 w-2 shrink-0 rounded-full bg-cyan-300" />
-                      <span>{item}</span>
-                    </li>
+                    <li key={item}>{item}</li>
                   ))}
                 </ul>
               </div>
