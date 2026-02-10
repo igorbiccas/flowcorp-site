@@ -7,6 +7,31 @@ import { useLanguage } from './contexts/LanguageContext';
 
 const App: React.FC = () => {
   const { t } = useLanguage();
+  const [animatedStats, setAnimatedStats] = React.useState({ users: 0, apps: 0, countries: 0 });
+
+  React.useEffect(() => {
+    const statsTarget = { users: 1000, apps: 3, countries: 30 };
+    const duration = 1400;
+    const start = performance.now();
+
+    const animateStats = (timestamp: number) => {
+      const elapsed = timestamp - start;
+      const progress = Math.min(elapsed / duration, 1);
+      const easedProgress = 1 - Math.pow(1 - progress, 3);
+
+      setAnimatedStats({
+        users: Math.round(statsTarget.users * easedProgress),
+        apps: Math.round(statsTarget.apps * easedProgress),
+        countries: Math.round(statsTarget.countries * easedProgress),
+      });
+
+      if (progress < 1) {
+        requestAnimationFrame(animateStats);
+      }
+    };
+
+    requestAnimationFrame(animateStats);
+  }, []);
 
   const b2bProducts = [
     {
@@ -110,18 +135,18 @@ const App: React.FC = () => {
                   </a>
                 ))}
               </div>
-              <div className="grid gap-6 rounded-3xl border border-white/10 bg-white/[0.04] px-8 py-10 text-center shadow-[0_20px_60px_-40px_rgba(59,130,246,0.4)] md:grid-cols-3">
+              <div className="grid grid-cols-3 gap-4 rounded-3xl border border-white/10 bg-white/[0.04] px-4 py-8 text-center shadow-[0_20px_60px_-40px_rgba(59,130,246,0.4)] md:gap-6 md:px-8 md:py-10">
                 <div className="space-y-2">
-                  <div className="text-3xl font-semibold tracking-tight text-white md:text-4xl">963</div>
-                  <div className="text-xs font-semibold uppercase tracking-[0.35em] text-zinc-400">Usuários</div>
+                  <div className="text-2xl font-semibold tracking-tight text-white md:text-4xl">+{animatedStats.users}</div>
+                  <div className="text-[10px] font-semibold uppercase tracking-[0.25em] text-zinc-400 md:text-xs md:tracking-[0.35em]">{t.app.stats.usersLabel}</div>
                 </div>
                 <div className="space-y-2">
-                  <div className="text-3xl font-semibold tracking-tight text-white md:text-4xl">3</div>
-                  <div className="text-xs font-semibold uppercase tracking-[0.35em] text-zinc-400">Apps</div>
+                  <div className="text-2xl font-semibold tracking-tight text-white md:text-4xl">{animatedStats.apps}</div>
+                  <div className="text-[10px] font-semibold uppercase tracking-[0.25em] text-zinc-400 md:text-xs md:tracking-[0.35em]">{t.app.stats.appsLabel}</div>
                 </div>
                 <div className="space-y-2">
-                  <div className="text-3xl font-semibold tracking-tight text-white md:text-4xl">22</div>
-                  <div className="text-xs font-semibold uppercase tracking-[0.35em] text-zinc-400">Países</div>
+                  <div className="text-2xl font-semibold tracking-tight text-white md:text-4xl">+{animatedStats.countries}</div>
+                  <div className="text-[10px] font-semibold uppercase tracking-[0.25em] text-zinc-400 md:text-xs md:tracking-[0.35em]">{t.app.stats.countriesLabel}</div>
                 </div>
               </div>
             </AnimatedSection>
