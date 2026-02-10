@@ -17,6 +17,14 @@ const SupportPage: React.FC = () => {
               <p className="text-xs font-medium uppercase tracking-[0.2em] text-zinc-500">Support</p>
               <h1 className="text-4xl font-medium tracking-tighter text-white md:text-5xl">{t.support.heroTitle}</h1>
               <p className="max-w-2xl text-lg leading-relaxed text-zinc-400">{t.support.intro}</p>
+              <a
+                href="https://world.org/pt-br/ecosystem/app_d7d74f7670c9cc36e9bbcc47874c8817"
+                target="_blank"
+                rel="noreferrer"
+                className="inline-flex items-center justify-center rounded-full border border-white/15 bg-white/10 px-5 py-2.5 text-xs font-semibold uppercase tracking-[0.2em] text-white transition-colors hover:border-white/40 hover:bg-white/20"
+              >
+                {t.support.worldAppLinkLabel}
+              </a>
             </div>
           </div>
         </AnimatedSection>
