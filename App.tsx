@@ -8,16 +8,40 @@ import { useLanguage } from './contexts/LanguageContext';
 const App: React.FC = () => {
   const { t } = useLanguage();
   const [animatedStats, setAnimatedStats] = React.useState({ users: 0, apps: 0, countries: 0 });
+  const [hasAnimatedStats, setHasAnimatedStats] = React.useState(false);
+  const statsRef = React.useRef<HTMLDivElement | null>(null);
 
   React.useEffect(() => {
+    const statsSection = statsRef.current;
+
+    if (!statsSection || hasAnimatedStats) return;
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (!entry.isIntersecting) return;
+
+        setHasAnimatedStats(true);
+        observer.disconnect();
+      },
+      { threshold: 0.35 },
+    );
+
+    observer.observe(statsSection);
+
+    return () => observer.disconnect();
+  }, [hasAnimatedStats]);
+
+  React.useEffect(() => {
+    if (!hasAnimatedStats) return;
+
     const statsTarget = { users: 1000, apps: 3, countries: 30 };
-    const duration = 1400;
+    const duration = 2400;
     const start = performance.now();
 
     const animateStats = (timestamp: number) => {
       const elapsed = timestamp - start;
       const progress = Math.min(elapsed / duration, 1);
-      const easedProgress = 1 - Math.pow(1 - progress, 3);
+      const easedProgress = 1 - Math.pow(1 - progress, 4);
 
       setAnimatedStats({
         users: Math.round(statsTarget.users * easedProgress),
@@ -31,7 +55,7 @@ const App: React.FC = () => {
     };
 
     requestAnimationFrame(animateStats);
-  }, []);
+  }, [hasAnimatedStats]);
 
   const b2bProducts = [
     {
@@ -135,7 +159,7 @@ const App: React.FC = () => {
                   </a>
                 ))}
               </div>
-              <div className="grid grid-cols-3 gap-4 rounded-3xl border border-white/10 bg-white/[0.04] px-4 py-8 text-center shadow-[0_20px_60px_-40px_rgba(59,130,246,0.4)] md:gap-6 md:px-8 md:py-10">
+              <div ref={statsRef} className="grid grid-cols-3 gap-4 rounded-3xl border border-white/10 bg-white/[0.04] px-4 py-8 text-center shadow-[0_20px_60px_-40px_rgba(59,130,246,0.4)] md:gap-6 md:px-8 md:py-10">
                 <div className="space-y-2">
                   <div className="text-2xl font-semibold tracking-tight text-white md:text-4xl">+{animatedStats.users}</div>
                   <div className="text-[10px] font-semibold uppercase tracking-[0.25em] text-zinc-400 md:text-xs md:tracking-[0.35em]">{t.app.stats.usersLabel}</div>
