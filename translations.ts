@@ -127,6 +127,7 @@ export const translations = {
     support: {
       heroTitle: 'Suporte SelfBrain',
       intro: 'Respostas rápidas para usuários do World App.',
+      worldAppLinkLabel: 'Ver SelfBrain no World App',
       sections: [
         {
           title: '🪙 FlowCoins',
@@ -256,6 +257,7 @@ export const translations = {
     support: {
       heroTitle: 'SelfBrain Support',
       intro: 'Frequently asked questions for World App users.',
+      worldAppLinkLabel: 'View SelfBrain on World App',
       sections: [
         {
           title: '🪙 FlowCoins',
