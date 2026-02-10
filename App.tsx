@@ -51,6 +51,37 @@ const App: React.FC = () => {
       <Header />
 
       <main className="relative z-10 flex flex-col pt-32 md:pt-48">
+        {/* Hero Section */}
+        <section className="px-6 md:px-8">
+          <div className="mx-auto w-full max-w-5xl">
+            <AnimatedSection className="space-y-8" delay="duration-700">
+              <div className="max-w-3xl space-y-5">
+                <h1 className="text-4xl font-semibold leading-tight text-white md:text-6xl">
+                  {t.app.hero.title}
+                </h1>
+                <p className="text-lg text-zinc-300 md:text-xl">
+                  {t.app.hero.subtitle}
+                </p>
+                <a
+                  href="#contato"
+                  className="inline-flex items-center justify-center rounded-full border border-white/20 bg-white/10 px-7 py-3 text-sm font-semibold uppercase tracking-[0.2em] text-white transition-all duration-300 hover:border-white/40 hover:bg-white/20"
+                >
+                  {t.app.hero.contactButton}
+                </a>
+              </div>
+
+              <div className="rounded-3xl border border-white/10 bg-white/[0.04] p-8 md:p-10">
+                <h2 className="text-2xl font-semibold text-white md:text-3xl">{t.app.hero.whatWeDoTitle}</h2>
+                <ul className="mt-6 space-y-4 text-base text-zinc-300 md:text-lg">
+                  {t.app.hero.whatWeDoItems.map((item) => (
+                    <li key={item}>• {item}</li>
+                  ))}
+                </ul>
+              </div>
+            </AnimatedSection>
+          </div>
+        </section>
+
         {/* B2B Products Section */}
         <section className="mt-24 px-6 md:px-8">
           <div className="mx-auto w-full max-w-5xl">
