@@ -7,6 +7,18 @@ export const translations = {
       contactInstagram: "Fale com o suporte no Instagram",
     },
     app: {
+      hero: {
+        title: "Aplicamos IA para resolver problemas reais de negócio.",
+        subtitle: "Automação, organização de dados e soluções sob medida.",
+        contactButton: "entre em contato",
+        whatWeDoTitle: "O que fazemos",
+        whatWeDoItems: [
+          "Organização e estruturação de dados",
+          "Automações com IA para operações reais",
+          "Projetos sob medida, do problema à entrega",
+          "desenvolvimento de software e sites",
+        ],
+      },
       projectsTitle: "Soluções B2B",
       miniAppsTitle: "Miniapps da World",
       explore: "Explorar →",
@@ -167,6 +179,18 @@ export const translations = {
       contactInstagram: "Contact support on Instagram",
     },
     app: {
+      hero: {
+        title: "We apply AI to solve real business problems.",
+        subtitle: "Automation, data organization, and tailor-made solutions.",
+        contactButton: "contact us",
+        whatWeDoTitle: "What we do",
+        whatWeDoItems: [
+          "Data organization and structuring",
+          "AI automations for real operations",
+          "Tailor-made projects, from problem to delivery",
+          "Software and website development",
+        ],
+      },
       projectsTitle: "B2B Solutions",
       miniAppsTitle: "World Mini-Apps",
       explore: "Explore →",
