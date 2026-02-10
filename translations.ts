@@ -47,15 +47,15 @@ export const translations = {
         title: "Como funciona",
         steps: [
           {
-            title: "1",
+            title: "Captação",
             description: "Grave a consulta.",
           },
           {
-            title: "2",
+            title: "Anamnese automática",
             description: "O DataDoc gera a anamnese.",
           },
           {
-            title: "3",
+            title: "Revisão",
             description: "Revise e use no prontuário.",
           },
         ],

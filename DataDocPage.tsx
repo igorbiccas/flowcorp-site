@@ -130,10 +130,12 @@ const DataDocPage: React.FC = () => {
                             <div key={step.title} className="relative rounded-[2rem] border border-white/10 bg-white/[0.03] p-8">
                                 <div className="absolute inset-x-6 top-0 h-px bg-gradient-to-r from-transparent via-sky-500/60 to-transparent" />
                                 <div className="flex items-center justify-between">
-                                    <div className="text-sm font-semibold uppercase tracking-[0.2em] text-sky-300">
+                                    <div className="inline-flex items-center gap-3 text-sm font-semibold uppercase tracking-[0.2em] text-sky-300">
+                                        <span className="flex h-8 w-8 items-center justify-center rounded-full border border-sky-400/40 bg-sky-500/10 text-xs font-semibold text-sky-200">
+                                            {index + 1}
+                                        </span>
                                         {step.title}
                                     </div>
-                                    <div className="text-xs font-semibold text-zinc-500">0{index + 1}</div>
                                 </div>
                                 <div className="mt-6">
                                     {index === 0 ? <AnamneseIcon /> : index === 1 ? <InsightIcon /> : <SparklesIcon />}
