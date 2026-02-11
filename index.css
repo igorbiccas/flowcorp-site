@@ -1,22 +1,33 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
 body {
     margin: 0;
     padding: 0;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    background-color: #0f0f12;
+    background-color: #09090b;
     color: #fff;
     font-family: 'Inter', sans-serif;
 }
 
-selection {
+::selection {
     background: rgba(255, 255, 255, 0.1);
     color: #fff;
+}
+
+#root {
+    isolation: isolate;
 }
 
 @layer utilities {
     .text-balance {
         text-wrap: balance;
+    }
+
+    .openai-grid {
+        background-image:
+            linear-gradient(to right, rgba(255, 255, 255, 0.06) 1px, transparent 1px),
+            linear-gradient(to bottom, rgba(255, 255, 255, 0.06) 1px, transparent 1px);
+        background-size: 48px 48px;
     }
 }
