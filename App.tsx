@@ -101,28 +101,10 @@ const App: React.FC = () => {
         <section className="px-6 md:px-8">
           <div className="mx-auto w-full max-w-5xl">
             <AnimatedSection className="space-y-10 md:space-y-12" delay="duration-700">
-              <div className="max-w-3xl space-y-6 md:space-y-7">
+              <div className="mx-auto max-w-3xl text-center">
                 <h1 className="text-4xl font-semibold leading-[1.05] tracking-tight text-zinc-50 md:text-6xl">
                   {t.app.hero.title}
                 </h1>
-                <p className="max-w-2xl text-lg leading-8 text-zinc-300 md:text-xl">
-                  {t.app.hero.subtitle}
-                </p>
-                <a
-                  href="#contato"
-                  className="inline-flex items-center justify-center rounded-full border border-white/20 bg-white px-7 py-3 text-sm font-semibold uppercase tracking-[0.16em] text-zinc-900 transition-all duration-300 hover:-translate-y-0.5 hover:bg-zinc-100"
-                >
-                  {t.app.hero.contactButton}
-                </a>
-              </div>
-
-              <div className="max-w-3xl border-l border-white/20 pl-5 md:pl-6">
-                <h2 className="text-xl font-medium text-zinc-100 md:text-2xl">{t.app.hero.whatWeDoTitle}</h2>
-                <ul className="mt-5 space-y-3 text-base leading-relaxed text-zinc-300 md:text-lg">
-                  {t.app.hero.whatWeDoItems.map((item) => (
-                    <li key={item}>{item}</li>
-                  ))}
-                </ul>
               </div>
             </AnimatedSection>
           </div>
