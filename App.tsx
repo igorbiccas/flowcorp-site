@@ -127,6 +127,13 @@ const App: React.FC = () => {
                     className="group relative block overflow-hidden rounded-3xl border border-white/15 bg-zinc-900/70 p-10 transition-all duration-300 hover:-translate-y-1 hover:border-white/30 hover:bg-zinc-900"
                   >
                     <div
+                      className="pointer-events-none absolute inset-0 opacity-80 transition duration-300 group-hover:opacity-100"
+                      style={{
+                        background:
+                          'radial-gradient(circle at 12% 18%, rgba(56,189,248,0.22) 0%, transparent 42%), radial-gradient(circle at 88% 22%, rgba(236,72,153,0.2) 0%, transparent 38%), radial-gradient(circle at 50% 100%, rgba(168,85,247,0.24) 0%, transparent 46%)',
+                      }}
+                    />
+                    <div
                       className="pointer-events-none absolute inset-0 opacity-0 transition duration-300 group-hover:opacity-100"
                       style={{ background: 'linear-gradient(135deg, rgba(255,255,255,0.10) 0%, rgba(255,255,255,0) 60%)' }}
                     />
