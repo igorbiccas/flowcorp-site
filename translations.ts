@@ -8,7 +8,7 @@ export const translations = {
     },
     app: {
       hero: {
-        title: "Aplicamos IA para resolver problemas reais de negócio.",
+        title: "Inteligência Artificial do Brasil",
         subtitle: "Automação, organização de dados e soluções sob medida.",
         contactButton: "entre em contato",
         whatWeDoTitle: "O que fazemos",
