@@ -174,19 +174,19 @@ const App: React.FC = () => {
               </div>
               <div
                 ref={statsRef}
-                className="grid grid-cols-3 gap-4 rounded-3xl border border-white/15 bg-zinc-900/75 px-4 py-8 text-center md:gap-6 md:px-8 md:py-10"
+                className="grid grid-cols-3 gap-3 rounded-2xl border border-white/10 bg-zinc-900/55 px-3 py-5 text-center md:gap-4 md:px-5 md:py-6"
               >
-                <div className="space-y-2">
-                  <div className="text-2xl font-semibold tracking-tight text-white md:text-4xl">+{animatedStats.users}</div>
-                  <div className="text-[10px] font-semibold uppercase tracking-[0.25em] text-zinc-400 md:text-xs md:tracking-[0.35em]">{t.app.stats.usersLabel}</div>
+                <div className="space-y-1">
+                  <div className="text-lg font-medium tracking-tight text-zinc-100 md:text-2xl">+{animatedStats.users}</div>
+                  <div className="text-[9px] font-medium uppercase tracking-[0.2em] text-zinc-500 md:text-[10px] md:tracking-[0.25em]">{t.app.stats.usersLabel}</div>
                 </div>
-                <div className="space-y-2">
-                  <div className="text-2xl font-semibold tracking-tight text-white md:text-4xl">{animatedStats.apps}</div>
-                  <div className="text-[10px] font-semibold uppercase tracking-[0.25em] text-zinc-400 md:text-xs md:tracking-[0.35em]">{t.app.stats.appsLabel}</div>
+                <div className="space-y-1">
+                  <div className="text-lg font-medium tracking-tight text-zinc-100 md:text-2xl">{animatedStats.apps}</div>
+                  <div className="text-[9px] font-medium uppercase tracking-[0.2em] text-zinc-500 md:text-[10px] md:tracking-[0.25em]">{t.app.stats.appsLabel}</div>
                 </div>
-                <div className="space-y-2">
-                  <div className="text-2xl font-semibold tracking-tight text-white md:text-4xl">+{animatedStats.countries}</div>
-                  <div className="text-[10px] font-semibold uppercase tracking-[0.25em] text-zinc-400 md:text-xs md:tracking-[0.35em]">{t.app.stats.countriesLabel}</div>
+                <div className="space-y-1">
+                  <div className="text-lg font-medium tracking-tight text-zinc-100 md:text-2xl">+{animatedStats.countries}</div>
+                  <div className="text-[9px] font-medium uppercase tracking-[0.2em] text-zinc-500 md:text-[10px] md:tracking-[0.25em]">{t.app.stats.countriesLabel}</div>
                 </div>
               </div>
             </AnimatedSection>
