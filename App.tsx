@@ -174,15 +174,15 @@ const App: React.FC = () => {
               </div>
               <div
                 ref={statsRef}
-                className="grid grid-cols-3 gap-3 rounded-2xl border border-white/10 bg-zinc-900/55 px-3 py-5 text-center md:gap-4 md:px-5 md:py-6"
+                className="mx-auto grid w-full max-w-xl grid-cols-3 gap-3 rounded-2xl border border-white/10 bg-zinc-900/55 px-3 py-5 text-center md:max-w-2xl md:gap-4 md:px-5 md:py-6"
               >
-                <div className="space-y-1">
-                  <div className="text-lg font-medium tracking-tight text-zinc-100 md:text-2xl">+{animatedStats.users}</div>
-                  <div className="text-[9px] font-medium uppercase tracking-[0.2em] text-zinc-500 md:text-[10px] md:tracking-[0.25em]">{t.app.stats.usersLabel}</div>
-                </div>
                 <div className="space-y-1">
                   <div className="text-lg font-medium tracking-tight text-zinc-100 md:text-2xl">{animatedStats.apps}</div>
                   <div className="text-[9px] font-medium uppercase tracking-[0.2em] text-zinc-500 md:text-[10px] md:tracking-[0.25em]">{t.app.stats.appsLabel}</div>
+                </div>
+                <div className="space-y-1">
+                  <div className="text-lg font-medium tracking-tight text-zinc-100 md:text-2xl">+{animatedStats.users}</div>
+                  <div className="text-[9px] font-medium uppercase tracking-[0.2em] text-zinc-500 md:text-[10px] md:tracking-[0.25em]">{t.app.stats.usersLabel}</div>
                 </div>
                 <div className="space-y-1">
                   <div className="text-lg font-medium tracking-tight text-zinc-100 md:text-2xl">+{animatedStats.countries}</div>
