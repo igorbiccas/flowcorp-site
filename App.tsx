@@ -105,6 +105,45 @@ const App: React.FC = () => {
                 <h1 className="text-4xl font-semibold leading-[1.05] tracking-tight text-zinc-50 md:text-6xl">
                   {t.app.hero.title}
                 </h1>
+                <p className="mx-auto mt-6 max-w-2xl text-base leading-relaxed text-zinc-300 md:text-xl">
+                  {t.app.hero.subtitle}
+                </p>
+                <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
+                  <a
+                    href="https://www.instagram.com/flowcorp_"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="inline-flex h-11 items-center justify-center rounded-full bg-white px-6 text-xs font-semibold uppercase tracking-[0.16em] text-zinc-950 transition-transform duration-200 hover:scale-[1.02]"
+                  >
+                    {t.app.hero.primaryCta}
+                  </a>
+                  <a
+                    href="https://chat.whatsapp.com/LnN6r20k6IhHWxoRVSdGQO"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="inline-flex h-11 items-center justify-center rounded-full border border-white/20 bg-white/5 px-6 text-xs font-semibold uppercase tracking-[0.16em] text-white transition-colors hover:bg-white/10"
+                  >
+                    {t.app.hero.secondaryCta}
+                  </a>
+                </div>
+              </div>
+            </AnimatedSection>
+          </div>
+        </section>
+
+        <section className="mt-14 px-6 md:px-8">
+          <div className="mx-auto w-full max-w-5xl">
+            <AnimatedSection className="w-full space-y-8" delay="duration-700">
+              <div className="max-w-2xl space-y-4">
+                <div className="h-px w-20 bg-gradient-to-r from-zinc-100 via-zinc-500 to-transparent" />
+                <h2 className="text-sm font-medium uppercase tracking-[0.2em] text-zinc-400">{t.app.hero.whatWeDoTitle}</h2>
+              </div>
+              <div className="grid gap-3 md:grid-cols-2">
+                {t.app.hero.whatWeDoItems.map((item) => (
+                  <div key={item} className="rounded-2xl border border-white/10 bg-zinc-900/50 px-5 py-4 text-sm leading-relaxed text-zinc-300">
+                    {item}
+                  </div>
+                ))}
               </div>
             </AnimatedSection>
           </div>
