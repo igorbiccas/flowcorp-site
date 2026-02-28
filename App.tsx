@@ -33,7 +33,7 @@ const App: React.FC = () => {
   React.useEffect(() => {
     if (!hasAnimatedStats) return;
 
-    const statsTarget = { users: 1000, apps: 3, countries: 30 };
+    const statsTarget = { users: 1200, apps: 3, countries: 30 };
     const duration = 2400;
     const start = performance.now();
 
