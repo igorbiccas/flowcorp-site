@@ -20,17 +20,17 @@ const DataDocPage: React.FC = () => {
                     <h1 className="text-4xl font-medium leading-tight text-white md:text-6xl">DataDoc</h1>
 
                     <p className="mt-5 max-w-3xl text-xl leading-relaxed text-zinc-200">
-                        Transforme 10 minutos de digitação em 30 segundos.
+                        Documentação clínica rápida, padronizada e pronta para uso.
                     </p>
 
                     <p className="mt-4 max-w-3xl text-lg leading-relaxed text-zinc-300">
-                        Grave a consulta e receba a anamnese estruturada automaticamente, pronta para o prontuário.
+                        Grave a consulta e receba a anamnese estruturada automaticamente para o prontuário.
                     </p>
 
                     <div className="mt-8 space-y-1 text-zinc-300">
-                        <p>Mais produtividade médica.</p>
-                        <p>Mais faturamento por hora.</p>
+                        <p>Mais produtividade.</p>
                         <p>Menos retrabalho.</p>
+                        <p>Mais foco no paciente.</p>
                     </div>
 
                     <div className="mt-10 flex flex-col gap-3 sm:flex-row">
@@ -57,12 +57,12 @@ const DataDocPage: React.FC = () => {
                 <AnimatedSection className="border-b border-zinc-800 py-16" delay="duration-700">
                     <h2 className="text-2xl font-medium text-white md:text-3xl">O problema que resolvemos</h2>
                     <p className="mt-6 max-w-3xl text-lg leading-relaxed text-zinc-300">
-                        Médicos perdem até 10 minutos por consulta digitando anamnese. Em 2.000 atendimentos/mês, isso representa mais de 300 horas de trabalho administrativo.
+                        O registro manual consome tempo clínico e gera sobrecarga operacional.
                     </p>
                     <div className="mt-8 space-y-1 text-zinc-300">
                         <p>Tempo caro.</p>
-                        <p>Desgaste alto.</p>
-                        <p>Produtividade limitada.</p>
+                        <p>Desgaste da equipe.</p>
+                        <p>Menor eficiência.</p>
                     </div>
                     <p className="mt-8 text-lg text-zinc-200">O DataDoc elimina esse gargalo.</p>
                 </AnimatedSection>
@@ -74,15 +74,15 @@ const DataDocPage: React.FC = () => {
                         {[
                             {
                                 title: '1. Grave normalmente',
-                                description: 'Sem mudar sua rotina.',
+                                description: 'A consulta segue como sempre.',
                             },
                             {
                                 title: '2. IA estrutura automaticamente',
-                                description: 'Anamnese organizada, clara e padronizada.',
+                                description: 'Resumo claro e padronizado em segundos.',
                             },
                             {
                                 title: '3. Revise e envie',
-                                description: 'Pronto para integrar ao prontuário.',
+                                description: 'Valide e registre no prontuário.',
                             },
                         ].map((step) => (
                             <div key={step.title} className="rounded-xl border border-zinc-800 bg-zinc-900 p-6">
@@ -92,7 +92,7 @@ const DataDocPage: React.FC = () => {
                         ))}
                     </div>
 
-                    <p className="mt-8 text-sm text-zinc-400">Leva 30 segundos.</p>
+                    <p className="mt-8 text-sm text-zinc-400">Fluxo simples e imediato.</p>
                 </AnimatedSection>
 
                 <AnimatedSection className="border-b border-zinc-800 py-16" delay="duration-700">
@@ -100,11 +100,11 @@ const DataDocPage: React.FC = () => {
 
                     <ul className="mt-8 space-y-3 text-zinc-200">
                         {[
-                            'Até 300 horas economizadas por mês',
+                            'Economia de tempo em escala',
                             'Redução de erros e retrabalho',
                             'Documentação padronizada',
-                            'Mais consultas por período',
-                            'Melhor experiência para o paciente',
+                            'Mais capacidade de atendimento',
+                            'Melhor experiência do paciente',
                         ].map((item) => (
                             <li key={item} className="flex items-start gap-3">
                                 <span className="mt-1">✔</span>
@@ -120,23 +120,22 @@ const DataDocPage: React.FC = () => {
                     <h2 className="text-2xl font-medium text-white md:text-3xl">Modelo de contratação</h2>
 
                     <div className="mt-8 rounded-xl border border-zinc-800 bg-zinc-900 p-8">
-                        <div className="text-3xl font-semibold text-white">R$ 3.000 / mês</div>
+                        <div className="text-3xl font-semibold text-white">Plano mensal sob consulta</div>
                         <ul className="mt-6 space-y-2 text-sm text-zinc-200">
-                            <li>Até 2.000 anamneses mensais</li>
-                            <li>Sem cobrança por médico</li>
-                            <li>Mensalidade fixa</li>
-                            <li>Sem taxas ocultas</li>
+                            <li>Escalável para o volume da clínica</li>
+                            <li>Sem cobrança individual por médico</li>
+                            <li>Condições transparentes</li>
                         </ul>
-                        <p className="mt-5 text-zinc-300">Implantação sob consulta.</p>
+                        <p className="mt-5 text-zinc-300">Implantação e detalhes comerciais sob consulta.</p>
                     </div>
                 </AnimatedSection>
 
                 <AnimatedSection className="border-b border-zinc-800 py-16" delay="duration-700">
                     <h2 className="text-2xl font-medium text-white md:text-3xl">Para quem é</h2>
                     <ul className="mt-6 space-y-2 text-zinc-300">
-                        <li>Clínicas com alto volume de atendimento</li>
-                        <li>Especialidades ambulatoriais</li>
-                        <li>Redes que buscam eficiência operacional</li>
+                        <li>Clínicas com alto volume de atendimentos</li>
+                        <li>Especialidades que exigem documentação recorrente</li>
+                        <li>Operações que buscam eficiência e padronização</li>
                     </ul>
                 </AnimatedSection>
 
