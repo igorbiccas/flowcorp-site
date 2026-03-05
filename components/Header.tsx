@@ -34,8 +34,19 @@ const Header: React.FC<HeaderProps> = ({ showLanguageSelector = true }) => {
         </a>
 
         <div className="flex items-center gap-4">
-          <nav className="flex items-center gap-8">
-            {/* Nav links removed */}
+          <nav className="hidden items-center gap-6 md:flex">
+            <a href="/" className="text-xs uppercase tracking-[0.2em] text-zinc-400 transition-colors hover:text-white">
+              Home
+            </a>
+            <a href="/#contato" className="text-xs uppercase tracking-[0.2em] text-zinc-400 transition-colors hover:text-white">
+              Contato
+            </a>
+            <a href="/selfbrain" className="text-xs uppercase tracking-[0.2em] text-zinc-400 transition-colors hover:text-white">
+              SelfBrain
+            </a>
+            <a href="/datadoc" className="text-xs uppercase tracking-[0.2em] text-zinc-400 transition-colors hover:text-white">
+              DataDoc
+            </a>
           </nav>
           {showLanguageSelector && (
             <button

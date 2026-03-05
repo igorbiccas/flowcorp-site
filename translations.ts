@@ -11,6 +11,8 @@ export const translations = {
         title: "Desenvolvemos Software com IA",
         subtitle: "Automação, organização de dados e soluções sob medida.",
         contactButton: "entre em contato",
+        primaryCta: "Agendar demonstração",
+        secondaryCta: "Falar no WhatsApp",
         whatWeDoTitle: "O que fazemos",
         whatWeDoItems: [
           "Organização e estruturação de dados",
@@ -184,6 +186,8 @@ export const translations = {
         title: "We apply AI to solve real business problems.",
         subtitle: "Automation, data organization, and tailor-made solutions.",
         contactButton: "contact us",
+        primaryCta: "Book a demo",
+        secondaryCta: "Talk on WhatsApp",
         whatWeDoTitle: "What we do",
         whatWeDoItems: [
           "Data organization and structuring",
