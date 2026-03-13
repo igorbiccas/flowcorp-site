@@ -8,8 +8,10 @@ export const translations = {
     },
     app: {
       hero: {
-        title: "IA aplicada para transformar operações empresariais",
-        subtitle: "Projetamos e implementamos soluções de IA para reduzir custos operacionais, acelerar decisões e escalar processos críticos.",
+        title: "IA aplicada para acelerar resultados de empresas",
+        subtitle: "Automatizamos processos, organizamos dados e colocamos IA para operar no fluxo real do seu negócio.",
+        ctaPrimary: "Falar com especialista",
+        ctaSecondary: "Ver soluções",
         contactButton: "entre em contato",
         whatWeDoTitle: "O que fazemos",
         whatWeDoItems: [
@@ -24,14 +26,14 @@ export const translations = {
       explore: "Explorar →",
       enterprisePill: "Parceiro de IA para empresas",
       heroHighlights: [
-        "Diagnóstico de processos e dados",
-        "Automação inteligente ponta a ponta",
-        "Entrega com métricas de impacto",
+        "Diagnóstico rápido de gargalos",
+        "Automação com IA integrada aos seus sistemas",
+        "Entrega focada em ROI",
       ],
       trust: {
         title: "IA com impacto real no negócio",
         description:
-          "Da estratégia à implantação, combinamos tecnologia, produto e operação para criar soluções de IA que funcionam no dia a dia da sua empresa.",
+          "Da estratégia à implantação, transformamos IA em resultado mensurável.",
         metrics: [
           { value: "-40%", label: "tempo em tarefas manuais" },
           { value: "+3x", label: "velocidade de execução" },
@@ -40,6 +42,7 @@ export const translations = {
       },
       process: {
         title: "Como atuamos",
+        subtitle: "Método simples, execução rápida e evolução contínua.",
         steps: [
           {
             title: "Mapeamento",
@@ -214,8 +217,10 @@ export const translations = {
     },
     app: {
       hero: {
-        title: "Applied AI to transform enterprise operations.",
-        subtitle: "We design and implement AI solutions to reduce operational costs, speed up decisions, and scale mission-critical workflows.",
+        title: "Applied AI to accelerate enterprise outcomes.",
+        subtitle: "We automate workflows, structure data, and deploy AI where your operations actually run.",
+        ctaPrimary: "Talk to a specialist",
+        ctaSecondary: "See solutions",
         contactButton: "contact us",
         whatWeDoTitle: "What we do",
         whatWeDoItems: [
@@ -230,14 +235,14 @@ export const translations = {
       explore: "Explore →",
       enterprisePill: "AI partner for enterprises",
       heroHighlights: [
-        "Process and data diagnostics",
-        "End-to-end intelligent automation",
-        "Delivery with measurable impact",
+        "Fast bottleneck diagnostics",
+        "AI automation integrated with your systems",
+        "Delivery focused on ROI",
       ],
       trust: {
         title: "AI with real business impact",
         description:
-          "From strategy to rollout, we combine technology, product, and operations to build AI solutions that perform in real-world enterprise environments.",
+          "From strategy to rollout, we turn AI into measurable outcomes.",
         metrics: [
           { value: "-40%", label: "time spent on manual work" },
           { value: "+3x", label: "execution speed" },
@@ -246,6 +251,7 @@ export const translations = {
       },
       process: {
         title: "How we work",
+        subtitle: "Simple method, fast execution, continuous optimization.",
         steps: [
           {
             title: "Discovery",
