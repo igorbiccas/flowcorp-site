@@ -8,8 +8,8 @@ export const translations = {
     },
     app: {
       hero: {
-        title: "Desenvolvemos Software com IA",
-        subtitle: "Automação, organização de dados e soluções sob medida.",
+        title: "IA aplicada para transformar operações empresariais",
+        subtitle: "Projetamos e implementamos soluções de IA para reduzir custos operacionais, acelerar decisões e escalar processos críticos.",
         contactButton: "entre em contato",
         whatWeDoTitle: "O que fazemos",
         whatWeDoItems: [
@@ -22,6 +22,39 @@ export const translations = {
       projectsTitle: "Soluções B2B",
       miniAppsTitle: "Miniapps da World",
       explore: "Explorar →",
+      enterprisePill: "Parceiro de IA para empresas",
+      heroHighlights: [
+        "Diagnóstico de processos e dados",
+        "Automação inteligente ponta a ponta",
+        "Entrega com métricas de impacto",
+      ],
+      trust: {
+        title: "IA com impacto real no negócio",
+        description:
+          "Da estratégia à implantação, combinamos tecnologia, produto e operação para criar soluções de IA que funcionam no dia a dia da sua empresa.",
+        metrics: [
+          { value: "-40%", label: "tempo em tarefas manuais" },
+          { value: "+3x", label: "velocidade de execução" },
+          { value: "24/7", label: "operações assistidas por IA" },
+        ],
+      },
+      process: {
+        title: "Como atuamos",
+        steps: [
+          {
+            title: "Mapeamento",
+            description: "Entendemos gargalos operacionais, fluxos de trabalho e objetivos de negócio.",
+          },
+          {
+            title: "Implementação",
+            description: "Desenvolvemos agentes, automações e integrações sob medida para o seu contexto.",
+          },
+          {
+            title: "Escala",
+            description: "Monitoramos indicadores e evoluímos continuamente para maximizar ROI.",
+          },
+        ],
+      },
       stats: {
         usersLabel: "Usuários",
         appsLabel: "Apps",
@@ -181,8 +214,8 @@ export const translations = {
     },
     app: {
       hero: {
-        title: "We apply AI to solve real business problems.",
-        subtitle: "Automation, data organization, and tailor-made solutions.",
+        title: "Applied AI to transform enterprise operations.",
+        subtitle: "We design and implement AI solutions to reduce operational costs, speed up decisions, and scale mission-critical workflows.",
         contactButton: "contact us",
         whatWeDoTitle: "What we do",
         whatWeDoItems: [
@@ -195,6 +228,39 @@ export const translations = {
       projectsTitle: "B2B Solutions",
       miniAppsTitle: "World Mini-Apps",
       explore: "Explore →",
+      enterprisePill: "AI partner for enterprises",
+      heroHighlights: [
+        "Process and data diagnostics",
+        "End-to-end intelligent automation",
+        "Delivery with measurable impact",
+      ],
+      trust: {
+        title: "AI with real business impact",
+        description:
+          "From strategy to rollout, we combine technology, product, and operations to build AI solutions that perform in real-world enterprise environments.",
+        metrics: [
+          { value: "-40%", label: "time spent on manual work" },
+          { value: "+3x", label: "execution speed" },
+          { value: "24/7", label: "AI-assisted operations" },
+        ],
+      },
+      process: {
+        title: "How we work",
+        steps: [
+          {
+            title: "Discovery",
+            description: "We map operational bottlenecks, workflows, and business outcomes.",
+          },
+          {
+            title: "Implementation",
+            description: "We build custom agents, automations, and integrations for your context.",
+          },
+          {
+            title: "Scale",
+            description: "We monitor KPIs and continuously optimize to maximize ROI.",
+          },
+        ],
+      },
       stats: {
         usersLabel: "Users",
         appsLabel: "Apps",

@@ -97,14 +97,58 @@ const App: React.FC = () => {
 
       <Header />
 
-      <main className="relative z-10 flex flex-col pt-32 md:pt-48">
+      <main className="relative z-10 flex flex-col pt-32 md:pt-44">
         <section className="px-6 md:px-8">
           <div className="mx-auto w-full max-w-5xl">
             <AnimatedSection className="space-y-10 md:space-y-12" delay="duration-700">
-              <div className="mx-auto max-w-3xl text-center">
+              <div className="mx-auto max-w-4xl space-y-8 text-center">
+                <span className="inline-flex items-center rounded-full border border-cyan-300/30 bg-cyan-300/10 px-4 py-1 text-[10px] font-semibold uppercase tracking-[0.25em] text-cyan-100">
+                  {t.app.enterprisePill}
+                </span>
                 <h1 className="text-4xl font-semibold leading-[1.05] tracking-tight text-zinc-50 md:text-6xl">
                   {t.app.hero.title}
                 </h1>
+                <p className="mx-auto max-w-3xl text-base leading-relaxed text-zinc-300 md:text-xl">
+                  {t.app.hero.subtitle}
+                </p>
+                <div className="grid gap-3 text-left md:grid-cols-3">
+                  {t.app.heroHighlights.map((item: string) => (
+                    <div key={item} className="rounded-2xl border border-white/10 bg-white/[0.04] px-4 py-3 text-sm text-zinc-200">
+                      {item}
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </AnimatedSection>
+          </div>
+        </section>
+
+        <section className="mt-20 px-6 md:px-8">
+          <div className="mx-auto grid w-full max-w-5xl gap-6 md:grid-cols-[1.2fr_1fr]">
+            <AnimatedSection className="rounded-3xl border border-white/15 bg-zinc-900/65 p-8 md:p-10" delay="duration-700">
+              <div className="space-y-4">
+                <h2 className="text-2xl font-semibold text-white md:text-3xl">{t.app.trust.title}</h2>
+                <p className="text-sm leading-relaxed text-zinc-300 md:text-base">{t.app.trust.description}</p>
+              </div>
+              <div className="mt-8 grid gap-3 sm:grid-cols-3">
+                {t.app.trust.metrics.map((metric: { value: string; label: string }) => (
+                  <div key={metric.label} className="rounded-2xl border border-white/10 bg-white/[0.03] px-4 py-4">
+                    <div className="text-2xl font-semibold text-cyan-200">{metric.value}</div>
+                    <div className="mt-1 text-xs uppercase tracking-[0.15em] text-zinc-400">{metric.label}</div>
+                  </div>
+                ))}
+              </div>
+            </AnimatedSection>
+            <AnimatedSection className="rounded-3xl border border-white/15 bg-zinc-900/55 p-8" delay="duration-700">
+              <h3 className="text-sm font-semibold uppercase tracking-[0.22em] text-zinc-300">{t.app.process.title}</h3>
+              <div className="mt-6 space-y-5">
+                {t.app.process.steps.map((step: { title: string; description: string }, index: number) => (
+                  <div key={step.title} className="border-l border-cyan-300/35 pl-4">
+                    <div className="text-xs uppercase tracking-[0.22em] text-cyan-200">0{index + 1}</div>
+                    <div className="mt-1 text-base font-medium text-white">{step.title}</div>
+                    <p className="mt-1 text-sm leading-relaxed text-zinc-400">{step.description}</p>
+                  </div>
+                ))}
               </div>
             </AnimatedSection>
           </div>
