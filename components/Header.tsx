@@ -8,7 +8,7 @@ interface HeaderProps {
 
 const Header: React.FC<HeaderProps> = ({ showLanguageSelector = true }) => {
   const [isScrolled, setIsScrolled] = useState(false);
-  const { language, toggleLanguage, t } = useLanguage();
+  const { language, toggleLanguage } = useLanguage();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -18,15 +18,6 @@ const Header: React.FC<HeaderProps> = ({ showLanguageSelector = true }) => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const isHomePage = typeof window !== 'undefined' && window.location.pathname === '/';
-
-  const navLinks = [
-    { href: `${isHomePage ? '' : '/'}#home`, label: t.app.nav.home },
-    { href: `${isHomePage ? '' : '/'}#capacidades`, label: t.app.nav.capabilities },
-    { href: `${isHomePage ? '' : '/'}#produtos`, label: t.app.nav.products },
-    { href: `${isHomePage ? '' : '/'}#sobre`, label: t.app.nav.about },
-    { href: `${isHomePage ? '' : '/'}#contato`, label: t.app.nav.contact },
-  ];
 
   return (
     <header
@@ -37,23 +28,12 @@ const Header: React.FC<HeaderProps> = ({ showLanguageSelector = true }) => {
         <a
           href="/"
           className="text-xs font-semibold uppercase tracking-[0.3em] text-white transition-opacity hover:opacity-70"
-          aria-label="FlowCorp"
+          aria-label="Flow corp."
         >
-          FLOWCORP
+          Flow corp.
         </a>
 
-        <div className="flex items-center gap-4">
-          <nav className="hidden items-center gap-5 md:flex">
-            {navLinks.map((link) => (
-              <a
-                key={link.href}
-                href={link.href}
-                className="text-xs font-medium uppercase tracking-[0.14em] text-zinc-500 transition-colors hover:text-zinc-200"
-              >
-                {link.label}
-              </a>
-            ))}
-          </nav>
+        <div className="flex items-center">
           {showLanguageSelector && (
             <button
               onClick={toggleLanguage}
