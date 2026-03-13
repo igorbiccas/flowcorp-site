@@ -53,15 +53,15 @@ const App: React.FC = () => {
 
       <Header />
 
-      <main className="relative z-10 flex flex-col pt-28 md:pt-36">
+      <main className="relative z-10 flex flex-col gap-6 pt-32 md:gap-8 md:pt-40">
         <section id="home" className="px-6 md:px-8">
           <div className="mx-auto w-full max-w-5xl">
-            <AnimatedSection className="space-y-8 md:space-y-10" delay="duration-700">
-              <div className="mx-auto max-w-3xl space-y-6 text-center">
-                <h1 className="text-4xl font-semibold leading-[1.05] tracking-tight text-zinc-50 md:text-5xl">
+            <AnimatedSection className="space-y-10 md:space-y-12" delay="duration-700">
+              <div className="mx-auto max-w-3xl space-y-8 text-center md:space-y-9">
+                <h1 className="text-4xl font-semibold leading-[1.12] tracking-tight text-zinc-50 md:text-5xl">
                   {t.app.hero.title}
                 </h1>
-                <p className="mx-auto max-w-xl text-base leading-relaxed text-zinc-400 md:text-lg">
+                <p className="mx-auto max-w-2xl text-base leading-8 text-zinc-400 md:text-lg">
                   {t.app.hero.subtitle}
                 </p>
               </div>
@@ -69,30 +69,30 @@ const App: React.FC = () => {
           </div>
         </section>
 
-        <section id="sobre" className="mt-20 px-6 md:px-8">
+        <section id="sobre" className="mt-24 px-6 md:mt-28 md:px-8">
           <div className="mx-auto w-full max-w-5xl">
-            <AnimatedSection className="w-full rounded-2xl border border-white/10 bg-zinc-900/30 p-7 md:p-10" delay="duration-700">
-              <div className="max-w-2xl space-y-4">
-                <p className="text-lg leading-relaxed text-zinc-200 md:text-xl">{t.app.about.description}</p>
+            <AnimatedSection className="w-full rounded-2xl border border-white/10 bg-zinc-900/30 p-8 md:p-12" delay="duration-700">
+              <div className="max-w-3xl space-y-6">
+                <p className="text-lg leading-8 text-zinc-200 md:text-xl">{t.app.about.description}</p>
               </div>
             </AnimatedSection>
           </div>
         </section>
 
-        <section id="capacidades" className="mt-20 px-6 md:px-8">
+        <section id="capacidades" className="mt-24 px-6 md:mt-28 md:px-8">
           <div className="mx-auto w-full max-w-5xl">
-            <AnimatedSection className="w-full space-y-8" delay="duration-700">
-              <div className="max-w-2xl space-y-3">
+            <AnimatedSection className="w-full space-y-10 md:space-y-12" delay="duration-700">
+              <div className="max-w-2xl space-y-4">
                 <h2 className="text-sm font-medium uppercase tracking-[0.2em] text-zinc-400">{t.app.capabilitiesTitle}</h2>
               </div>
-              <div className="grid gap-4 md:grid-cols-3">
+              <div className="grid gap-6 md:grid-cols-3">
                 {capabilities.map((capability) => (
                   <article
                     key={capability.title}
-                    className="rounded-2xl border border-white/10 bg-zinc-900/35 p-6"
+                    className="rounded-2xl border border-white/10 bg-zinc-900/35 p-7 md:p-8"
                   >
                     <h3 className="text-lg font-medium text-zinc-50">{capability.title}</h3>
-                    <p className="mt-3 text-sm leading-relaxed text-zinc-400">{capability.description}</p>
+                    <p className="mt-4 text-sm leading-7 text-zinc-400">{capability.description}</p>
                   </article>
                 ))}
               </div>
@@ -100,27 +100,27 @@ const App: React.FC = () => {
           </div>
         </section>
 
-        <section id="produtos" className="mt-24 px-6 md:px-8">
+        <section id="produtos" className="mt-28 px-6 md:mt-32 md:px-8">
           <div className="mx-auto w-full max-w-5xl">
-            <AnimatedSection className="w-full space-y-8" delay="duration-700">
-              <div className="max-w-2xl space-y-3">
+            <AnimatedSection className="w-full space-y-10 md:space-y-12" delay="duration-700">
+              <div className="max-w-2xl space-y-4">
                 <h2 className="text-sm font-medium uppercase tracking-[0.2em] text-zinc-400">{t.app.productsTitle}</h2>
               </div>
-              <div className="grid w-full gap-6">
+              <div className="grid w-full gap-8">
                 {products.map((product) => (
                   <a
                     key={product.title}
                     href={product.href}
                     target={(product as any).target || '_blank'}
                     rel="noreferrer"
-                    className="group relative block overflow-hidden rounded-2xl border border-white/15 bg-zinc-900/40 p-8 transition-colors duration-300 hover:border-white/30"
+                    className="group relative block overflow-hidden rounded-2xl border border-white/15 bg-zinc-900/40 p-8 md:p-10 transition-colors duration-300 hover:border-white/30"
                   >
-                    <div className="relative space-y-4">
+                    <div className="relative space-y-5">
                       <span className="inline-flex rounded-full border border-white/15 bg-black/20 px-3 py-1 text-[10px] font-semibold uppercase tracking-[0.2em] text-zinc-300">
                         {product.tag}
                       </span>
                       <h3 className="text-2xl font-semibold text-white md:text-3xl">{product.title}</h3>
-                      <p className="max-w-xl text-base leading-relaxed text-zinc-300">{product.description}</p>
+                      <p className="max-w-2xl text-base leading-8 text-zinc-300">{product.description}</p>
                     </div>
                     <div className="pt-5 text-xs font-semibold uppercase tracking-[0.3em] text-zinc-400 transition-colors group-hover:text-white">
                       {t.app.explore}
@@ -129,19 +129,19 @@ const App: React.FC = () => {
                 ))}
               </div>
 
-              <div className="space-y-4 rounded-2xl border border-white/10 bg-zinc-900/30 p-6">
+              <div className="space-y-6 rounded-2xl border border-white/10 bg-zinc-900/30 p-7 md:p-8">
                 <h3 className="text-sm font-medium uppercase tracking-[0.2em] text-zinc-400">{t.app.labsTitle}</h3>
-                <div className="grid w-full gap-4 md:grid-cols-2">
+                <div className="grid w-full gap-5 md:grid-cols-2">
                   {labs.map((lab) => (
                     <a
                       key={lab.title}
                       href={lab.href}
                       target={(lab as any).target || '_blank'}
                       rel="noreferrer"
-                      className="group relative block space-y-3 overflow-hidden rounded-2xl border border-white/15 bg-zinc-900/35 p-5 transition-colors duration-300 hover:border-white/30"
+                      className="group relative block space-y-4 overflow-hidden rounded-2xl border border-white/15 bg-zinc-900/35 p-6 transition-colors duration-300 hover:border-white/30"
                     >
                       <h3 className="text-base font-medium text-white">{lab.title}</h3>
-                      <p className="text-sm leading-relaxed text-zinc-400">{lab.description}</p>
+                      <p className="text-sm leading-7 text-zinc-400">{lab.description}</p>
                       <div className="pt-2 text-xs font-semibold uppercase tracking-[0.3em] text-zinc-400 transition-colors group-hover:text-white">
                         {t.app.explore}
                       </div>
@@ -153,11 +153,11 @@ const App: React.FC = () => {
           </div>
         </section>
 
-        <section id="contato" className="px-6 py-24 md:px-8 md:py-28">
+        <section id="contato" className="px-6 py-28 md:px-8 md:py-32">
           <div className="mx-auto w-full max-w-5xl text-center">
-            <AnimatedSection className="w-full space-y-6 rounded-2xl border border-white/10 bg-zinc-900/30 px-6 py-10" delay="duration-700">
+            <AnimatedSection className="w-full space-y-8 rounded-2xl border border-white/10 bg-zinc-900/30 px-7 py-12 md:px-10" delay="duration-700">
               <h2 className="text-2xl font-semibold text-zinc-50 md:text-3xl">{t.app.contactCta.title}</h2>
-              <p className="mx-auto max-w-xl text-zinc-400">{t.app.contactCta.description}</p>
+              <p className="mx-auto max-w-2xl leading-8 text-zinc-400">{t.app.contactCta.description}</p>
               <a
                 href="https://chat.whatsapp.com/LnN6r20k6IhHWxoRVSdGQO"
                 target="_blank"
@@ -166,7 +166,7 @@ const App: React.FC = () => {
               >
                 {t.app.contactCta.button}
               </a>
-              <div className="flex flex-wrap items-center justify-center gap-8 pt-2">
+              <div className="flex flex-wrap items-center justify-center gap-8 pt-4">
                 <a
                   href="https://www.instagram.com/flowcorp_"
                   target="_blank"
