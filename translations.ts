@@ -17,8 +17,8 @@ export const translations = {
       hero: {
         title: "IA aplicada para transformar operações empresariais",
         subtitle: "Soluções de IA para ganhar eficiência, escala e clareza nas decisões.",
-        contactButton: "falar com especialista",
-        secondaryButton: "ver capacidades",
+        contactButton: "",
+        secondaryButton: "",
         whatWeDoTitle: "O que fazemos",
         whatWeDoItems: [
           "Organização e estruturação de dados",
@@ -28,7 +28,7 @@ export const translations = {
         ],
       },
       about: {
-        title: "Quem somos",
+        title: "",
         description:
           "Aplicamos IA em operações reais para reduzir fricção e aumentar resultado, com implementação direta no negócio.",
       },

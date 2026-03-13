@@ -64,20 +64,6 @@ const App: React.FC = () => {
                 <p className="mx-auto max-w-xl text-base leading-relaxed text-zinc-400 md:text-lg">
                   {t.app.hero.subtitle}
                 </p>
-                <div className="flex flex-wrap items-center justify-center gap-4">
-                  <a
-                    href="#contato"
-                    className="rounded-lg border border-white/20 bg-white px-6 py-3 text-xs font-semibold uppercase tracking-[0.22em] text-zinc-900 transition-all hover:bg-zinc-200"
-                  >
-                    {t.app.hero.contactButton}
-                  </a>
-                  <a
-                    href="#capacidades"
-                    className="rounded-lg border border-white/20 bg-transparent px-6 py-3 text-xs font-semibold uppercase tracking-[0.22em] text-zinc-200 transition-all hover:border-white/40 hover:text-white"
-                  >
-                    {t.app.hero.secondaryButton}
-                  </a>
-                </div>
               </div>
             </AnimatedSection>
           </div>
@@ -87,7 +73,6 @@ const App: React.FC = () => {
           <div className="mx-auto w-full max-w-5xl">
             <AnimatedSection className="w-full rounded-2xl border border-white/10 bg-zinc-900/30 p-7 md:p-10" delay="duration-700">
               <div className="max-w-2xl space-y-4">
-                <h2 className="text-sm font-medium uppercase tracking-[0.2em] text-zinc-400">{t.app.about.title}</h2>
                 <p className="text-lg leading-relaxed text-zinc-200 md:text-xl">{t.app.about.description}</p>
               </div>
             </AnimatedSection>

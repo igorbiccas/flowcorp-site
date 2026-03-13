@@ -27,10 +27,10 @@ const Header: React.FC<HeaderProps> = ({ showLanguageSelector = true }) => {
       <div className="mx-auto flex w-full max-w-5xl items-center justify-between px-6 md:px-8">
         <a
           href="/"
-          className="text-xs font-semibold uppercase tracking-[0.3em] text-white transition-opacity hover:opacity-70"
-          aria-label="Flow corp."
+          className="text-sm font-semibold tracking-[0.08em] text-white transition-opacity hover:opacity-70"
+          aria-label="Flow corp"
         >
-          Flow corp.
+          Flow corp
         </a>
 
         <div className="flex items-center">
