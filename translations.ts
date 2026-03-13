@@ -15,8 +15,8 @@ export const translations = {
         contact: "Contato",
       },
       hero: {
-        title: "IA aplicada para transformar operações empresariais",
-        subtitle: "Soluções de IA para ganhar eficiência, escala e clareza nas decisões.",
+        title: "Software e IA para operações empresariais",
+        subtitle: "Desenvolvemos software, automações e sistemas de IA para operações reais.",
         contactButton: "",
         secondaryButton: "",
         whatWeDoTitle: "O que fazemos",
@@ -30,45 +30,45 @@ export const translations = {
       about: {
         title: "",
         description:
-          "Aplicamos IA em operações reais para reduzir fricção e aumentar resultado, com implementação direta no negócio.",
+          "Construímos soluções sob medida para reduzir trabalho manual, organizar informação e melhorar a execução.",
       },
       capabilitiesTitle: "Capacidades",
       capabilities: {
         automation: {
           title: "Automação com IA",
-          description: "Criamos fluxos automatizados para reduzir tarefas repetitivas, acelerar processos e ganhar produtividade operacional.",
+          description: "Automatizamos processos, tarefas e fluxos de trabalho para reduzir tempo operacional e aumentar produtividade.",
         },
         documents: {
           title: "Análise de documentos e dados",
-          description: "Estruturamos informações dispersas e aplicamos IA para extrair insights acionáveis com precisão e contexto.",
+          description: "Estruturamos documentos, textos e dados para transformar informação dispersa em operação útil.",
         },
         intelligentSystems: {
           title: "Sistemas inteligentes para operação e decisão",
-          description: "Desenvolvemos sistemas sob medida para apoiar times em decisões críticas, governança e execução diária.",
+          description: "Desenvolvemos sistemas sob medida para apoiar rotinas, decisões e operações críticas.",
         },
       },
-      productsTitle: "Produtos e projetos",
-      labsTitle: "Labs e iniciativas",
+      productsTitle: "Produtos e iniciativas",
+      labsTitle: "Iniciativas",
       productTags: {
         platform: "Plataforma",
       },
       explore: "Explorar →",
       contactCta: {
-        title: "Pronto para aplicar IA no seu negócio?",
-        description: "Fale com a FlowCorp e receba um plano objetivo para sua operação.",
-        button: "iniciar conversa",
+        title: "Vamos construir algo útil para a sua operação.",
+        description: "Converse com a FlowCorp sobre software, automação e IA para o seu negócio.",
+        button: "Falar com a FlowCorp",
       },
       selfbrain: {
         title: "SelfBrain",
-        description: "IA com memória contínua. Experiências personalizadas que evoluem conforme o uso.",
+        description: "Experimento de interação personalizada com IA e contexto contínuo.",
       },
       datadoc: {
         title: "DataDoc",
-        description: "Anamnese automática a partir da consulta, pronta para o prontuário.",
+        description: "Estrutura informações clínicas a partir da consulta para agilizar o registro médico.",
       },
       gaialink: {
         title: "Gaia Link",
-        description: "Crie seu perfil público, adicione seus links e descubra outras pessoas no mapa.",
+        description: "Projeto de identidade pública e descoberta social baseada em perfil e presença digital.",
       },
     },
     gaia: {
