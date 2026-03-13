@@ -7,10 +7,18 @@ export const translations = {
       contactInstagram: "Fale com o suporte no Instagram",
     },
     app: {
+      nav: {
+        home: "Home",
+        capabilities: "Soluções",
+        products: "Produtos",
+        about: "Sobre",
+        contact: "Contato",
+      },
       hero: {
-        title: "Desenvolvemos Software com IA",
-        subtitle: "Automação, organização de dados e soluções sob medida.",
-        contactButton: "entre em contato",
+        title: "IA aplicada para transformar operações empresariais",
+        subtitle: "A FlowCorp desenvolve soluções e sistemas de inteligência artificial para eficiência, escala e decisão.",
+        contactButton: "falar com especialista",
+        secondaryButton: "ver capacidades",
         whatWeDoTitle: "O que fazemos",
         whatWeDoItems: [
           "Organização e estruturação de dados",
@@ -19,13 +27,36 @@ export const translations = {
           "desenvolvimento de software e sites",
         ],
       },
-      projectsTitle: "Soluções B2B",
-      miniAppsTitle: "Miniapps da World",
+      about: {
+        title: "Quem somos",
+        description:
+          "Somos uma empresa de IA aplicada que atua lado a lado com empresas para mapear gargalos, desenhar soluções e implementar sistemas inteligentes com impacto real no negócio.",
+      },
+      capabilitiesTitle: "Capacidades",
+      capabilities: {
+        automation: {
+          title: "Automação com IA",
+          description: "Criamos fluxos automatizados para reduzir tarefas repetitivas, acelerar processos e ganhar produtividade operacional.",
+        },
+        documents: {
+          title: "Análise de documentos e dados",
+          description: "Estruturamos informações dispersas e aplicamos IA para extrair insights acionáveis com precisão e contexto.",
+        },
+        intelligentSystems: {
+          title: "Sistemas inteligentes para operação e decisão",
+          description: "Desenvolvemos sistemas sob medida para apoiar times em decisões críticas, governança e execução diária.",
+        },
+      },
+      productsTitle: "Produtos e projetos",
+      labsTitle: "Labs e iniciativas",
+      productTags: {
+        platform: "Plataforma",
+      },
       explore: "Explorar →",
-      stats: {
-        usersLabel: "Usuários",
-        appsLabel: "Apps",
-        countriesLabel: "Países",
+      contactCta: {
+        title: "Pronto para aplicar IA no seu negócio?",
+        description: "Converse com a FlowCorp e receba uma proposta alinhada aos desafios da sua operação.",
+        button: "iniciar conversa",
       },
       selfbrain: {
         title: "SelfBrain",
@@ -180,10 +211,18 @@ export const translations = {
       contactInstagram: "Contact support on Instagram",
     },
     app: {
+      nav: {
+        home: "Home",
+        capabilities: "Solutions",
+        products: "Products",
+        about: "About",
+        contact: "Contact",
+      },
       hero: {
-        title: "We apply AI to solve real business problems.",
-        subtitle: "Automation, data organization, and tailor-made solutions.",
-        contactButton: "contact us",
+        title: "Applied AI to transform business operations",
+        subtitle: "FlowCorp designs and builds AI solutions and systems for efficiency, scale, and better decision-making.",
+        contactButton: "talk to an expert",
+        secondaryButton: "view capabilities",
         whatWeDoTitle: "What we do",
         whatWeDoItems: [
           "Data organization and structuring",
@@ -192,13 +231,36 @@ export const translations = {
           "Software and website development",
         ],
       },
-      projectsTitle: "B2B Solutions",
-      miniAppsTitle: "World Mini-Apps",
+      about: {
+        title: "Who we are",
+        description:
+          "We are an applied AI company that works alongside organizations to identify bottlenecks, design solutions, and implement intelligent systems with measurable business impact.",
+      },
+      capabilitiesTitle: "Capabilities",
+      capabilities: {
+        automation: {
+          title: "AI automation",
+          description: "We create automated workflows to cut repetitive tasks, speed up processes, and improve operational productivity.",
+        },
+        documents: {
+          title: "Document and data analysis",
+          description: "We structure scattered information and apply AI to generate actionable insights with accuracy and context.",
+        },
+        intelligentSystems: {
+          title: "Intelligent systems for operations and decisions",
+          description: "We build tailored systems that support teams in critical decisions, governance, and everyday execution.",
+        },
+      },
+      productsTitle: "Products and projects",
+      labsTitle: "Labs and initiatives",
+      productTags: {
+        platform: "Platform",
+      },
       explore: "Explore →",
-      stats: {
-        usersLabel: "Users",
-        appsLabel: "Apps",
-        countriesLabel: "Countries",
+      contactCta: {
+        title: "Ready to apply AI to your business?",
+        description: "Talk to FlowCorp and get a proposal aligned with your operation's real challenges.",
+        button: "start conversation",
       },
       selfbrain: {
         title: "SelfBrain",

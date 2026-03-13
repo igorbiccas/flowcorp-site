@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { useLanguage } from '../contexts/LanguageContext';
 import { BrazilFlagIcon } from './icons';
@@ -9,7 +8,7 @@ interface HeaderProps {
 
 const Header: React.FC<HeaderProps> = ({ showLanguageSelector = true }) => {
   const [isScrolled, setIsScrolled] = useState(false);
-  const { language, toggleLanguage } = useLanguage();
+  const { language, toggleLanguage, t } = useLanguage();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -19,9 +18,17 @@ const Header: React.FC<HeaderProps> = ({ showLanguageSelector = true }) => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  const navLinks = [
+    { href: '#home', label: t.app.nav.home },
+    { href: '#capacidades', label: t.app.nav.capabilities },
+    { href: '#produtos', label: t.app.nav.products },
+    { href: '#sobre', label: t.app.nav.about },
+    { href: '#contato', label: t.app.nav.contact },
+  ];
+
   return (
     <header
-      className={`fixed inset-x-0 top-0 z-50 transition-all duration-300 ease-in-out ${isScrolled ? 'border-b border-white/10 bg-[#0a0a0c]/80 backdrop-blur-xl py-4' : 'bg-transparent py-6'
+      className={`fixed inset-x-0 top-0 z-50 transition-all duration-300 ease-in-out ${isScrolled ? 'border-b border-white/10 bg-[#0a0a0c]/80 py-4 backdrop-blur-xl' : 'bg-transparent py-6'
         }`}
     >
       <div className="mx-auto flex w-full max-w-5xl items-center justify-between px-6 md:px-8">
@@ -34,14 +41,22 @@ const Header: React.FC<HeaderProps> = ({ showLanguageSelector = true }) => {
         </a>
 
         <div className="flex items-center gap-4">
-          <nav className="flex items-center gap-8">
-            {/* Nav links removed */}
+          <nav className="hidden items-center gap-6 md:flex">
+            {navLinks.map((link) => (
+              <a
+                key={link.href}
+                href={link.href}
+                className="text-xs font-medium uppercase tracking-[0.14em] text-zinc-400 transition-colors hover:text-white"
+              >
+                {link.label}
+              </a>
+            ))}
           </nav>
           {showLanguageSelector && (
             <button
               onClick={toggleLanguage}
               className="flex h-8 w-12 items-center justify-center rounded-lg border border-white/15 bg-zinc-900/80 transition-transform hover:scale-105 hover:bg-zinc-800 active:scale-95"
-              title={language === 'en' ? "Translate to Portuguese" : "Translate to English"}
+              title={language === 'en' ? 'Translate to Portuguese' : 'Translate to English'}
             >
               {language === 'en' ? (
                 <BrazilFlagIcon />
