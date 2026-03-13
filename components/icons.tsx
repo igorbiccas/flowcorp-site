@@ -110,14 +110,6 @@ export const BrazilFlagIcon = () => (
     <rect width="72" height="48" fill="#009c3b" />
     <path fill="#ffdf00" d="M36 5 67 24 36 43 5 24Z" />
     <circle cx="36" cy="24" r="12" fill="#002776" />
-    <path
-      d="M24.2 21.2a22 22 0 0 0 23.6 4.5l.9 1.9a24 24 0 0 1-25.8-4.9Z"
-      fill="#fff"
-    />
-    <circle cx="32" cy="22" r="1" fill="#fff" />
-    <circle cx="35.5" cy="24" r="1" fill="#fff" />
-    <circle cx="39" cy="25.5" r="1" fill="#fff" />
-    <circle cx="42.5" cy="23" r="1" fill="#fff" />
   </svg>
 );
 
