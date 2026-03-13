@@ -8,52 +8,32 @@ interface HeaderProps {
 
 const Header: React.FC<HeaderProps> = ({ showLanguageSelector = true }) => {
   const [isScrolled, setIsScrolled] = useState(false);
-  const { language, toggleLanguage, t } = useLanguage();
+  const { language, toggleLanguage } = useLanguage();
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 10);
+      setIsScrolled(window.scrollY > 24);
     };
     window.addEventListener('scroll', handleScroll, { passive: true });
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const isHomePage = typeof window !== 'undefined' && window.location.pathname === '/';
-
-  const navLinks = [
-    { href: `${isHomePage ? '' : '/'}#home`, label: t.app.nav.home },
-    { href: `${isHomePage ? '' : '/'}#capacidades`, label: t.app.nav.capabilities },
-    { href: `${isHomePage ? '' : '/'}#produtos`, label: t.app.nav.products },
-    { href: `${isHomePage ? '' : '/'}#sobre`, label: t.app.nav.about },
-    { href: `${isHomePage ? '' : '/'}#contato`, label: t.app.nav.contact },
-  ];
 
   return (
     <header
-      className={`fixed inset-x-0 top-0 z-50 transition-all duration-300 ease-in-out ${isScrolled ? 'border-b border-white/10 bg-[#0a0a0c]/80 py-4 backdrop-blur-xl' : 'bg-transparent py-6'
+      className={`fixed inset-x-0 top-0 z-50 transition-all duration-300 ease-in-out ${isScrolled ? 'border-b border-white/10 bg-[#0a0a0c]/75 py-3 backdrop-blur-lg' : 'bg-transparent py-5'
         }`}
     >
       <div className="mx-auto flex w-full max-w-5xl items-center justify-between px-6 md:px-8">
         <a
           href="/"
-          className="text-xs font-semibold uppercase tracking-[0.3em] text-white transition-opacity hover:opacity-70"
-          aria-label="FlowCorp"
+          className="text-sm font-semibold tracking-[0.08em] text-white transition-opacity hover:opacity-70"
+          aria-label="Flow corp"
         >
-          FLOWCORP
+          Flow corp
         </a>
 
-        <div className="flex items-center gap-4">
-          <nav className="hidden items-center gap-6 md:flex">
-            {navLinks.map((link) => (
-              <a
-                key={link.href}
-                href={link.href}
-                className="text-xs font-medium uppercase tracking-[0.14em] text-zinc-400 transition-colors hover:text-white"
-              >
-                {link.label}
-              </a>
-            ))}
-          </nav>
+        <div className="flex items-center">
           {showLanguageSelector && (
             <button
               onClick={toggleLanguage}

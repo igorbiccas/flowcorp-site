@@ -16,9 +16,9 @@ export const translations = {
       },
       hero: {
         title: "IA aplicada para transformar operações empresariais",
-        subtitle: "A FlowCorp desenvolve soluções e sistemas de inteligência artificial para eficiência, escala e decisão.",
-        contactButton: "falar com especialista",
-        secondaryButton: "ver capacidades",
+        subtitle: "Soluções de IA para ganhar eficiência, escala e clareza nas decisões.",
+        contactButton: "",
+        secondaryButton: "",
         whatWeDoTitle: "O que fazemos",
         whatWeDoItems: [
           "Organização e estruturação de dados",
@@ -28,9 +28,9 @@ export const translations = {
         ],
       },
       about: {
-        title: "Quem somos",
+        title: "",
         description:
-          "Somos uma empresa de IA aplicada que atua lado a lado com empresas para mapear gargalos, desenhar soluções e implementar sistemas inteligentes com impacto real no negócio.",
+          "Aplicamos IA em operações reais para reduzir fricção e aumentar resultado, com implementação direta no negócio.",
       },
       capabilitiesTitle: "Capacidades",
       capabilities: {
@@ -55,7 +55,7 @@ export const translations = {
       explore: "Explorar →",
       contactCta: {
         title: "Pronto para aplicar IA no seu negócio?",
-        description: "Converse com a FlowCorp e receba uma proposta alinhada aos desafios da sua operação.",
+        description: "Fale com a FlowCorp e receba um plano objetivo para sua operação.",
         button: "iniciar conversa",
       },
       selfbrain: {
@@ -220,7 +220,7 @@ export const translations = {
       },
       hero: {
         title: "Applied AI to transform business operations",
-        subtitle: "FlowCorp designs and builds AI solutions and systems for efficiency, scale, and better decision-making.",
+        subtitle: "AI solutions to improve efficiency, scale, and decision clarity.",
         contactButton: "talk to an expert",
         secondaryButton: "view capabilities",
         whatWeDoTitle: "What we do",
@@ -234,7 +234,7 @@ export const translations = {
       about: {
         title: "Who we are",
         description:
-          "We are an applied AI company that works alongside organizations to identify bottlenecks, design solutions, and implement intelligent systems with measurable business impact.",
+          "We apply AI to real operations to reduce friction and deliver measurable business impact.",
       },
       capabilitiesTitle: "Capabilities",
       capabilities: {
@@ -259,7 +259,7 @@ export const translations = {
       explore: "Explore →",
       contactCta: {
         title: "Ready to apply AI to your business?",
-        description: "Talk to FlowCorp and get a proposal aligned with your operation's real challenges.",
+        description: "Talk to FlowCorp and get a clear plan for your operation.",
         button: "start conversation",
       },
       selfbrain: {
