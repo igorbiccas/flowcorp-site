@@ -18,12 +18,14 @@ const Header: React.FC<HeaderProps> = ({ showLanguageSelector = true }) => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  const isHomePage = typeof window !== 'undefined' && window.location.pathname === '/';
+
   const navLinks = [
-    { href: '#home', label: t.app.nav.home },
-    { href: '#capacidades', label: t.app.nav.capabilities },
-    { href: '#produtos', label: t.app.nav.products },
-    { href: '#sobre', label: t.app.nav.about },
-    { href: '#contato', label: t.app.nav.contact },
+    { href: `${isHomePage ? '' : '/'}#home`, label: t.app.nav.home },
+    { href: `${isHomePage ? '' : '/'}#capacidades`, label: t.app.nav.capabilities },
+    { href: `${isHomePage ? '' : '/'}#produtos`, label: t.app.nav.products },
+    { href: `${isHomePage ? '' : '/'}#sobre`, label: t.app.nav.about },
+    { href: `${isHomePage ? '' : '/'}#contato`, label: t.app.nav.contact },
   ];
 
   return (
