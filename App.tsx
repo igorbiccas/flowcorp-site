@@ -24,11 +24,11 @@ const App: React.FC = () => {
 
   const products = [
     {
-      title: t.app.datadoc.title,
-      description: t.app.datadoc.description,
-      href: '/datadoc',
+      title: t.app.mainService.title,
+      description: t.app.mainService.description,
+      href: '#contato',
       target: '_self',
-      tag: t.app.productTags.platform,
+      tag: t.app.productTags.mainService,
     },
   ];
 

@@ -15,8 +15,8 @@ export const translations = {
         contact: "Contato",
       },
       hero: {
-        title: "Software e IA para operações empresariais",
-        subtitle: "Desenvolvemos software, automações e sistemas de IA para operações reais.",
+        title: "Desenvolvimento de sites para empresas que querem vender mais",
+        subtitle: "Criamos sites corporativos sob medida, com design estratégico, performance e foco em conversão.",
         contactButton: "",
         secondaryButton: "",
         whatWeDoTitle: "O que fazemos",
@@ -30,32 +30,37 @@ export const translations = {
       about: {
         title: "",
         description:
-          "Construímos soluções sob medida para reduzir trabalho manual, organizar informação e melhorar a execução.",
+          "A FlowCorp transforma a presença digital de empresas com sites profissionais, rápidos e pensados para gerar oportunidades de negócio.",
       },
       capabilitiesTitle: "Capacidades",
       capabilities: {
         automation: {
-          title: "Automação com IA",
-          description: "Automatizamos processos, tarefas e fluxos de trabalho para reduzir tempo operacional e aumentar produtividade.",
+          title: "Site institucional e comercial",
+          description: "Desenvolvemos sites que posicionam sua empresa, apresentam serviços com clareza e aumentam a geração de contatos.",
         },
         documents: {
-          title: "Análise de documentos e dados",
-          description: "Estruturamos documentos, textos e dados para transformar informação dispersa em operação útil.",
+          title: "Estratégia de conteúdo e conversão",
+          description: "Organizamos estrutura, textos e chamadas para guiar o visitante até o contato, orçamento ou venda.",
         },
         intelligentSystems: {
-          title: "Sistemas inteligentes para operação e decisão",
-          description: "Desenvolvemos sistemas sob medida para apoiar rotinas, decisões e operações críticas.",
+          title: "Performance, SEO e evolução contínua",
+          description: "Criamos páginas rápidas e preparadas para SEO, com base técnica sólida para crescer junto com sua empresa.",
         },
       },
-      productsTitle: "Produtos e iniciativas",
+      productsTitle: "Produto principal",
       labsTitle: "Iniciativas",
       productTags: {
         platform: "Plataforma",
+        mainService: "Serviço principal",
+      },
+      mainService: {
+        title: "Desenvolvimento de sites para empresas",
+        description: "Projeto completo do seu site corporativo: estratégia, layout, desenvolvimento e publicação com acompanhamento da FlowCorp.",
       },
       explore: "Explorar →",
       contactCta: {
-        title: "Vamos construir algo útil para a sua operação.",
-        description: "Converse com a FlowCorp sobre software, automação e IA para o seu negócio.",
+        title: "Pronto para criar o site da sua empresa?",
+        description: "Fale com a FlowCorp e receba uma proposta para desenvolver um site profissional, moderno e orientado a resultados.",
         button: "Falar com a FlowCorp",
       },
       selfbrain: {
@@ -219,8 +224,8 @@ export const translations = {
         contact: "Contact",
       },
       hero: {
-        title: "Applied AI to transform business operations",
-        subtitle: "AI solutions to improve efficiency, scale, and decision clarity.",
+        title: "Website development for companies that want to grow online",
+        subtitle: "We build custom corporate websites with strategic design, high performance, and conversion focus.",
         contactButton: "talk to an expert",
         secondaryButton: "view capabilities",
         whatWeDoTitle: "What we do",
@@ -234,32 +239,37 @@ export const translations = {
       about: {
         title: "Who we are",
         description:
-          "We apply AI to real operations to reduce friction and deliver measurable business impact.",
+          "FlowCorp helps companies strengthen their digital presence with professional, fast websites built to generate business opportunities.",
       },
       capabilitiesTitle: "Capabilities",
       capabilities: {
         automation: {
-          title: "AI automation",
-          description: "We create automated workflows to cut repetitive tasks, speed up processes, and improve operational productivity.",
+          title: "Corporate and commercial websites",
+          description: "We create websites that position your company, clearly present your services, and increase qualified leads.",
         },
         documents: {
-          title: "Document and data analysis",
-          description: "We structure scattered information and apply AI to generate actionable insights with accuracy and context.",
+          title: "Content and conversion strategy",
+          description: "We define structure, messaging, and calls-to-action to guide visitors toward contact, quotes, or sales.",
         },
         intelligentSystems: {
-          title: "Intelligent systems for operations and decisions",
-          description: "We build tailored systems that support teams in critical decisions, governance, and everyday execution.",
+          title: "Performance, SEO, and continuous growth",
+          description: "We deliver fast, SEO-ready pages with a technical foundation that scales with your business.",
         },
       },
-      productsTitle: "Products and projects",
+      productsTitle: "Main product",
       labsTitle: "Labs and initiatives",
       productTags: {
         platform: "Platform",
+        mainService: "Main service",
+      },
+      mainService: {
+        title: "Website development for companies",
+        description: "Complete delivery for your corporate website: strategy, design, development, and launch with FlowCorp support.",
       },
       explore: "Explore →",
       contactCta: {
-        title: "Ready to apply AI to your business?",
-        description: "Talk to FlowCorp and get a clear plan for your operation.",
+        title: "Ready to build your company website?",
+        description: "Talk to FlowCorp and get a proposal for a modern, high-performing website focused on business results.",
         button: "start conversation",
       },
       selfbrain: {
